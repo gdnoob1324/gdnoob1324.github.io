@@ -45,3 +45,13 @@ img {
     margin-top: 5vh;
     text-align: center;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    img {
+        width: 8rem;
+        height: 8rem;
+    }
+    .text {
+        width: 50vw;
+    }
+}
