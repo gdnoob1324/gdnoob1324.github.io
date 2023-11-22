@@ -1,3 +1,7 @@
+* {
+    transition: all 500ms;
+}
+
 body {
     background-color: black;
     color: white;
@@ -68,6 +72,9 @@ h2.x {
 }
 
 @media only screen and (max-device-width : 480px){
+    main {
+        width: 100vw;
+    }
     img {
         width: 8rem;
         height: 8rem;
