@@ -15,6 +15,7 @@ main {
     width: 75vw;
     height: 100vh;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 h1 {
@@ -94,5 +95,39 @@ h2.x {
 @media only screen and ((min-device-width : 600px) and (max-device-height : 800px)) {
     main, footer {
         width: 75vw;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-device-height : 600px) {
+    main {
+        position: relative;
+    }
+    .profile {
+        position: absolute;
+        margin-top: 16vh;
+        right: 50%;
+    }
+    .text {
+        margin-top: 22vh;
+        position: absolute;
+        left: 35%;
+        width: 40vw;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-device-height : 300px) {
+    main {
+        position: relative;
+    }
+    .profile {
+        position: absolute;
+        margin-top: -1vh;
+        right: 50%;
+    }
+    .text {
+        margin-top: 6vh;
+        position: absolute;
+        left: 35%;
+        width: 40vw;
     }
 }
