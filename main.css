@@ -31,7 +31,7 @@ h2 {
 }
 
 .profile {
-    width: 50vw;
+    width: 30vw;
     margin: 0 auto;
     margin-top: 16vh;
     text-align: center;
@@ -75,7 +75,7 @@ h2.x {
 }
 
 @media only screen and ((max-device-width : 480px) or (max-device-height : 800px)) {
-    main, footer {
+    main, footer, .profile {
         width: 100vw;
     }
     img {
@@ -93,41 +93,34 @@ h2.x {
 }
 
 @media only screen and ((min-device-width : 600px) and (max-device-height : 800px)) {
-    main, footer {
+    main, footer, .profile {
         width: 75vw;
     }
 }
 
-@media only screen and (orientation: landscape) and (max-device-height : 600px) {
-    main {
-        position: relative;
-    }
+@media only screen and (orientation: landscape) and (max-device-height : 500px) {
     .profile {
-        position: absolute;
-        margin-top: 16vh;
-        right: 50%;
+        width: 30vw;
+        float: left;
     }
     .text {
-        margin-top: 22vh;
-        position: absolute;
-        left: 35%;
-        width: 40vw;
+        margin-top: 20vh;
+        margin-right: 10vh;
+        float: right;
+        width: 35vw;
     }
 }
 
 @media only screen and (orientation: landscape) and (max-device-height : 300px) {
-    main {
-        position: relative;
-    }
     .profile {
-        position: absolute;
-        margin-top: -1vh;
-        right: 50%;
+        width: 30vw;
+        margin-top: -2vh;
+        float: left;
     }
     .text {
-        margin-top: 6vh;
-        position: absolute;
-        left: 35%;
-        width: 40vw;
+        margin-top: 20vh;
+        margin-right: 10vh;
+        float: right;
+        width: 35vw;
     }
 }
