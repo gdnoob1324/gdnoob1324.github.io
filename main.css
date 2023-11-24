@@ -11,6 +11,7 @@ body {
 
 main {
     background-color: #202020;
+    background: linear-gradient(0deg, rgb(24, 24, 24) 0%, rgb(32, 32, 32) 25%);
     width: 75vw;
     height: 100vh;
     margin: 0 auto;
@@ -51,7 +52,7 @@ img {
 }
 
 footer {
-    background-color: #303030;
+    background: #202020;
     width: 75vw;
     height: 100vh;
     margin: 0 auto;
@@ -61,27 +62,31 @@ h2.x {
     padding: 2vh;
 }
 
-@media only screen and (max-device-width : 800px){
+@media only screen and (max-device-width : 800px) {
     img {
         width: 12rem;
         height: 12rem;
     }
+
     .profile {
         margin-top: 8vh;
     }
 }
 
-@media only screen and (max-device-width : 480px){
+@media only screen and (max-device-width : 480px) {
     main {
         width: 100vw;
     }
+
     img {
         width: 8rem;
         height: 8rem;
     }
+
     h2 {
         padding: 0vh;
     }
+
     .text {
         width: 50vw;
         margin-top: 8vh;
