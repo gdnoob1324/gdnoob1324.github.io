@@ -68,29 +68,31 @@ h2.x {
         width: 12rem;
         height: 12rem;
     }
-
     .profile {
         margin-top: 8vh;
     }
 }
 
-@media only screen and (max-device-width : 480px) {
-    main {
+@media only screen and ((max-device-width : 480px) or (max-device-height : 800px)) {
+    main, footer {
         width: 100vw;
     }
-
     img {
         width: 8rem;
         height: 8rem;
     }
-
     h2 {
         padding: 0vh;
     }
-
     .text {
         width: 50vw;
         margin-top: 8vh;
         padding: 0vh;
+    }
+}
+
+@media only screen and ((min-device-width : 600px) and (max-device-height : 800px)) {
+    main, footer {
+        width: 75vw;
     }
 }
