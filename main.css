@@ -99,6 +99,10 @@ h2.x {
 }
 
 @media only screen and (orientation: landscape) and (max-device-height : 500px) {
+    h1 {
+        padding: 4px;
+        font-size: xx-large;
+    }
     .profile {
         width: 30dvw;
         float: left;
@@ -112,16 +116,19 @@ h2.x {
 }
 
 @media only screen and (orientation: landscape) and (max-device-height : 300px) {
+    h1 {
+        padding: 2px;
+        font-size: x-large;
+    }
     .profile {
         width: 30dvw;
-        margin-top: -2dvh;
+        margin-top: 2dvh;
         float: left;
     }
     .text {
         margin-top: 20dvh;
-        margin-right: 10dvh;
+        margin-right: 16dvh;
         float: right;
         width: 35dvw;
-        width: 1ddvw;
     }
 }
