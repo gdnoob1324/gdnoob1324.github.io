@@ -12,8 +12,8 @@ body {
 main {
     background-color: #202020;
     background: linear-gradient(0deg, rgb(24, 24, 24) 0%, rgb(32, 32, 32) 25%);
-    width: 75dvw;
-    height: 100dvh;
+    width: 75vw;
+    height: 100vh;
     margin: 0 auto;
     overflow: hidden;
 }
@@ -31,9 +31,9 @@ h2 {
 }
 
 .profile {
-    width: 30dvw;
+    width: 30vw;
     margin: 0 auto;
-    margin-top: 16dvh;
+    margin-top: 16vh;
     text-align: center;
 }
 
@@ -46,22 +46,22 @@ img {
 .text {
     margin: 0 auto;
     border: 1px solid white;
-    width: 24dvw;
-    border-radius: .5dvw;
-    margin-top: 4dvh;
-    padding: 2dvh;
+    width: 24vw;
+    border-radius: .5vw;
+    margin-top: 4vh;
+    padding: 2vh;
     text-align: center;
 }
 
 footer {
     background: #202020;
-    width: 75dvw;
-    height: 100dvh;
+    width: 75vw;
+    height: 100vh;
     margin: 0 auto;
 }
 
 h2.x {
-    padding: 2dvh;
+    padding: 2vh;
 }
 
 @media only screen and (max-device-width : 800px) {
@@ -76,17 +76,17 @@ h2.x {
 
 @media only screen and ((max-device-width : 480px) or (max-device-height : 800px)) {
     main, footer, .profile {
-        width: 100dvw;
+        width: 100vw;
     }
     img {
         width: 8rem;
         height: 8rem;
     }
     h2 {
-        padding: 0dvh;
+        padding: 0vh;
     }
     .text {
-        width: 75dvw;
+        width: 75vw;
     }
 }
 
@@ -100,11 +100,11 @@ h2.x {
         font-size: xx-large;
     }
     .profile {
-        width: 24dvw;
-        margin: 2dvh auto;
+        width: 24vw;
+        margin: 2vh auto;
     }
     .text {
         margin: auto;
-        width: 48dvw;
+        width: 48vw;
     }
 }
