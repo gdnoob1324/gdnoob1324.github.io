@@ -1,5 +1,5 @@
 * {
-    transition: all 500ms;
+    transition: all 200ms;
 }
 
 body {
@@ -48,8 +48,8 @@ img {
     border: 1px solid white;
     width: 24dvw;
     border-radius: 1dvw;
-    margin-top: 6dvh;
-    padding: 4dvh;
+    margin-top: 4dvh;
+    padding: 2dvh;
     text-align: center;
 }
 
@@ -70,7 +70,7 @@ h2.x {
         height: 12rem;
     }
     .profile {
-        margin-top: 8dvh;
+        margin: auto;
     }
 }
 
@@ -86,49 +86,25 @@ h2.x {
         padding: 0dvh;
     }
     .text {
-        width: 50dvw;
-        margin-top: 8dvh;
-        padding: 0dvh;
-    }
-}
-
-@media only screen and ((min-device-width : 600px) and (max-device-height : 800px)) {
-    main, footer, .profile {
         width: 75dvw;
     }
 }
 
 @media only screen and (orientation: landscape) and (max-device-height : 500px) {
+    .div {
+        display: flex;
+    }
     h1 {
+        display: block;
         padding: 4px;
         font-size: xx-large;
     }
     .profile {
-        width: 30dvw;
-        float: left;
+        width: 24dvw;
+        margin: 2dvh auto;
     }
     .text {
-        margin-top: 20dvh;
-        margin-right: 10dvh;
-        float: right;
-        width: 35vw;
-    }
-}
-
-@media only screen and (orientation: landscape) and (max-device-height : 300px) {
-    h1 {
-        padding: 2px;
-        font-size: x-large;
-    }
-    .profile {
-        width: 30dvw;
-        margin-top: 2dvh;
-        float: left;
-    }
-    .text {
-        margin-top: 20dvh;
-        margin-right: 16dvh;
-        float: right;
-        width: 35dvw;
+        margin: auto;
+        width: 48dvw;
     }
 }
