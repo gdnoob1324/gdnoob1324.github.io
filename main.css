@@ -47,7 +47,7 @@ img {
     margin: 0 auto;
     border: 1px solid white;
     width: 24dvw;
-    border-radius: 1dvw;
+    border-radius: .5dvw;
     margin-top: 4dvh;
     padding: 2dvh;
     text-align: center;
