@@ -24,21 +24,32 @@ h1 {
     text-align: center;
     background-color: #101010;
     word-break: keep-all;
+    margin-bottom: 5vh;
 }
 
 a {
     word-break: keep-all;
     white-space: nowrap;
 }
-a:link, a:visited {
+
+a:link,
+a:visited {
     color: darkorange;
 }
-a:hover, a:active {
+
+a:hover,
+a:active {
     color: lawngreen;
 }
 
 h2 {
     margin: 0 auto;
+}
+
+.div {
+    position: static;
+    margin-top: 10vh;
+    height: 75vh;
 }
 
 .profile {
@@ -117,11 +128,13 @@ h2.x {
         display: block;
         padding: 4px;
         font-size: xx-large;
+        margin-bottom: 1vh;
     }
 
     .profile {
         width: 24vw;
         margin: 2vh auto;
+        align-self: center;
     }
 
     .text {
