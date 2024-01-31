@@ -20,10 +20,21 @@ main {
 
 h1 {
     margin-top: 0px;
-    padding: 1rem;
+    padding: .5rem;
     text-align: center;
     background-color: #101010;
     word-break: keep-all;
+}
+
+a {
+    word-break: keep-all;
+    white-space: nowrap;
+}
+a:link, a:visited {
+    color: darkorange;
+}
+a:hover, a:active {
+    color: lawngreen;
 }
 
 h2 {
@@ -69,22 +80,29 @@ h2.x {
         width: 12rem;
         height: 12rem;
     }
+
     .profile {
         margin: auto;
     }
 }
 
 @media only screen and ((max-device-width : 480px) or (max-device-height : 800px)) {
-    main, footer, .profile {
+
+    main,
+    footer,
+    .profile {
         width: 100vw;
     }
+
     img {
         width: 8rem;
         height: 8rem;
     }
+
     h2 {
         padding: 0vh;
     }
+
     .text {
         width: 75vw;
     }
@@ -94,15 +112,18 @@ h2.x {
     .div {
         display: flex;
     }
+
     h1 {
         display: block;
         padding: 4px;
         font-size: xx-large;
     }
+
     .profile {
         width: 24vw;
         margin: 2vh auto;
     }
+
     .text {
         margin: auto;
         width: 48vw;
