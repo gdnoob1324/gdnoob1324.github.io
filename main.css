@@ -24,7 +24,7 @@ h1 {
     text-align: center;
     background-color: #101010;
     word-break: keep-all;
-    margin-bottom: 5vh;
+    margin-bottom: 0px;
 }
 
 a {
@@ -60,8 +60,8 @@ h2 {
 }
 
 img {
-    width: 16rem;
-    height: 16rem;
+    width: 12rem;
+    height: 12rem;
     border: 1px solid gray;
 }
 
@@ -84,17 +84,6 @@ footer {
 
 h2.x {
     padding: 2vh;
-}
-
-@media only screen and (max-device-width : 800px) {
-    img {
-        width: 12rem;
-        height: 12rem;
-    }
-
-    .profile {
-        margin: auto;
-    }
 }
 
 @media only screen and ((max-device-width : 480px) or (max-device-height : 800px)) {
@@ -128,12 +117,12 @@ h2.x {
         display: block;
         padding: 4px;
         font-size: xx-large;
-        margin-bottom: 1vh;
     }
 
     .profile {
         width: 24vw;
         margin: 2vh auto;
+        margin-top: 1vh;
         align-self: center;
     }
 
