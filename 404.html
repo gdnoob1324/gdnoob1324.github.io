@@ -4,8 +4,6 @@
 <head>
     <title>404 Not Found</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <script async defer src="https://code.jquery.com/jquery-3.6.0.js"
-        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <style>
         body {
             text-align: center;
@@ -26,8 +24,13 @@
         <h1>404 Not Found</h1>
     </center>
     <hr>
-    <center><a href="https://gdnoob1324.github.io/">메인 페이지 바로가기</a>
+    <center>
+        <p></p>
+        <a href="https://gdnoob1324.github.io/">메인 페이지 바로가기</a>
     </center>
+    <script>
+        document.getElementsByTagName("p")[0].innerText = "요정된 URL " + window.location.pathname + "을(를) 찾을 수 없음";
+    </script>
 </body>
 
 </html>
