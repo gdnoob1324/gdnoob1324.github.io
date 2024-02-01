@@ -68,7 +68,7 @@ h2 {
 .text {
     margin: 0 auto;
     border: 1px solid white;
-    width: 24vw;
+    width: 32vw;
     border-radius: .5vw;
     margin-top: 4vh;
     padding: 2vh;
@@ -86,12 +86,22 @@ h2.x {
     padding: 2vh;
 }
 
-@media only screen and ((max-device-width : 480px) or (max-device-height : 800px)) {
+@media only screen and ((max-device-width : 800px) or (max-device-height : 480px)) {
+    .text {
+        width: 64vw;
+    }
+}
+
+@media only screen and ((max-device-width : 480px) or (max-device-height : 600px)) {
 
     main,
     footer,
     .profile {
         width: 100vw;
+    }
+
+    .profile {
+        margin-top: 8vh;
     }
 
     .profile img {
@@ -105,6 +115,7 @@ h2.x {
 
     .text {
         width: 75vw;
+        padding: 0;
     }
 }
 
