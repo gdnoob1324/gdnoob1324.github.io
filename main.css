@@ -1,5 +1,13 @@
+@font-face {
+    font-family: 'Cafe24Dongdong';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Dongdong.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     transition: all 200ms;
+    font-family: 'Cafe24Dongdong';
 }
 
 body {
@@ -47,7 +55,8 @@ h2 {
 .profile img {
     width: 12rem;
     height: 12rem;
-    border: 1px solid gray;
+    border: 2px solid gray;
+    border-radius: 32px;
 }
 
 .text {
@@ -133,6 +142,7 @@ h2.x {
     .profile img {
         width: 4rem;
         height: 4rem;
+        border-radius: 16px;
     }
 
     p {
