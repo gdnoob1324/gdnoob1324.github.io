@@ -27,21 +27,6 @@ h1 {
     margin-bottom: 0px;
 }
 
-a {
-    word-break: keep-all;
-    white-space: nowrap;
-}
-
-a:link,
-a:visited {
-    color: darkorange;
-}
-
-a:hover,
-a:active {
-    color: lawngreen;
-}
-
 h2 {
     margin: 0 auto;
 }
@@ -110,6 +95,7 @@ h2.x {
     }
 
     h2 {
+        font-size: 1.25rem;
         padding: 0vh;
     }
 
@@ -119,7 +105,7 @@ h2.x {
     }
 }
 
-@media only screen and (orientation: landscape) and (max-device-height : 500px) {
+@media only screen and (((orientation: landscape) and (max-device-height : 500px)) or ( (orientation: portrait) and (max-device-height : 420px))) {
     .div {
         display: flex;
     }
@@ -131,7 +117,7 @@ h2.x {
     }
 
     .profile {
-        width: 24vw;
+        width: auto;
         margin: 2vh auto;
         margin-top: 1vh;
         align-self: center;
@@ -140,5 +126,16 @@ h2.x {
     .text {
         margin: auto;
         width: 48vw;
+    }
+}
+
+@media only screen and ((max-device-height : 270px) or (max-device-width : 270px)) {
+    .profile img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    p {
+        font-size: .75rem;
     }
 }
