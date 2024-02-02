@@ -28,7 +28,7 @@ body {
 main {
     background-color: #202020;
     background: linear-gradient(0deg, rgb(24, 24, 24) 0%, rgb(32, 32, 32) 25%);
-    background: linear-gradient(0deg, #a0ffff -50%, #ffa0ff 120%);
+    background: linear-gradient(0deg, #72E1E5 -50%, #E572A4 120%);
     width: 75vw;
     height: 100vh;
     margin: 0 auto;
@@ -43,7 +43,7 @@ h1 {
     background-color: #101010;
     word-break: keep-all;
     margin-bottom: 0px;
-    background: radial-gradient(circle, #206080 40%, #208080 80%);
+    background: radial-gradient(circle, #204080 40%, #20a0a0 80%);
 }
 
 h2 {
