@@ -112,6 +112,10 @@ h2.x {
         width: 100vw;
     }
 
+    h1 {
+        font-size: 2rem;
+    }
+
     .profile {
         margin-top: 2vh;
     }
