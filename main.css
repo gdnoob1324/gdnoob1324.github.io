@@ -36,6 +36,7 @@ main {
 }
 
 h1 {
+    font-size: 3rem;
     margin-top: 0px;
     padding: .5rem;
     text-align: center;
@@ -46,6 +47,7 @@ h1 {
 }
 
 h2 {
+    font-size: 2rem;
     margin: 0 auto;
 }
 
@@ -73,10 +75,16 @@ h2 {
     margin: 0 auto;
     border: 1px solid white;
     width: 32vw;
-    border-radius: .5vw;
+    border-radius: 16px;
     margin-top: 4vh;
     padding: 2vh;
     text-align: center;
+}
+
+p {
+    font-size: 1rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
 }
 
 footer {
@@ -105,7 +113,7 @@ h2.x {
     }
 
     .profile {
-        margin-top: 8vh;
+        margin-top: 2vh;
     }
 
     .profile img {
@@ -115,12 +123,12 @@ h2.x {
 
     h2 {
         font-size: 1.25rem;
-        padding: 0vh;
+        padding: 1vh;
     }
 
     .text {
         width: 75vw;
-        padding: 0;
+        padding: 2vw;
     }
 }
 
