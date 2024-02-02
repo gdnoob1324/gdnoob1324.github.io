@@ -28,7 +28,7 @@ body {
 main {
     background-color: #202020;
     background: linear-gradient(0deg, rgb(24, 24, 24) 0%, rgb(32, 32, 32) 25%);
-    background: linear-gradient(0deg, #72E1E5 -50%, #E572A4 120%);
+    background: linear-gradient(0deg, #80e0e0 -50%, #ff80e0 120%);
     width: 75vw;
     height: 100vh;
     margin: 0 auto;
