@@ -14,7 +14,7 @@
 
 * {
     transition: all 200ms;
-    text-shadow: 0px 0px 5px black;
+    /* text-shadow: 0px 0px 5px black; */
     font-family: 'GmarketSansMedium';
 }
 
@@ -28,8 +28,8 @@ body {
 main {
     background-color: #202020;
     background: linear-gradient(0deg, rgb(24, 24, 24) 0%, rgb(32, 32, 32) 25%);
-    background: linear-gradient(0deg, #80e0e0 -50%, #ff80e0 120%);
-    width: 75vw;
+    /* background: linear-gradient(0deg, #80e0e0 -50%, #ff80e0 120%); */
+    width: 80vw;
     height: 100vh;
     margin: 0 auto;
     overflow: hidden;
@@ -43,7 +43,7 @@ h1 {
     background-color: #101010;
     word-break: keep-all;
     margin-bottom: 0px;
-    background: radial-gradient(circle, #204080 40%, #20a0a0 80%);
+    /* background: radial-gradient(circle, #204080 40%, #20a0a0 80%); */
 }
 
 h2 {
@@ -77,25 +77,44 @@ h2 {
     width: 32vw;
     border-radius: 16px;
     margin-top: 4vh;
-    padding: 2vh;
+    padding: 1vh;
     text-align: center;
 }
 
 p {
     font-size: 1rem;
-    margin-top: .5rem;
-    margin-bottom: .5rem;
+    margin-top: .25rem;
+    margin-bottom: .25rem;
 }
+
+a:link,
+a:visited {
+    color: white;
+}
+
+a:hover, a:active {
+    color: darkorange;
+} 
 
 footer {
     background: #202020;
-    width: 75vw;
+    width: 80vw;
     height: 100vh;
     margin: 0 auto;
 }
 
 h2.x {
     padding: 2vh;
+}
+
+.music {
+    margin: 0 auto;
+    padding: 10vh;
+    width: 64vw;
+}
+
+.music iframe {
+    border: 1px solid gray;
 }
 
 @media only screen and ((max-device-width : 800px) or (max-device-height : 480px)) {
@@ -132,11 +151,11 @@ h2.x {
 
     .text {
         width: 75vw;
-        padding: 2vw;
+        padding: .5vh;
     }
 }
 
-@media only screen and (((orientation: landscape) and (max-device-height : 500px)) or ( (orientation: portrait) and (max-device-height : 420px))) {
+@media only screen and (((orientation: landscape) and (max-device-height : 500px)) or ((orientation: portrait) and (max-device-height : 420px))) {
     .div {
         display: flex;
     }
