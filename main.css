@@ -25,6 +25,10 @@ body {
     margin: 0;
 }
 
+main, footer {
+    overflow: hidden;
+}
+
 main {
     background-color: #202020;
     background: linear-gradient(0deg, rgb(24, 24, 24) 0%, rgb(32, 32, 32) 25%);
@@ -121,6 +125,10 @@ h2.x {
     .text {
         width: 64vw;
     }
+
+    .music {
+        padding: 10vh 0;
+    }
 }
 
 @media only screen and ((max-device-width : 480px) or (max-device-height : 600px)) {
@@ -152,6 +160,14 @@ h2.x {
     .text {
         width: 75vw;
         padding: .5vh;
+    }
+
+    .music {
+        width: 80vw;
+    }
+
+    .music iframe {
+        height: 75vh;
     }
 }
 
