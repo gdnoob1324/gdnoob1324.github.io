@@ -105,6 +105,7 @@ footer {
     width: 80vw;
     height: 100vh;
     margin: 0 auto;
+    position : relative;
 }
 
 h2.x {
@@ -113,8 +114,12 @@ h2.x {
 
 .music {
     margin: 0 auto;
-    padding: 10vh;
+    padding: 0;
     width: 64vw;
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translate(-50%, 0%);
 }
 
 .music iframe {
