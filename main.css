@@ -93,6 +93,10 @@ a:hover, a:active {
     color: darkorange;
 } 
 
+.text p a {
+    margin: 0 4px;
+}
+
 footer {
     background: #202020;
     width: 80vw;
