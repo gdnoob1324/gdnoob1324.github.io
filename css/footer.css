@@ -1,0 +1,57 @@
+footer {
+    background: #202020;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+h2.x {
+    padding: 2vh;
+}
+
+.project {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 1vh;
+}
+
+.pj {
+    margin: 2vh 3%;
+    overflow: hidden;
+    width:max-content;
+    height: inherit;
+    border: 2px solid white;
+    border-radius: 32px;
+}
+
+.pj img {
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid white;
+    border-width: 0 0 2px
+}
+
+.pj p {
+    margin-top: 0;
+    text-align: center;
+}
+
+
+
+
+
+
+.music {
+    margin: 0 auto;
+    padding: 0;
+    width: 64vw;
+    position: absolute;
+    left: 50%;
+    bottom: 1rem;
+    transform: translate(-50%, 0%);
+}
+
+.music iframe {
+    border: 1px solid gray;
+}

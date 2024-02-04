@@ -1,0 +1,85 @@
+@media only screen and ((max-device-width : 800px) or (max-device-height : 480px)) {
+    .text {
+        width: 64vw;
+    }
+
+    .music {
+        padding: 10vh 0;
+    }
+}
+
+@media only screen and ((max-device-width : 480px) or (max-device-height : 600px)) {
+
+    main,
+    footer,
+    .profile {
+        width: 100vw;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .profile {
+        margin-top: 2vh;
+    }
+
+    .profile img {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+        padding: 1vh;
+    }
+
+    .text {
+        width: 75vw;
+        padding: .5vh;
+    }
+
+    .music {
+        width: 80vw;
+    }
+
+    .music iframe {
+        height: 75vh;
+    }
+}
+
+@media only screen and (((orientation: landscape) and (max-device-height : 500px)) or ((orientation: portrait) and (max-device-height : 420px))) {
+    .div {
+        display: flex;
+    }
+
+    h1 {
+        display: block;
+        padding: 4px;
+        font-size: xx-large;
+    }
+
+    .profile {
+        width: auto;
+        margin: 2vh auto;
+        margin-top: 1vh;
+        align-self: center;
+    }
+
+    .text {
+        margin: auto;
+        width: 48vw;
+    }
+}
+
+@media only screen and ((max-device-height : 270px) or (max-device-width : 270px)) {
+    .profile img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 16px;
+    }
+
+    p {
+        font-size: .75rem;
+    }
+}
