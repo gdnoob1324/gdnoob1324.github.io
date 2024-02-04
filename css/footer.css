@@ -12,21 +12,37 @@ h2.x {
 }
 
 .project {
-    margin: 0 auto;
+    margin: 0 3%;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 1vh;
+    padding: 1rem;
 }
 
 .pj {
-    margin: 2vh 3%;
+    width: 160px;
+    height: 196px;
+    background-color: #303030;
+    box-shadow: 0 0 8px black;
+    margin: 2vh 1rem;
+    /* border: 1px solid white; */
+    border-radius: 16px;
+    cursor: pointer;
     overflow: hidden;
-    width:max-content;
-    height: inherit;
-    border: 1px solid white;
-    border-radius: 32px;
+}
+
+.pj p {
+    padding: 0 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    white-space: nowrap;
+}
+
+.pj:hover {
+    box-shadow: 0 8px 16px black;
+    transition: box-shadow 200ms;
 }
 
 .pj img {
