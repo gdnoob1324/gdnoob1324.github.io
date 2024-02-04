@@ -1,6 +1,7 @@
 footer {
     background: #202020;
     width: 80vw;
+    min-height: 100vh;
     margin: 0 auto;
 }
 
@@ -10,6 +11,7 @@ h2.x {
 
 .project {
     margin: 0 auto;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
