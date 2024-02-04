@@ -3,6 +3,8 @@ footer {
     width: 80vw;
     min-height: 100vh;
     margin: 0 auto;
+    border: 2px solid gray;
+    border-width: 2px 0 0
 }
 
 h2.x {
