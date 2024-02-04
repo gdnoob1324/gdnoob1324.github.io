@@ -8,6 +8,12 @@
     }
 }
 
+@media only screen and ((max-device-width : 800px) or (max-device-height : 800px)) {
+    .project {
+        margin: 4rem 3%;
+    }
+}
+
 @media only screen and ((max-device-width : 480px) or (max-device-height : 600px)) {
 
     main,
