@@ -9,8 +9,8 @@ $("playButton").click(function () {
 });
 
 const audio = new Audio("https://www.myinstants.com/media/sounds/epic.mp3");
-function rickRoll()
-{
-    audio.volume = .3;
+audio.volume = .3;
+
+function rickRoll() {
     audio.play();
 }
