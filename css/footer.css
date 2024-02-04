@@ -2,6 +2,7 @@ footer {
     background: #202020;
     width: 80vw;
     min-height: 100vh;
+    height: inherit;
     margin: 0 auto;
     border: 2px solid gray;
     border-width: 2px 0 0
@@ -12,7 +13,7 @@ h2.x {
 }
 
 .project {
-    margin: 0 3%;
+    margin: 4rem 3%;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
