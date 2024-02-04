@@ -6,9 +6,4 @@ function setVolume() {
 
 $("playButton").click(function () {
     setVolume();
-    clearInterval(playAlert);
 });
-
-playAlert = setInterval(function() {
-    setVolume();
- }, 500);
