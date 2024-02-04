@@ -25,15 +25,15 @@ h2.x {
     overflow: hidden;
     width:max-content;
     height: inherit;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 32px;
 }
 
 .pj img {
     width: 10rem;
     height: 10rem;
-    border: 2px solid white;
-    border-width: 0 0 2px
+    border: solid white;
+    border-width: 0 0 1px
 }
 
 .pj p {
