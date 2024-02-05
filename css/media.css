@@ -92,4 +92,8 @@
     p {
         font-size: .75rem;
     }
+
+    .pj p {
+        height: 16px;
+    }
 }

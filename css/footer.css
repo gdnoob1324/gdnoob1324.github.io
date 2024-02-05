@@ -13,20 +13,20 @@ h2.x {
 }
 
 .project {
-    margin: 8rem 3%;
-    align-items: center;
+    margin: 8rem 0;
     display: flex;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 1.5rem;
     padding: 1rem;
 }
 
 .pj {
-    /* width: 160px; */
-    /* height: 194px; */
     background-color: #303030;
     box-shadow: 0 0 8px black;
     margin: 2vh 1rem;
+    margin: auto;
     border-radius: 16px;
     cursor: pointer;
     overflow: hidden;
@@ -46,6 +46,7 @@ h2.x {
 }
 
 .pj p {
+    height: 21px;
     margin: 0;
     padding: 2px 8px;
     overflow: hidden;
