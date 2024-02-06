@@ -18,14 +18,14 @@ h2.x {
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
-    gap: 1.5rem;
+    gap: 1rem;
     padding: 1rem;
 }
 
 .pj {
     background-color: #303030;
     box-shadow: 0 0 8px black;
-    margin: 2vh 1rem;
+    /* margin: 2vh 1rem; */
     margin: auto;
     border-radius: 16px;
     cursor: pointer;
