@@ -19,6 +19,12 @@ h1 {
     /* background: radial-gradient(circle, #204080 40%, #20a0a0 80%); */
 }
 
+h1 p {
+    background: linear-gradient(to right top, #861657, #ffa69e);
+    color: transparent;
+    background-clip: text;
+}
+
 h2 {
     font-size: 2rem;
     margin: 0 auto;
