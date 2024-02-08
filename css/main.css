@@ -66,6 +66,11 @@ h2 {
     margin-bottom: .25rem;
 }
 
+.text p a {
+    margin: 0 4px;
+    font-size: 1.25rem;
+}
+
 a:link,
 a:visited {
     color: white;
@@ -73,8 +78,4 @@ a:visited {
 
 main a:hover, main a:active {
     color: darkorange;
-}
-
-.text p a {
-    margin: 0 4px;
 }
