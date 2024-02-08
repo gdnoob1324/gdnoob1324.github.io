@@ -19,6 +19,7 @@ h1 {
 }
 
 h1 p {
+    position: static;
     background: linear-gradient(to right top, #861657, #ffa69e);
     color: transparent;
     background-clip: text;
