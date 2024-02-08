@@ -19,6 +19,10 @@ body {
     margin: 0;
 }
 
+::selection {
+    color: white;
+}
+
 img {
     vertical-align: bottom;
 }
