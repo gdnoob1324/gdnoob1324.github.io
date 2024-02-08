@@ -28,6 +28,7 @@ h2.x {
     background: linear-gradient(to right top, #9ebd13 0%, #00d080 100%);
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .project {

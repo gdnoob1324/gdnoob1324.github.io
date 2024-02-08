@@ -23,6 +23,7 @@ h1 p {
     background: linear-gradient(to right top, #861657, #ffa69e);
     color: transparent;
     background-clip: text;
+    -webkit-background-clip: text;
 }
 
 h2 {
