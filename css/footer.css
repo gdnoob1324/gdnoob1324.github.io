@@ -25,7 +25,6 @@ h2.x {
 }
 
 .project {
-    /* margin: 8rem 0; */
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -36,17 +35,15 @@ h2.x {
 
 .pj {
     background-color: #303030;
-    box-shadow: 0 0 8px black;
-    /* margin: 2vh 1rem; */
-    /* margin: auto; */
+    border: 2px #404040 solid;
     border-radius: 16px;
     cursor: pointer;
     overflow: hidden;
+    transition: border 200ms;
 }
 
 .pj:hover {
-    box-shadow: 0 8px 16px black;
-    transition: box-shadow 200ms;
+    border-color: #2080ff;
 }
 
 .pj img {
@@ -67,7 +64,6 @@ h2.x {
     white-space: nowrap;
     text-align: center;
 }
-
 
 
 
