@@ -71,9 +71,9 @@ a:visited {
     color: white;
 }
 
-a:hover, a:active {
+main a:hover, main a:active {
     color: darkorange;
-} 
+}
 
 .text p a {
     margin: 0 4px;

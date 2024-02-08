@@ -8,6 +8,10 @@ footer {
     border-width: 2px 0 0
 }
 
+footer a {
+    text-decoration: none;
+}
+
 h2.x {
     padding: 2vh;
 }
