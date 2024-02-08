@@ -19,6 +19,7 @@ h1 {
 }
 
 h1 p {
+    font-size: 24px;
     background: linear-gradient(to right top, #861657, #ffa69e);
     color: transparent;
     background-clip: text;
@@ -39,7 +40,7 @@ h2 {
 .profile {
     width: 50vw;
     margin: 0 auto;
-    margin-top: 12vh;
+    margin-top: 8vh;
     text-align: center;
 }
 
@@ -56,19 +57,19 @@ h2 {
     width: 32vw;
     border-radius: 16px;
     margin-top: 4vh;
-    padding: 1vh;
+    padding: .5rem;
     text-align: center;
 }
 
 .text p {
+    width: fit-content;
     font-size: 1rem;
-    margin-top: .25rem;
-    margin-bottom: .25rem;
+    margin: 4px auto;
 }
 
 .text p a {
     margin: 0 4px;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 a:link,

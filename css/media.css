@@ -26,8 +26,12 @@
         font-size: 2rem;
     }
 
+    h1 p {
+        font-size: 1.25rem;
+    }
+
     .profile {
-        margin-top: 2vh;
+        margin-top: 2rem;
     }
 
     .profile img {
@@ -58,7 +62,7 @@
     }
 }
 
-@media only screen and (((orientation: landscape) and (max-device-height : 500px)) or ((orientation: portrait) and (max-device-height : 420px))) {
+@media only screen and (((orientation: landscape) and (max-device-height : 500px)) or ((orientation: portrait) and (max-device-height : 450px))) {
     .div {
         display: flex;
     }
@@ -71,8 +75,7 @@
 
     .profile {
         width: auto;
-        margin: 2vh auto;
-        margin-top: 1vh;
+        margin: 0 auto;
         align-self: center;
     }
 
