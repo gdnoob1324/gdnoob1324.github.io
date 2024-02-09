@@ -1,6 +1,5 @@
 main {
     background-color: #202020;
-    /* background: linear-gradient(0deg, #80e0e0 -50%, #ff80e0 120%); */
     width: 80vw;
     height: 100vh;
     margin: 0 auto;
@@ -15,7 +14,6 @@ h1 {
     background-color: #101010;
     word-break: keep-all;
     margin-bottom: 0px;
-    /* background: radial-gradient(circle, #204080 40%, #20a0a0 80%); */
 }
 
 h1 p {
