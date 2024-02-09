@@ -62,11 +62,11 @@ h2 {
 .text p {
     width: fit-content;
     font-size: 1rem;
-    margin: 4px auto;
+    margin: 2px auto;
 }
 
-.text p:nth-child(2) {
-    margin: 2px auto;
+.text p:first-child, .text p:last-child {
+    margin: 0 auto;
 }
 
 .text p a {
