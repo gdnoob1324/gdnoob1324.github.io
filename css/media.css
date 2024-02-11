@@ -39,6 +39,10 @@
         height: 8rem;
     }
 
+    .profile p {
+        margin-top: -12px;
+    }
+
     h2 {
         font-size: 1.25rem;
         padding: 1vh;

@@ -50,6 +50,12 @@ h2 {
     border-radius: 32px;
 }
 
+.profile p {
+    color: gray;
+    margin: 0;
+    margin-top: -8px;
+}
+
 .text {
     margin: 0 auto;
     border: 1px solid white;
