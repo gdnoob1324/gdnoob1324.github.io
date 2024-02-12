@@ -68,13 +68,9 @@ h2.x {
 
 
 .music {
-    margin: 0 auto;
+    margin: 2rem auto 0;
     padding: 0;
     width: 64vw;
-    position: absolute;
-    left: 50%;
-    bottom: 1rem;
-    transform: translate(-50%, 0%);
 }
 
 .music iframe {
