@@ -1,9 +1,11 @@
 function setVolume() {
     var widgetIframe = document.getElementById("scplayer"),
         fixWidget = SC.Widget(widgetIframe);
-    fixWidget.setVolume(10);
+    fixWidget.setVolume(20);
 }
 
-$("playButton").click(function () {
-    setVolume();
+$("*").click(function () {
+    var widgetIframe = document.getElementById("scplayer"),
+        fixWidget = SC.Widget(widgetIframe);
+    fixWidget.setVolume(20);
 });
