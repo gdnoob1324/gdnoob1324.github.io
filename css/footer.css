@@ -8,10 +8,6 @@ footer {
     border-width: 2px 0 0
 }
 
-footer a {
-    text-decoration: none;
-}
-
 h2.x {
     padding: 2vh;
 }
@@ -46,6 +42,7 @@ h2.x {
     cursor: pointer;
     overflow: hidden;
     transition: border 200ms;
+    text-decoration: none;
 }
 
 .pj:hover {
