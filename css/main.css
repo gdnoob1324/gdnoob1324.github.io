@@ -70,7 +70,7 @@ h2 {
 .text p {
     width: fit-content;
     font-size: 1rem;
-    margin: 2px auto;
+    margin: 4px auto;
 }
 
 .text p:first-child, .text p:last-child {
@@ -79,7 +79,6 @@ h2 {
 
 .text p a {
     margin: 0 4px;
-    font-size: 1rem;
 }
 
 a:link,
