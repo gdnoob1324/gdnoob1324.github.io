@@ -60,7 +60,7 @@ h2 {
 .text {
     margin: 0 auto;
     border: 1px solid white;
-    width: 32vw;
+    width: calc(24vw + 128px);
     border-radius: 16px;
     margin-top: 4vh;
     padding: 6px;
