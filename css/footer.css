@@ -18,8 +18,7 @@ h2.x {
 
 .pjtitle {
     width: max-content;
-    margin: 6rem auto;
-    margin-bottom: 2rem;
+    margin: 6rem auto 2rem;
     text-align: center;
     font-size: 1.5rem;
     word-break: keep-all;
@@ -57,8 +56,6 @@ h2.x {
     width: 12rem;
     height: 12rem;
     background: black;
-    border: solid gray;
-    border-width: 0 0 1px
 }
 
 .pj p {
@@ -71,7 +68,6 @@ h2.x {
     white-space: nowrap;
     text-align: center;
 }
-
 
 
 .music {
