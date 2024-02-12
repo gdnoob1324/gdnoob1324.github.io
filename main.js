@@ -7,5 +7,5 @@ function setVolume() {
 $("*").click(function () {
     var widgetIframe = document.getElementById("scplayer"),
         fixWidget = SC.Widget(widgetIframe);
-    fixWidget.setVolume(20);
+    fixWidget.setVolume(30);
 });
