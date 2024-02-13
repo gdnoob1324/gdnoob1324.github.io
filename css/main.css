@@ -33,6 +33,7 @@ h2 {
 }
 
 .div {
+    margin: auto;
     position: static;
     height: 75vh;
 }
