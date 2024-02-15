@@ -35,10 +35,6 @@
         height: 8rem;
     }
 
-    .profile p {
-        margin-top: -12px;
-    }
-
     h2 {
         font-size: 1.5rem;
         padding: 1vh;
@@ -59,11 +55,18 @@
 }
 
 @media only screen and (((orientation: landscape) and (max-device-height : 500px)) or ((orientation: portrait) and (max-device-height : 450px))) {
-    .div {
+    main {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        row-gap: calc(24vh - 32px);
     }
 
-    h1 {
+    .title {
+        width: min-content;
+        flex: 0 0 100%;
+        height: min-content;
         display: block;
         padding: 4px;
         font-size: xx-large;
@@ -76,15 +79,17 @@
     }
 
     .text {
-        margin: auto;
+        margin: 0 auto;
+        height: fit-content;
+        align-self: center;
     }
 }
 
 @media only screen and ((max-device-height : 270px) or (max-device-width : 270px)) {
     .profile img {
-        width: 4rem;
-        height: 4rem;
-        border-radius: 16px;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 24px;
     }
 
     p {
