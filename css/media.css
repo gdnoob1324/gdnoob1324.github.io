@@ -60,7 +60,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-content: flex-start;
-        row-gap: calc(24vh - 32px);
+        row-gap: calc(32vh - 56px);
     }
 
     .title {
