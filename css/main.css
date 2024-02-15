@@ -6,24 +6,31 @@ main {
     overflow: hidden;
 }
 
+.title {
+    background-color: #101010;
+    padding: .5rem;
+}
+
 h1 {
     font-size: 3rem;
     margin-top: 0px;
-    padding: .5rem;
     text-align: center;
-    background-color: #101010;
     word-break: keep-all;
     margin-bottom: 0px;
-}
 
-h1 p {
-    font-size: 24px;
-    /* background: linear-gradient(to right top, #861657, #ffa69e); */
-    /* background: linear-gradient(to right top, #93291e, #ed213a); */
     background: linear-gradient(to right top, #bbb, #fff);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+}
+
+h1 p {
+    font-size: 24px;
+    margin: 0;
+    word-break: keep-all;
+    display: inline;
+    /* background: linear-gradient(to right top, #861657, #ffa69e); */
+    /* background: linear-gradient(to right top, #93291e, #ed213a); */
 }
 
 h2 {
