@@ -27,7 +27,7 @@
     }
 
     .profile {
-        margin-top: 2rem;
+        margin-top: 1rem;
     }
 
     .profile img {
@@ -54,7 +54,7 @@
     }
 }
 
-@media only screen and (((orientation: landscape) and (max-device-height : 500px)) or ((orientation: portrait) and (max-device-height : 450px))) {
+@media only screen and ((orientation: landscape) and (max-device-height : 500px)) {
     main {
         display: flex;
         flex-wrap: wrap;
