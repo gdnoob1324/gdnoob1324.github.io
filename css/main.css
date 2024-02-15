@@ -18,8 +18,9 @@ h1 {
 
 h1 p {
     font-size: 24px;
-    background: linear-gradient(to right top, #861657, #ffa69e);
-    background: linear-gradient(to right top, #93291e, #ed213a);
+    /* background: linear-gradient(to right top, #861657, #ffa69e); */
+    /* background: linear-gradient(to right top, #93291e, #ed213a); */
+    background: linear-gradient(to right top, #bbb, #fff);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
