@@ -14,9 +14,9 @@ h2.x {
 
 .pjtitle {
     width: max-content;
-    margin: 6rem auto 2rem;
+    margin: 4rem auto 1rem;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     word-break: keep-all;
 
     font-weight: bold;
