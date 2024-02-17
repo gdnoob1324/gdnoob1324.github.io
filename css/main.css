@@ -13,8 +13,8 @@ main {
 .title {
     background-color: #101010;
     padding: .5rem;
-    
-    background-color: hsla(0,0%,100%,.5);
+
+    background-color: hsla(0, 0%, 0%, .5);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 }
@@ -60,7 +60,7 @@ h2 {
     margin-top: 8vh;
     text-align: center;
 
-    background-color: hsla(0,0%,100%,.5);
+    background-color: hsla(0, 0%, 100%, .5);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
     padding: 8px;
@@ -88,7 +88,7 @@ h2 {
     margin-top: 4vh;
     padding: 6px;
     text-align: center;
-    background-color: hsla(0,0%,100%,.5);
+    background-color: hsla(0, 0%, 100%, .5);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
 }
@@ -99,7 +99,8 @@ h2 {
     margin: 4px auto;
 }
 
-.text p:first-child, .text p:last-child {
+.text p:first-child,
+.text p:last-child {
     margin: 0 auto;
 }
 
@@ -112,6 +113,7 @@ main a:visited {
     color: black;
 }
 
-main a:hover, main a:active {
+main a:hover,
+main a:active {
     color: #FF8232;
 }
