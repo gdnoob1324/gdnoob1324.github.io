@@ -13,8 +13,7 @@
 @media only screen and ((max-device-width : 480px) or (max-device-height : 600px)) {
 
     main,
-    footer,
-    .profile {
+    footer {
         width: 100vw;
     }
 
@@ -60,7 +59,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-content: flex-start;
-        row-gap: calc(32vh - 56px);
+        row-gap: calc(32vh - 64px);
     }
 
     .title {

@@ -47,7 +47,7 @@ h2 {
 }
 
 .profile {
-    width: 50vw;
+    width: max-content;
     margin: 0 auto;
     margin-top: 8vh;
     text-align: center;
