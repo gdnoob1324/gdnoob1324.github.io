@@ -29,7 +29,7 @@
     }
 }
 
-@media only screen and ((orientation: landscape) and ((max-device-height : 400px) and (max-device-width : 800px))) {
+@media only screen and ((orientation: landscape) and ((max-device-height : 400px) or (max-device-width : 800px))) {
     main {
         display: flex;
         flex-wrap: wrap;
