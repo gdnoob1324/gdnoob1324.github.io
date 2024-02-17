@@ -2,6 +2,7 @@ main {
     background-color: #202020;
     background-image: url(https://whale-store.pstatic.net/20220527_96/16536317955526CVDl_JPEG/1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
     width: 80vw;
     height: 100vh;
