@@ -23,7 +23,7 @@ h1 {
     word-break: keep-all;
     margin-bottom: 0px;
 
-    background: linear-gradient(to right top, #bbb, white);
+    background: linear-gradient(to right top, lightgray, white);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -64,7 +64,7 @@ h2 {
 .profile img {
     width: 10rem;
     height: 10rem;
-    border: 2px solid white;
+    border: 2px solid lightgray;
     border-radius: 32px;
 }
 
