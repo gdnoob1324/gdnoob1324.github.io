@@ -21,10 +21,6 @@
         font-size: 1.25rem;
     }
 
-    .profile {
-        margin-top: 1rem;
-    }
-
     .profile img {
         width: 6rem;
         height: 6rem;
@@ -32,7 +28,7 @@
 
     h2 {
         font-size: 1.5rem;
-        padding: 1vh;
+        padding-top: 1vh;
         margin-top: 0;
     }
 }
