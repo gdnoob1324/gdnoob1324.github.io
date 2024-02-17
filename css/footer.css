@@ -1,5 +1,5 @@
 footer {
-    background: #202020;
+    background: var(--color-black20);
     width: 80vw;
     min-height: 100vh;
     height: inherit;
@@ -53,7 +53,7 @@ footer {
 }
 
 .pj:hover {
-    border-color: #0071e3;
+    border-color: var(--color-blue);
 }
 
 .pj img {

@@ -5,6 +5,11 @@
     font-style: normal;
 }
 
+:root {
+    --color-black20: #202020;
+    --color-blue: #0071e3;
+  }
+
 body {
     background-color: black;
     color: white;

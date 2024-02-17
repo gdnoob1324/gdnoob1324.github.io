@@ -1,5 +1,5 @@
 main {
-    background-color: #202020;
+    background-color: var(--color-black20);
     background-image: url(https://whale-store.pstatic.net/20220527_96/16536317955526CVDl_JPEG/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,7 +23,7 @@ h1 {
     word-break: keep-all;
     margin-bottom: 0px;
 
-    background: linear-gradient(to right top, #bbb, #fff);
+    background: linear-gradient(to right top, #bbb, white);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
@@ -64,7 +64,7 @@ h2 {
 .profile img {
     width: 10rem;
     height: 10rem;
-    border: 2px solid #c0c0c0;
+    border: 2px solid white;
     border-radius: 32px;
 }
 
@@ -107,5 +107,5 @@ main a:visited {
 main a:hover,
 main a:active {
     /* color: #FF8232; */
-    color: #0071e3;
+    color: var(--color-blue);
 }
