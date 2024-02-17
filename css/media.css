@@ -35,7 +35,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-content: flex-start;
-        row-gap: calc(32vh - 4rem);
+        row-gap: calc(32vh - 3.5rem);
     }
 
     .title {
