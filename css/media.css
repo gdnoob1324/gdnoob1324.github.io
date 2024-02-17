@@ -45,13 +45,9 @@
         padding: 4px;
     }
 
-    .profile {
-        width: auto;
+    .profile, .text {
         align-self: center;
-    }
-
-    .text {
         height: fit-content;
-        align-self: center;
+        margin-top: 0;
     }
 }
