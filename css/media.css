@@ -5,8 +5,10 @@
 }
 
 @media only screen and ((max-device-width : 800px) or (max-device-height : 800px)) {
-    .project {
-        margin: 4rem 3%;
+    .profile img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 24px;
     }
 }
 
@@ -30,8 +32,8 @@
     }
 
     .profile img {
-        width: 8rem;
-        height: 8rem;
+        width: 6rem;
+        height: 6rem;
     }
 
     h2 {
