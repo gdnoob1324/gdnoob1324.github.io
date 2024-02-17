@@ -106,5 +106,6 @@ main a:visited {
 
 main a:hover,
 main a:active {
-    color: #FF8232;
+    /* color: #FF8232; */
+    color: #0071e3;
 }
