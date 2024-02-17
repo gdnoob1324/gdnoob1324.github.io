@@ -1,9 +1,12 @@
 main {
     background-color: #202020;
+    background-image: url(https://whale-store.pstatic.net/20220527_96/16536317955526CVDl_JPEG/9.jpg);
+    background-size: cover;
     width: 80vw;
     height: 100vh;
     margin: 0 auto;
     overflow: hidden;
+    color: black;
 }
 
 .title {
@@ -51,6 +54,13 @@ h2 {
     margin: 0 auto;
     margin-top: 8vh;
     text-align: center;
+
+    background-color: hsla(0,0%,100%,.5);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    /* padding: 8px; */
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem white;
 }
 
 .profile img {
@@ -74,6 +84,9 @@ h2 {
     margin-top: 4vh;
     padding: 6px;
     text-align: center;
+    background-color: hsla(0,0%,100%,.5);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
 }
 
 .text p {
@@ -92,7 +105,7 @@ h2 {
 
 a:link,
 a:visited {
-    color: white;
+    color: black;
 }
 
 main a:hover, main a:active {
