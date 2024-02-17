@@ -13,10 +13,6 @@ main {
 .title {
     background-color: #101010;
     padding: .5rem;
-
-    background-color: hsla(0, 0%, 0%, .5);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
 }
 
 h1 {
@@ -60,9 +56,6 @@ h2 {
     margin-top: 8vh;
     text-align: center;
 
-    background-color: hsla(0, 0%, 100%, .5);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
     padding: 8px;
     border-radius: 1rem;
 }
@@ -88,9 +81,6 @@ h2 {
     margin-top: 4vh;
     padding: 6px;
     text-align: center;
-    background-color: hsla(0, 0%, 100%, .5);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
 }
 
 .text p {
