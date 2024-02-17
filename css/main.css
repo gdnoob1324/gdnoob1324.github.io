@@ -58,9 +58,8 @@ h2 {
     background-color: hsla(0,0%,100%,.5);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    /* padding: 8px; */
+    padding: 8px;
     border-radius: 1rem;
-    box-shadow: 0 0 1rem white;
 }
 
 .profile img {
