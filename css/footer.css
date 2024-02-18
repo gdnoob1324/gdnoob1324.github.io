@@ -4,17 +4,16 @@ footer {
     min-height: 100vh;
     height: inherit;
     margin: 0 auto;
-    border: 2px solid gray;
-    border-width: 2px 0 0;
     background: url(https://whale-store.pstatic.net/20220527_223/1653631793973hlE11_JPEG/1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding-top: 2rem;
 }
 
 .pjtitle {
     width: max-content;
-    margin: 2rem auto 0;
+    margin: 0 auto;
     text-align: center;
     font-size: 1.75rem;
     word-break: keep-all;
@@ -38,6 +37,10 @@ footer {
     justify-content: space-evenly;
     gap: 1.5rem;
     padding: 1rem;
+}
+
+.pjb {
+    display: contents;
 }
 
 .pj {
