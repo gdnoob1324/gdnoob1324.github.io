@@ -81,7 +81,7 @@ a:active {
 .music {
     margin: 2rem auto 0;
     padding: 0;
-    width: 64vw;
+    width: fit-content;
 }
 
 .music iframe {
