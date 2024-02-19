@@ -22,11 +22,11 @@
     <script>
         const agent = window.navigator.userAgent.toLowerCase();
         switch (true) {
-            case agent.indexOf("whale") > -1:
-                browserName = "Whale"; // 사파리
-                break;
             case agent.indexOf("naver") > -1:
-                browserName = "Naver"; // 사파리
+                browserName = "Naver";
+                break;
+            case agent.indexOf("whale") > -1:
+                browserName = "Whale";
                 break;
             case agent.indexOf("edge") > -1:
                 browserName = "MS Edge"; // MS 엣지
@@ -54,12 +54,19 @@
         }
 
         function debug() {
-            document.querySelector("h1").innerText = agent;
+            if (browserName == "Whale") {
+                $("body").css("overflow", "hidden")
+                $("main").css("display", "none")
+                $("footer").css("display", "none")
+                $("#NaverBlocker").css("display", "block")
+            }
+            //document.querySelector("h1").innerText = agent;
         }
     </script>
 </head>
 
 <body onload="debug();">
+    <div id="NaverBlocker" style="display: none; width: 100vw; height: 100vh;"><h2>네이버 쓰지 마세요</h2></div>
     <main>
         <div class="title blurd">
             <h1>지디늅<p>portfolio</p>
