@@ -9,6 +9,10 @@ footer {
     background-repeat: no-repeat;
     background-position: center;
     padding-top: 2rem;
+
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .pjtitle {
