@@ -1,17 +1,17 @@
-function setVolume() {
-    var widgetIframe = document.getElementById("scplayer"),
-        fixWidget = SC.Widget(widgetIframe);
-    fixWidget.setVolume(20);
-}
+// function setVolume() {
+//     var widgetIframe = document.getElementById("scplayer"),
+//         fixWidget = SC.Widget(widgetIframe);
+//     fixWidget.setVolume(20);
+// }
 
-$("*").click(function () {
-    var widgetIframe = document.getElementById("scplayer"),
-        fixWidget = SC.Widget(widgetIframe);
-    fixWidget.setVolume(30);
-});
+// $("*").click(function () {
+//     var widgetIframe = document.getElementById("scplayer"),
+//         fixWidget = SC.Widget(widgetIframe);
+//     fixWidget.setVolume(30);
+// });
 
-setTimeout(function () {
-    var widgetIframe = document.getElementById("scplayer"),
-        fixWidget = SC.Widget(widgetIframe);
-    fixWidget.setVolume(30);
-}, 1000);
+// setTimeout(function () {
+//     var widgetIframe = document.getElementById("scplayer"),
+//         fixWidget = SC.Widget(widgetIframe);
+//     fixWidget.setVolume(30);
+// }, 1000);
