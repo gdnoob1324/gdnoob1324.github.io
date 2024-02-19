@@ -34,7 +34,7 @@
     }
 }
 
-@media only screen and (((orientation: landscape) or (width > height)) and (max-device-height : 400px)) {
+@media only screen and ((orientation: landscape) and (max-device-height : 400px)) {
     main {
         display: flex;
         flex-wrap: wrap;
