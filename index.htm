@@ -22,6 +22,12 @@
     <script>
         const agent = window.navigator.userAgent.toLowerCase();
         switch (true) {
+            case agent.indexOf("whale") > -1:
+                browserName = "Whale"; // 사파리
+                break;
+            case agent.indexOf("naver") > -1:
+                browserName = "Naver"; // 사파리
+                break;
             case agent.indexOf("edge") > -1:
                 browserName = "MS Edge"; // MS 엣지
                 break;
