@@ -80,7 +80,7 @@ a:active {
 
 .music {
     margin: 2rem auto 0;
-    padding: 0;
+    padding-bottom: 2rem;
     width: fit-content;
 }
 
