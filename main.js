@@ -12,6 +12,10 @@
 //     setVolume();
 // }, 1000);
 
+setTimeout(function () {
+    debug();
+}, 0);
+
 let currentOrientation = function () {
     if (screen.availHeight > screen.availWidth) {
         //	 세로모드일 때 실행할 이벤트
