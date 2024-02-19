@@ -74,8 +74,8 @@
         padding: 4px;
     }
     
-    .landscape.profile,
-    .text {
+    .landscape .profile,
+    .landscape .text {
         align-self: center;
         height: fit-content;
         margin-top: 0;
