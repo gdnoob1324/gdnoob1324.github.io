@@ -58,24 +58,26 @@
     }
 }
 
-.landscape main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: flex-start;
-    row-gap: calc(32vh - 3.5rem);
-}
-
-.landscape .title {
-    width: min-content;
-    flex: 0 0 100%;
-    height: min-content;
-    padding: 4px;
-}
-
-.landscape.profile,
-.text {
-    align-self: center;
-    height: fit-content;
-    margin-top: 0;
+@media only screen and (max-device-height : 400px) {
+    .landscape main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+        row-gap: calc(32vh - 3.5rem);
+    }
+    
+    .landscape .title {
+        width: min-content;
+        flex: 0 0 100%;
+        height: min-content;
+        padding: 4px;
+    }
+    
+    .landscape.profile,
+    .text {
+        align-self: center;
+        height: fit-content;
+        margin-top: 0;
+    }
 }
