@@ -85,6 +85,7 @@ a:active {
 }
 
 .music iframe {
+    width: calc(40vw + 128px);
     border: 1px solid gray;
-    border-radius: 12px;
+    border-radius: 8px;
 }
