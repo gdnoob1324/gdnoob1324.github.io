@@ -66,14 +66,14 @@
         align-content: flex-start;
         row-gap: calc(32vh - 3.5rem);
     }
-    
+
     .landscape .title {
         width: min-content;
         flex: 0 0 100%;
         height: min-content;
         padding: 4px;
     }
-    
+
     .landscape .profile,
     .landscape .text {
         align-self: center;
