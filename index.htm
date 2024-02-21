@@ -54,7 +54,7 @@
         }
 
         function debug() {
-            if (browserName == "Naver") {
+            if (agent.indexOf("naver") > -1) {
                 $("body").css("overflow", "hidden");
                 $("main").css("display", "none");
                 $("footer").css("display", "none");
