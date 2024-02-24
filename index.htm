@@ -19,8 +19,8 @@
     <script src="main.js"></script>
     
     <script>
-        const agent = window.navigator.userAgent.toLowerCase();
         function debug() {
+            const agent = window.navigator.userAgent.toLowerCase();
             if (agent.indexOf("naver") > -1) {
                 $("body").css("overflow", "hidden");
                 $("main").css("display", "none");
