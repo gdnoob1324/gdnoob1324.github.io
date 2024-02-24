@@ -29,8 +29,8 @@
     }
 
     .music iframe {
-        width: 80vw;
-        height: 400px;
+        width: calc(50vw + 128px);
+        height: 300px;
     }
 }
 
