@@ -9,6 +9,8 @@ main {
     margin: 0 auto;
     overflow: hidden;
     color: black;
+
+    display: none;
 }
 
 .title {
