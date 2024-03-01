@@ -39,6 +39,7 @@ main {
 main div {
     background-color: #202020;
     border-radius: 12px;
+    padding: 8px;
 }
 
 .pf {
