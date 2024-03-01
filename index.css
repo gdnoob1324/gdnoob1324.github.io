@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
 body {
-    background-color: #202020;
+    background-color: black;
     color: white;
     padding: 0;
     margin: 0;
-    font-family: "";
+    font-family: "Noto Sans KR", sans-serif;
+    min-height: 100vh;
 }
 
 .backblur {
@@ -12,3 +15,53 @@ body {
     backdrop-filter: blur(2px);
 }
 
+main {
+    display: grid;
+    height: calc(100vh - 16px);
+    padding: 8px;
+    gap: 8px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "fp desc";
+}
+
+@media screen and (orientation: portrait) {
+    main {
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .pf {
+        height: calc(100vh - 16px);
+    }
+}
+
+main div {
+    background-color: #202020;
+    border-radius: 12px;
+}
+
+.pf {
+    grid-area: fp;
+    display: flex;
+    align-items: center;
+}
+
+.desc {
+    grid-area: desc;
+}
+
+.pf div {
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pf img {
+    border: solid 2px gray;
+    border-radius: 24px;
+}
+
+.pf h2 {
+    margin: 0;
+}
