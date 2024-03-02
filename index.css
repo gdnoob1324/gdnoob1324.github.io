@@ -76,12 +76,12 @@ main>div {
 
 @media screen and ((orientation: portrait) or ((max-height: 400px) or (max-width: 500px))) {
     main {
-        display: flex;
         height: fit-content;
-        flex-direction: column;
+        grid-template-areas: "fp" "desc";
     }
 
     .pf {
+        width: calc(100vw - 32px);
         height: calc(100vh - 32px);
     }
 
