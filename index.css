@@ -94,6 +94,7 @@ main>div {
     }
 
     .pf p {
+        width: calc(60vw);
         margin: 0;
     }
 }
