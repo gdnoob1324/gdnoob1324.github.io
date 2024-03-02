@@ -50,6 +50,7 @@ main>div {
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
+    gap: 64px;
 }
 
 .pfp {
@@ -85,7 +86,6 @@ main>div {
     }
 
     .pf>div {
-        gap: 64px;
         width: -webkit-fill-available;
     }
 
