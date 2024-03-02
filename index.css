@@ -50,7 +50,7 @@ main>div {
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
-    gap: 64px;
+    gap: 32px;
 }
 
 .pfp {
@@ -74,7 +74,7 @@ main>div {
     margin: 16px auto;
 }
 
-@media screen and ((orientation: portrait) or (max-height: 400px)) {
+@media screen and ((orientation: portrait) or ((max-height: 400px) or (max-width: 500px))) {
     main {
         display: flex;
         height: fit-content;
