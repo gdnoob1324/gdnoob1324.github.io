@@ -57,15 +57,17 @@ main>div {
 
 .pf img {
     border: solid 2px #444;
-    border-radius: 24px;
+    border-radius: 32px;
 }
 
 .pf h2 {
     margin: 0;
+    line-height: 1;
+
 }
 
 .pf p {
-    width: calc(20vh + 64px);
+    width: calc(20vw + 64px);
     margin: 16px auto;
 }
 
@@ -90,5 +92,11 @@ main>div {
 
     .pf p {
         margin: 0;
+    }
+}
+
+@media screen and ((max-height: 500px) or (max-width: 500px)) {
+    .pfp img {
+        width: 128px;
     }
 }
