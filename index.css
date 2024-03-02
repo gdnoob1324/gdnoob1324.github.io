@@ -24,22 +24,11 @@ main {
     grid-template-areas: "fp desc";
 }
 
-@media screen and (orientation: portrait) {
-    main {
-        display: flex;
-        height: fit-content;
-        flex-direction: column;
-    }
-
-    .pf {
-        height: calc(100vh - 16px);
-    }
-}
-
 main div {
     background-color: #202020;
     border-radius: 12px;
     padding: 8px;
+    height: calc(100% - 20px);
 }
 
 .pf {
@@ -52,10 +41,18 @@ main div {
     grid-area: desc;
 }
 
-.pf div {
+.pf>div {
     width: fit-content;
+    height: fit-content;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     text-align: center;
+}
+
+.pfp {
+    flex: 1 1 100%;
 }
 
 .pf img {
@@ -65,4 +62,33 @@ main div {
 
 .pf h2 {
     margin: 0;
+}
+
+.pf p {
+    width: calc(20vh + 64px);
+    margin: 16px auto;
+}
+
+@media screen and ((orientation: portrait) or (max-height: 400px)) {
+    main {
+        display: flex;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .pf {
+        height: calc(100vh - 32px);
+    }
+
+    .pf>div {
+        width: -webkit-fill-available;
+    }
+
+    .pfp {
+        flex: 0;
+    }
+
+    .pf p {
+        margin: 0;
+    }
 }
