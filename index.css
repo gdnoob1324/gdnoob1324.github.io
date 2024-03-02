@@ -87,6 +87,7 @@ main>div {
 
     .pf>div {
         width: -webkit-fill-available;
+        height: 60vh;
     }
 
     .pfp {
