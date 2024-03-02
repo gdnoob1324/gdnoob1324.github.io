@@ -28,7 +28,7 @@ main div {
     background-color: #202020;
     border-radius: 12px;
     padding: 8px;
-    height: calc(100% - 20px);
+    height: calc(100% - 16px);
 }
 
 .pf {
