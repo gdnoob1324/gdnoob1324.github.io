@@ -37,7 +37,7 @@ main>div {
     align-items: center;
 }
 
-.desc {
+.idea {
     grid-area: desc;
 }
 
@@ -69,9 +69,23 @@ main>div {
 
 }
 
+.pf .desc {
+    margin: 0 auto;
+}
+
 .pf p {
     width: calc(20vw + 32px);
-    margin: 16px auto;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.pf p:first-child {
+    margin-top: 0;
+}
+
+.pf p a:link, .pf p a:visited, .pf p a:hover, .pf p a:active {
+    color: white;
+    text-decoration: none;
 }
 
 @media screen and ((orientation: portrait) or ((max-height: 400px) or (max-width: 500px))) {
@@ -91,7 +105,6 @@ main>div {
 
     .pf p {
         width: 60vw;
-        margin: 0;
     }
 }
 
