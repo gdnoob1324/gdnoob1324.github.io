@@ -83,6 +83,14 @@ main>div {
     margin-top: 0;
 }
 
+.pf p a {
+    margin-left: 8px;
+}
+
+.pf p a:first-child {
+    margin-left: 0;
+}
+
 .pf p a:link, .pf p a:visited, .pf p a:hover, .pf p a:active {
     color: white;
     text-decoration: none;
