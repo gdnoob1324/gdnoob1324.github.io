@@ -48,6 +48,7 @@ main>div {
     width: fit-content;
     min-height: 55vh;
     margin: 0 auto;
+    margin-top: -10vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
