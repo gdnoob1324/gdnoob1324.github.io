@@ -119,7 +119,11 @@ main>div {
 
     .pf {
         width: calc(100vw - 32px);
-        height: calc(100vh - 32px);
+        height: calc(75vh - 32px);
+    }
+
+    .idea {
+        height: calc(25vh - 24px);
     }
 
     .pfp {
