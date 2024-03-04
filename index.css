@@ -104,6 +104,11 @@ main>div {
     text-decoration: none;
 }
 
+.idea iframe {
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and ((orientation: portrait) or ((max-height: 400px) or (max-width: 500px))) {
     main {
         height: fit-content;
