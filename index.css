@@ -43,7 +43,7 @@ main>div {
 
 .pf>div {
     width: fit-content;
-    min-height: 50vh;
+    min-height: 60vh;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -111,17 +111,19 @@ main>div {
     }
 
     .pf p {
-        width: 60vw;
-    }
-}
-
-@media screen and (orientation: landscape) {
-    .pfp {
-        flex: 0;
+        width: 50vw;
     }
 }
 
 @media screen and ((max-height: 500px) or (max-width: 400px)) {
+    .pf>div {
+        gap: 32px;
+    }
+
+    .pfp {
+        flex: 0;
+    }
+
     .pfp img {
         width: 128px;
     }
