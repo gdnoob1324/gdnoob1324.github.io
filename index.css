@@ -39,6 +39,9 @@ main>div {
 
 .idea {
     grid-area: desc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pf>div {
@@ -107,8 +110,8 @@ main>div {
 .idea iframe {
     border: solid 1px #444;
     border-radius: 8px;
-    width: 100%;
-    height: 100%;
+    width: min(100%, 800px);
+    height: min(100%, 600px);
 }
 
 @media screen and ((orientation: portrait)/* or ((max-height: 400px) or (max-width: 500px))*/) {
