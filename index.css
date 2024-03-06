@@ -126,6 +126,10 @@ main>div {
         height: calc(75vh - 32px);
     }
 
+    .pf .desc {
+        margin-top: -48px;
+    }
+
     .idea {
         height: calc(25vh - 24px);
     }
