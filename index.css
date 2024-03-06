@@ -60,7 +60,7 @@ main>div {
     height: fit-content;
 }
 
-.pf img {
+.pf .pfp>img {
     border: solid 2px #444;
     border-radius: 32px;
 }
