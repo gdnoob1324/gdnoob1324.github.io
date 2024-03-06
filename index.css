@@ -115,7 +115,7 @@ main>div {
     height: min(100%, 600px);
 }
 
-@media screen and ((orientation: portrait)/* or ((max-height: 400px) or (max-width: 500px))*/) {
+@media screen and (orientation: portrait) {
     main {
         height: fit-content;
         grid-template-areas: "fp" "desc";
