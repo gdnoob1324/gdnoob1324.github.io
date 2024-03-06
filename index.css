@@ -21,7 +21,7 @@ main {
     padding: 8px;
     gap: 8px;
     grid-template-columns: 1fr 2fr;
-    grid-template-areas: "fp desc";
+    grid-template-areas: "a b";
 }
 
 main>div {
@@ -32,13 +32,13 @@ main>div {
 }
 
 .pf {
-    grid-area: fp;
+    grid-area: a;
     display: flex;
     align-items: center;
 }
 
 .idea {
-    grid-area: desc;
+    grid-area: b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,6 @@ main>div {
     width: fit-content;
     min-height: 55vh;
     margin: 0 auto;
-    margin-top: -10vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -74,6 +73,7 @@ main>div {
 
 .pf .desc {
     margin: 0 auto;
+    margin-top: 32px;
 }
 
 .pf p {
@@ -118,7 +118,7 @@ main>div {
 @media screen and (orientation: portrait) {
     main {
         height: fit-content;
-        grid-template-areas: "fp" "desc";
+        grid-template-areas: "a" "b";
     }
 
     .pf {
@@ -141,7 +141,7 @@ main>div {
 
 @media screen and ((max-height: 500px) or (max-width: 400px)) {
     .pf>div {
-        gap: 32px;
+        gap: 24px;
     }
 
     .pfp {
