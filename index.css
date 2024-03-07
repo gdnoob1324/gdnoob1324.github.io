@@ -35,6 +35,7 @@ main>div {
     grid-area: a;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .idea {
