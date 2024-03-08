@@ -141,7 +141,7 @@ main>div {
 
     .pf {
         width: calc(100vw - 32px);
-        height: calc(60vh - 32px);
+        height: calc(70vh - 32px);
     }
 
     .pf .desc {
@@ -149,7 +149,7 @@ main>div {
     }
 
     .idea {
-        height: calc(40vh - 24px);
+        height: calc(30vh - 24px);
     }
 
     .pfp {
