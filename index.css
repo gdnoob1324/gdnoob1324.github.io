@@ -40,6 +40,7 @@ main>div {
 
 .idea {
     grid-area: b;
+    position: relative;
 }
 
 .pf>div {
@@ -55,8 +56,6 @@ main>div {
 
 .pf>span {
     position: absolute;
-    padding: 2px;
-    border-radius: 4px;
     top: 8px;
     text-shadow: 0 0 4px white;
 }
@@ -120,6 +119,12 @@ main>div {
     align-items: center;
     width: 100%;
     height: 100%;
+}
+
+.idea>span {
+    position: absolute;
+    right: 8px;
+    bottom: 8px;
 }
 
 .idea iframe {
