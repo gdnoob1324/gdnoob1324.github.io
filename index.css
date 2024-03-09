@@ -170,6 +170,6 @@ main>div {
 
 @media screen and ((orientation: landscape) and ((max-height: 500px) or (max-width: 400px))) {
     .pf>div {
-        min-height: 80vh;
+        min-height: 90%;
     }
 }
