@@ -68,7 +68,6 @@ main>div {
 }
 
 .pfp {
-    /* flex: 1 1 100%; */
     height: fit-content;
 }
 
@@ -90,7 +89,7 @@ main>div {
 
 .pf p {
     width: fit-content;
-    max-width: calc(20vw + 32px);
+    /* max-width: calc(20vw + 32px); */
     margin: 0 auto;
     margin-top: 4px;
     &:first-child {
