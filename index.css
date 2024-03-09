@@ -155,6 +155,10 @@ main>div {
 }
 
 @media screen and ((max-height: 500px) or (max-width: 400px)) {
+body {
+    font-size: small;
+}
+
     .pf>div {
         gap: 8px 0;
     }
