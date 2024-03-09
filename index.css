@@ -10,7 +10,7 @@ body {
 }
 
 .backblur {
-    background-color: hsla(0, 0%, 100%, .5);
+    background-color: rgba(0, 0, 0, .25);
     -webkit-backdrop-filter: blur(2px);
     backdrop-filter: blur(2px);
 }
@@ -36,6 +36,9 @@ main>div {
     display: flex;
     align-items: center;
     position: relative;
+
+    background: no-repeat url(https://img.freepik.com/premium-photo/clouds-in-the-sky-wallpapers_771703-10100.jpg);
+    background-size: cover;
 }
 
 .idea {
@@ -55,12 +58,15 @@ main>div {
 }
 
 .pf>div>div {
-    padding: 4px;
+    padding: 8px;
+    border-radius: 16px;
 }
 
-.pf>span {
+.pf>.mini {
     position: absolute;
     top: 8px;
+    padding: 2px;
+    border-radius: 4px;
 }
 
 .pfp {
@@ -70,7 +76,7 @@ main>div {
 
 .pf .pfp>img {
     border: solid 2px #444;
-    border-radius: 32px;
+    border-radius: 8px;
 }
 
 .pf h2 {
