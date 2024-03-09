@@ -44,7 +44,7 @@ main>div {
 }
 
 .pf>div {
-    width: fit-content;
+    width: min-content;
     min-height: 55vh;
     margin: 0 auto;
     display: flex;
@@ -52,6 +52,10 @@ main>div {
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
+}
+
+.pf>div>div {
+    padding: 4px;
 }
 
 .pf>span {
@@ -109,7 +113,10 @@ main>div {
     margin-left: 0;
 }
 
-.pf p a:link, .pf p a:visited, .pf p a:hover, .pf p a:active {
+.pf p a:link,
+.pf p a:visited,
+.pf p a:hover,
+.pf p a:active {
     color: white;
     text-decoration: none;
 }
