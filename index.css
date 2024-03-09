@@ -154,6 +154,13 @@ main>div {
     }
 }
 
+
+@media screen and ((orientation: landscape) and ((max-height: 500px) or (max-width: 400px))) {
+    .pf>div {
+        min-height: 90%;
+    }
+}
+
 @media screen and ((max-height: 500px) or (max-width: 400px)) {
     body {
         font-size: small;
@@ -165,11 +172,5 @@ main>div {
 
     .pfp img {
         width: 96px;
-    }
-}
-
-@media screen and ((orientation: landscape) and ((max-height: 500px) or (max-width: 400px))) {
-    .pf>div {
-        min-height: 90%;
     }
 }
