@@ -146,7 +146,7 @@ main>div {
     }
 
     .pf .desc {
-        margin-top: -48px;
+        margin-top: -16px;
     }
 
     .idea {
@@ -154,7 +154,7 @@ main>div {
     }
 }
 
-@media screen and ((max-height: 500px) or (max-width: 500px)) {
+@media screen and ((max-height: 500px) or (max-width: 400px)) {
     .pf>div {
         gap: 8px;
     }
