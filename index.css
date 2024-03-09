@@ -36,15 +36,11 @@ main>div {
     display: flex;
     align-items: center;
     position: relative;
-
-    background-image: linear-gradient(0deg, #ff80b0 0%, #20a0ff 100%);
 }
 
 .idea {
     grid-area: b;
     position: relative;
-    background-color: #ff80b0;
-    background-image: linear-gradient(0deg, #ff80b0 0%, #20a0ff 100%);
 }
 
 .pf>div {
@@ -161,7 +157,6 @@ main>div {
 
     .idea {
         height: calc(30vh - 24px);
-        background-image: none;
     }
 
     .pfp {
