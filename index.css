@@ -37,7 +37,7 @@ main>div {
     align-items: center;
     position: relative;
 
-    background: no-repeat url(https://img.freepik.com/premium-photo/clouds-in-the-sky-wallpapers_771703-10100.jpg);
+    background: no-repeat linear-gradient(0deg, #ff80b0 0%, #20a0ff 100%);
     background-size: cover;
 }
 
