@@ -156,7 +156,7 @@ main>div {
 
 @media screen and ((max-height: 500px) or (max-width: 400px)) {
     .pf>div {
-        gap: 8px;
+        gap: 8px 0;
     }
 
     .pfp img {
