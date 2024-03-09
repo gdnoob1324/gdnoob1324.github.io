@@ -45,7 +45,7 @@ main>div {
 
 .pf>div {
     width: min-content;
-    min-height: 55vh;
+    min-height: 60vh;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -85,7 +85,6 @@ main>div {
 .pf .desc {
     flex: 1 1 100%;
     margin: 0 auto;
-    margin-top: -12px;
 }
 
 .pf p {
@@ -151,10 +150,6 @@ main>div {
         height: calc(30vh - 24px);
     }
 
-    .pfp {
-        flex: 1 1 100%;
-    }
-
     .pf p {
         width: 80vw;
     }
@@ -163,10 +158,6 @@ main>div {
 @media screen and ((max-height: 500px) or (max-width: 400px)) {
     .pf>div {
         gap: 24px;
-    }
-
-    .pfp {
-        flex: 0;
     }
 
     .pfp img {
