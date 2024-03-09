@@ -67,6 +67,7 @@ main>div {
     top: 8px;
     padding: 2px;
     border-radius: 4px;
+    text-decoration: none;
 }
 
 .pfp {
