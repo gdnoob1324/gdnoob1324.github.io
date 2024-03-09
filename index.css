@@ -103,6 +103,10 @@ main>div {
     &:first-child {
         margin-left: 0;
     }
+    &:link, &:visited, &:hover, &:active {
+        color: white;
+        text-decoration: none;
+    }
 }
 
 .pf p a i {
@@ -111,14 +115,6 @@ main>div {
     &:hover {
         border-color: white;
     }
-}
-
-.pf p a:link,
-.pf p a:visited,
-.pf p a:hover,
-.pf p a:active {
-    color: white;
-    text-decoration: none;
 }
 
 .idea>div {
