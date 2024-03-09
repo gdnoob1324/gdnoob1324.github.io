@@ -106,7 +106,7 @@ main>div {
 }
 
 .pf p a i {
-    padding: 3px;
+    padding: 2px;
     border: dashed 1px transparent;
     &:hover {
         border-color: white;
