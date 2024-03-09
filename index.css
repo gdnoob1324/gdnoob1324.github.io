@@ -149,10 +149,6 @@ main>div {
     .idea {
         height: calc(30vh - 24px);
     }
-
-    .pf p {
-        width: 80vw;
-    }
 }
 
 @media screen and ((max-height: 500px) or (max-width: 400px)) {
