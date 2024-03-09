@@ -92,7 +92,7 @@ main>div {
     width: fit-content;
     max-width: calc(20vw + 32px);
     margin: 0 auto;
-    margin-top: 8px;
+    margin-top: 4px;
     &:first-child {
         margin-top: 0;
     }
