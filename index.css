@@ -155,9 +155,9 @@ main>div {
 }
 
 @media screen and ((max-height: 500px) or (max-width: 400px)) {
-body {
-    font-size: small;
-}
+    body {
+        font-size: small;
+    }
 
     .pf>div {
         gap: 8px 0;
@@ -165,5 +165,11 @@ body {
 
     .pfp img {
         width: 96px;
+    }
+}
+
+@media screen and ((orientation: landscape) and ((max-height: 500px) or (max-width: 400px))) {
+    .pf>div {
+        min-height: 80vh;
     }
 }
