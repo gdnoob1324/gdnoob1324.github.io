@@ -74,6 +74,7 @@ main>div {
 .pf .pfp>img {
     border: solid 2px #444;
     border-radius: 8px;
+    animation: rotate 3s linear infinite;
 }
 
 .pf h2 {
@@ -173,5 +174,11 @@ main>div {
 
     .pfp img {
         width: 96px;
+    }
+}
+
+@keyframes rotate{
+    100% {
+        transform: rotate(360deg);
     }
 }
