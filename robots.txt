@@ -1,3 +1,2 @@
 User-agent: *
 Allow: /
-Sitemap: https://gdnoob1324.github.io/sitemap.xml
