@@ -74,7 +74,6 @@ main>div {
 .pf .pfp>img {
     border: solid 2px #444;
     border-radius: 8px;
-    animation: rotate 3s linear infinite;
 }
 
 .pf h2 {
