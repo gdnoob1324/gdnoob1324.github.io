@@ -44,7 +44,7 @@ main>div {
 }
 
 .pf>div {
-    width: fit-content;
+    width: min-content;
     min-height: 50vh;
     margin: 0 auto;
     display: flex;
@@ -83,12 +83,13 @@ main>div {
 
 .pf .desc {
     flex: 1 1 100%;
-    width: 5vw;
+    width: min-content;
     margin: 0 auto;
 }
 
 .pf p {
-    width: fit-content;
+    width: min-content;
+    white-space: nowrap;
     /* max-width: calc(20vw + 32px); */
     margin: 0 auto;
     margin-top: 4px;
