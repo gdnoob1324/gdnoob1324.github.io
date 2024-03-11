@@ -126,7 +126,7 @@ main>div {
     margin-top: -8px;
     width: calc(100% + 16px);
     &>button {
-        flex-grow: 1;
+        flex: 1 1 auto;
         background-color: #111;
         color: white;
         border: solid 0 #444;
