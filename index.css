@@ -90,7 +90,6 @@ main>div {
 .pf p {
     width: min-content;
     white-space: nowrap;
-    /* max-width: calc(20vw + 32px); */
     margin: 0 auto;
     margin-top: 4px;
     &:first-child {
