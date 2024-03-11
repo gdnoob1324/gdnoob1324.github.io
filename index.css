@@ -45,6 +45,38 @@ main>div {
 .idea {
     grid-area: b;
     overflow: hidden;
+    & .controller {
+        display: flex;
+        margin-left: -8px;
+        margin-top: -8px;
+        width: calc(100% + 16px);
+        &>button {
+            flex: 1 1 auto;
+            background-color: #111;
+            color: white;
+            border: solid 0 #444;
+            border-width: 0 0 0 1px;
+            cursor: pointer;
+            padding: 4px;
+            &:first-child {
+                border: solid 0 #444;
+            }
+        }
+    }
+    & .youtube {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8px;
+        width: 100%;
+        height: calc(100% - 26px);
+    }
+    & iframe {
+        border: solid 1px #444;
+        border-radius: 8px;
+        width: min(100%, 800px);
+        height: min(100%, 600px);
+    }
 }
 
 .pf>div {
@@ -118,41 +150,6 @@ main>div {
     &:hover {
         border-color: white;
     }
-}
-
-.idea .controller {
-    display: flex;
-    margin-left: -8px;
-    margin-top: -8px;
-    width: calc(100% + 16px);
-    &>button {
-        flex: 1 1 auto;
-        background-color: #111;
-        color: white;
-        border: solid 0 #444;
-        border-width: 0 0 0 1px;
-        cursor: pointer;
-        padding: 4px;
-        &:first-child {
-            border: solid 0 #444;
-        }
-    }
-}
-
-.idea .youtube {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 8px;
-    width: 100%;
-    height: calc(100% - 26px);
-}
-
-.idea iframe {
-    border: solid 1px #444;
-    border-radius: 8px;
-    width: min(100%, 800px);
-    height: min(100%, 600px);
 }
 
 @media screen and (orientation: portrait) {
