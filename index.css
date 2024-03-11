@@ -44,7 +44,7 @@ main>div {
 
 .idea {
     grid-area: b;
-    position: relative;
+    overflow: hidden;
 }
 
 .pf>div {
@@ -120,7 +120,26 @@ main>div {
     }
 }
 
-.idea>div {
+.idea .controller {
+    display: flex;
+    margin-left: -8px;
+    margin-top: -8px;
+    width: calc(100% + 16px);
+    &>button {
+        flex-grow: 1;
+        background-color: #111;
+        color: white;
+        border: solid 0 #444;
+        border-width: 0 0 0 1px;
+        cursor: pointer;
+        padding: 4px;
+        &:first-child {
+            border: solid 0 #444;
+        }
+    }
+}
+
+.idea .youtube {
     display: flex;
     justify-content: center;
     align-items: center;
