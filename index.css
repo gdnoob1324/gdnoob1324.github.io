@@ -101,14 +101,12 @@ main>div {
     }
 }
 
-.pf p a {
+.pf p>a {
     margin-left: 4px;
+    color: white;
+    text-decoration: none;
     &:first-child {
         margin-left: 0;
-    }
-    &:link, &:visited, &:hover, &:active {
-        color: white;
-        text-decoration: none;
     }
 }
 
