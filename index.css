@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
+a {
+    color: white;
+}
+
 body {
     background-color: black;
     color: white;
@@ -102,7 +106,6 @@ main>div {
 
 .pf p>a {
     margin-left: 4px;
-    color: white;
     text-decoration: none;
     &:first-child {
         margin-left: 0;
