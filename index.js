@@ -15,15 +15,30 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var player;
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player('player', {
-    height: '360',
-    width: '640',
-    videoId: 'oCrobJMZBTo',
-    events: {
-      'onReady': (event) => {event.target.playVideo();},
-      'onStateChange': (event) => {}
+    player = new YT.Player('player', {
+        height: '360',
+        width: '640',
+        videoId: 'oCrobJMZBTo',
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+        }
+    });
+}
+
+function onPlayerReady(event) {
+    event.target.playVideo();
+}
+
+var done = false;
+function onPlayerStateChange(event) {
+    if (event.data == YT.PlayerState.PLAYING && !done) {
+        setTimeout(stopVideo, 6000);
+        done = true;
     }
-  });
+}
+function stopVideo() {
+    player.stopVideo();
 }
 
 function changeVideo(id) {
@@ -34,8 +49,7 @@ function changeVideo(id) {
     case 1: videoId = 'YCg__giT4ko'; break;
     case 2: videoId = 'RBIUyqNBnZs'; break;
   }
-  let bgc = "background-color";
-  button.css(bgc, "#111");
-  button.eq(id).css(bgc, "#202020");
+  button.css("background-color", "#111");
+  button.eq(id).css("background-color", "#202020");
   player.loadVideoById(videoId);
 }
