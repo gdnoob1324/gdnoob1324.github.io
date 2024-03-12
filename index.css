@@ -44,7 +44,6 @@ main>div {
 
 .idea {
     grid-area: b;
-    overflow: hidden;
 }
 
 .pf>div {
@@ -143,6 +142,11 @@ main>div {
 
 .idea .controller>button:first-child {
     border: solid 0 #444;
+    border-radius: 12px 0 0 0;
+}
+
+.idea .controller>button:last-child {
+    border-radius: 0 12px 0 0;
 }
 
 .idea .youtube {
