@@ -38,3 +38,4 @@ function changeVideo(id) {
   button.eq(id).css("background-color", "#202020");
   player.loadVideoById(videoId);
 }
+changeVideo(0);
