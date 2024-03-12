@@ -28,7 +28,7 @@ function onYouTubeIframeAPIReady() {
 
 function changeVideo(id) {
   let videoId = '';
-  var button = $('.controller>button');
+  let button = $('.controller>button');
   switch(id) {
     case 0: videoId = 'oCrobJMZBTo'; break;
     case 1: videoId = 'YCg__giT4ko'; break;
