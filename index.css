@@ -137,11 +137,8 @@ main>div {
     color: white;
     border: solid 0 #444;
     border-width: 0 0 0 1px;
-    cursor: pointer;
     padding: 4px;
-    &:first-child {
-        border: solid 0 #444;
-    }
+    cursor: pointer;
 }
 
 .idea .controller>button:first-child {
