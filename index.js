@@ -27,14 +27,14 @@ function onYouTubeIframeAPIReady() {
 }
 
 function changeVideo(id) {
-  var videoId = '';
+  let videoId = '';
   var button = $('.controller>button');
   switch(id) {
     case 0: videoId = 'oCrobJMZBTo'; break;
     case 1: videoId = 'YCg__giT4ko'; break;
     case 2: videoId = 'RBIUyqNBnZs'; break;
   }
-  var bgc = "background-color";
+  let bgc = "background-color";
   button.css(bgc, "#111");
   button.eq(id).css(bgc, "#202020");
   player.loadVideoById(videoId);
