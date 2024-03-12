@@ -20,16 +20,21 @@ function onYouTubeIframeAPIReady() {
     width: '640',
     videoId: 'oCrobJMZBTo',
     events: {
-      'onReady': onPlayerReady,
-      'onStateChange': onPlayerStateChange
+      'onReady': (event) => {event.target.playVideo();},
+      'onStateChange': (event) => {}
     }
   });
 }
 
-function onPlayerReady(event) {
-    // event.target.playVideo();
-}
-
-function onPlayerStateChange(event) {
-
+function changeVideo(id) {
+  var videoId = '';
+  var button = $('.controller>button');
+  switch(id) {
+    case 0: videoId = 'oCrobJMZBTo'; break;
+    case 1: videoId = 'YCg__giT4ko'; break;
+    case 2: videoId = 'RBIUyqNBnZs'; break;
+  }
+  button.css("background-color", "#111");
+  button.eq(id).css("background-color", "#202020");
+  player.loadVideoById(videoId);
 }
