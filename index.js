@@ -13,8 +13,7 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var location = window.location;
-var ytId = new URLSearchParams(location.search).get("v");
+var ytId = new URLSearchParams(window.location.search).get("v");
 if (ytId == null) ytId = 'oCrobJMZBTo';
 
 var player;
