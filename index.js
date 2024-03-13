@@ -1,3 +1,5 @@
+var eventt;
+
 var player = new YT.get(document.getElementById("yt-player"));
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('yt-player', {
@@ -5,8 +7,10 @@ function onYouTubeIframeAPIReady() {
         events: {
             'onReady': (event) => {
                 event.target.playVideo();
+                eventt = event;
             },
             'onStateChange': (event) => {
+                event.target.getPlayerState();
             }
         }
     });
