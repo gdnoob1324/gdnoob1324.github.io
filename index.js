@@ -23,7 +23,7 @@ function changeVideo(id) {
     case 1: videoId = 'YCg__giT4ko'; break;
     case 2: videoId = 'RBIUyqNBnZs'; break;
   }
-  button.css("background-color", "#111");
-  button.eq(id).css("background-color", "#202020");
+  button.removeClass("focus");
+  button.eq(id).addClass("focus");
   player.loadVideoById(videoId);
 }
