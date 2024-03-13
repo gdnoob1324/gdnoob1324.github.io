@@ -144,12 +144,16 @@ main>div {
     cursor: pointer;
 }
 
-.idea .controller>button.focus {
-    background-color: #202020;
-}
-
 .idea .controller>button:hover {
     background-color: #444;
+}
+
+.idea .controller>button:not(:hover) {
+    background-color: #111;
+}
+
+.idea .controller>button.focus {
+    background-color: #202020;
 }
 
 .idea .controller>button:first-child {
