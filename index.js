@@ -13,12 +13,16 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
+var location = window.location;
+var ytId = new URLSearchParams(location.search).get("v");
+if (ytId == null) ytId = 'oCrobJMZBTo';
+
 var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
         height: '360',
         width: '640',
-        videoId: 'oCrobJMZBTo',
+        videoId: ytId,
         events: {
             'onReady': ()=>{
                 // event.target.playVideo();
