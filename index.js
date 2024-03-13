@@ -1,19 +1,3 @@
-// let currentOrientation = function () {
-//     if (screen.availHeight > screen.availWidth) {
-//         $("html").addClass('portrait').removeClass('landscape');
-//     }
-//     else {
-//         $("html").addClass('landscape').removeClass('portrait');
-//     }
-// }
-// window.addEventListener("resize", currentOrientation);
-
-
-// var tag = document.createElement('script');
-// tag.src = "https://www.youtube.com/iframe_api";
-// var firstScriptTag = document.getElementsByTagName('script')[0];
-// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
 var ytId = new URLSearchParams(window.location.search).get("v");
 if (ytId == null) ytId = 'oCrobJMZBTo';
 
