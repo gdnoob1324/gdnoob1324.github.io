@@ -1,10 +1,7 @@
-var ytId = new URLSearchParams(window.location.search).get("v");
-if (ytId == null) ytId = 'oCrobJMZBTo';
-
 var player = new YT.get(document.getElementById("yt-player"));
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('yt-player', {
-        videoId: ytId,
+        videoId: new URLSearchParams(window.location.search).get("v") ?? 'oCrobJMZBTo',
         events: {
             'onReady': () => {
                 // event.target.playVideo();
