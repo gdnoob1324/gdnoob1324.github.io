@@ -2,7 +2,7 @@
 
 * {
     pointer-events: all;
-    letter-spacing: -0.1rem;
+    letter-spacing: -1px;
 }
 
 a {
