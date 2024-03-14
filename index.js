@@ -1,6 +1,6 @@
 var eventt;
 
-var player = new YT.get(document.getElementById("yt-player"));
+var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('yt-player', {
         videoId: new URLSearchParams(window.location.search).get("v") ?? 'oCrobJMZBTo',
