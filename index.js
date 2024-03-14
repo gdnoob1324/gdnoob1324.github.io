@@ -1,19 +1,12 @@
-// var tag = document.createElement('script');
-// tag.src = "https://www.youtube.com/iframe_api";
-// var firstScriptTag = document.getElementsByTagName('script')[0];
-// firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var player;
 function onYouTubeIframeAPIReady() {
-    player = new YT.Player('yt-player', {
-        videoId: 'oCrobJMZBTo',
-        events: {
-            'onReady': (event) => {
-                // event.target.playVideo();
-            },
-            'onStateChange': (event) => {
-            }
-        }
+    player = new YT.Player('yt', {
+        videoId: 'oCrobJMZBTo'
     });
 }
 
