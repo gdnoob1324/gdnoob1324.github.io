@@ -175,10 +175,9 @@ main>div {
     .pf {
         width: calc(100vw - 32px);
         height: calc(65vh - 32px);
-    }
-
-    .pf .desc {
-        margin-top: -16px;
+        .desc {
+            margin-top: -16px;
+        }
     }
 
     .idea {
