@@ -6,7 +6,19 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('yt', {
-        videoId: 'oCrobJMZBTo'
+        videoId: 'oCrobJMZBTo',
+        playerVars: {
+            'rel': 0,
+            'controls': 1,
+            'autoplay': 1,
+            'mute': 1,
+            'loop': 1,
+            'playsinline': 1,
+        },
+        events: {
+            'onReady': (e) => { e.target.playVideo(); },
+            'onStateChange': (e) => {}
+        }
     });
 }
 
