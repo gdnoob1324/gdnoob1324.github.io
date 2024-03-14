@@ -7,7 +7,6 @@ function onYouTubeIframeAPIReady() {
         events: {
             'onReady': (event) => {
                 // event.target.playVideo();
-                eventt = event;
             },
             'onStateChange': (event) => {
             }
