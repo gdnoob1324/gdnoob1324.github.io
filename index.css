@@ -111,12 +111,7 @@ main>div {
 }
 
 .pf p>a {
-    margin-left: 2px;
     text-decoration: none;
-}
-
-.pf p>a:first-child {
-    margin-left: 0;
 }
 
 .pf p a i {
