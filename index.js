@@ -3,7 +3,7 @@ var eventt;
 var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('yt-player', {
-        videoId: new URLSearchParams(window.location.search).get("v") ?? 'oCrobJMZBTo',
+        videoId: 'oCrobJMZBTo',
         events: {
             'onReady': (event) => {
                 event.target.playVideo();
