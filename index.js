@@ -8,7 +8,7 @@ var urlParams = (new URL(window.location)).searchParams;
 var player;
 function onYouTubeIframeAPIReady() {
     let videoId;
-    let id = urlParams.get('tab');
+    let id = Number(urlParams.get('tab'));
     switch (id) {
         case 0: videoId = 'oCrobJMZBTo'; break;
         case 1: videoId = 'YCg__giT4ko'; break;
