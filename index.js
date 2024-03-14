@@ -6,11 +6,10 @@ function onYouTubeIframeAPIReady() {
         videoId: 'oCrobJMZBTo',
         events: {
             'onReady': (event) => {
-                event.target.playVideo();
+                // event.target.playVideo();
                 eventt = event;
             },
             'onStateChange': (event) => {
-                event.target.getPlayerState();
             }
         }
     });
