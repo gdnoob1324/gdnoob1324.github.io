@@ -1,5 +1,3 @@
-var eventt;
-
 var player;
 function onYouTubeIframeAPIReady() {
     player = new YT.Player('yt-player', {
