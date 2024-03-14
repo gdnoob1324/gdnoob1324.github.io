@@ -10,8 +10,6 @@ function onYouTubeIframeAPIReady() {
         playerVars: {
             'rel': 0,
             'controls': 1,
-            'autoplay': 1,
-            'mute': 1,
             'loop': 1,
             'playsinline': 1,
         },
