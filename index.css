@@ -136,7 +136,7 @@ main>div {
     cursor: pointer;
 }
 .idea .controller>button:hover {
-    background-color: #444;
+    background-color: #303030;
 }
 .idea .controller>button.focus {
     background-color: #202020;
