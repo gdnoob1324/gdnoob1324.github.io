@@ -13,6 +13,7 @@ function onYouTubeIframeAPIReady() {
         case 0: videoId = 'oCrobJMZBTo'; break;
         case 1: videoId = 'YCg__giT4ko'; break;
         case 2: videoId = 'RBIUyqNBnZs'; break;
+        case 3: videoId = '29N8_pSsWCE'; break;
     }
     player = new YT.Player('yt', {
         videoId: videoId,
@@ -39,6 +40,7 @@ function changeVideo(id) {
         case 0: videoId = 'oCrobJMZBTo'; break;
         case 1: videoId = 'YCg__giT4ko'; break;
         case 2: videoId = 'RBIUyqNBnZs'; break;
+        case 3: videoId = '29N8_pSsWCE'; break;
     }
     button.removeClass("focus");
     button.eq(id).addClass("focus");
