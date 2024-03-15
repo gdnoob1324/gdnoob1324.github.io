@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
-* {
-    letter-spacing: -1px;
+:root {
+    --l-spacing: -1px;
+    --w-spacing: 2px;
 }
 
 a {
     color: white;
     text-decoration: none;
+}
+
+* {
+    letter-spacing: var(--l-spacing);
+    word-spacing: var(--w-spacing);
 }
 
 body {
@@ -151,9 +157,9 @@ main>div {
     .pf {
         width: calc(100vw - 32px);
         height: calc(65vh - 32px);
-        .desc {
-            margin-top: -16px;
-        }
+    }
+    .pf .desc {
+        margin-top: -16px;
     }
     .idea {
         height: calc(35vh - 24px);
@@ -168,6 +174,10 @@ main>div {
 }
 
 @media screen and ((max-height: 500px) or (max-width: 400px)) {
+    :root {
+        --l-spacing: -.7px;
+        --w-spacing: 1px;
+    }
     body {
         font-size: small;
     }
