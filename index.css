@@ -139,7 +139,7 @@ main>div {
     border: solid 0 #444;
     border-width: 0 0 0 1px;
     padding: 4px;
-    line-height: 95%;
+    line-height: 100%;
     cursor: pointer;
 }
 .idea .controller>button:hover {
