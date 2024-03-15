@@ -128,7 +128,7 @@ main>div {
 }
 .idea .controller>button, .idea .controller>button:not(:hover) {
     flex: 1 1 auto;
-    background-color: #111;
+    background-color: #151515;
     color: white;
     border: solid 0 #444;
     border-width: 0 0 0 1px;
