@@ -16,8 +16,8 @@ function getV(n) {
 
 var player;
 function onYouTubeIframeAPIReady() {
-    let videoId = getV(id);
     let id = Number(urlParams.get('tab'));
+    let videoId = getV(id);
     player = new YT.Player('yt', {
         videoId: videoId,
         playerVars: {
@@ -39,12 +39,6 @@ function onYouTubeIframeAPIReady() {
 function changeVideo(id) {
     let button = $('.controller>button');
     let videoId = getV(id);
-    switch (id) {
-        case 0: videoId = 'oCrobJMZBTo'; break;
-        case 1: videoId = 'YCg__giT4ko'; break;
-        case 2: videoId = '29N8_pSsWCE'; break;
-        case 3: videoId = 'RBIUyqNBnZs'; break;
-    }
     button.removeClass("focus");
     button.eq(id).addClass("focus");
     urlParams.set('tab', id);
