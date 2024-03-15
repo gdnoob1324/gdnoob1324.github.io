@@ -5,16 +5,19 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var urlParams = (new URL(window.location)).searchParams;
 
+function getV(n) {
+    switch (n) {
+        case 0: return 'oCrobJMZBTo';
+        case 1: return 'YCg__giT4ko';
+        case 2: return '29N8_pSsWCE';
+        case 3: return 'RBIUyqNBnZs';
+    }
+}
+
 var player;
 function onYouTubeIframeAPIReady() {
-    let videoId;
+    let videoId = getV(id);
     let id = Number(urlParams.get('tab'));
-    switch (id) {
-        case 0: videoId = 'oCrobJMZBTo'; break;
-        case 1: videoId = 'YCg__giT4ko'; break;
-        case 2: videoId = 'RBIUyqNBnZs'; break;
-        case 3: videoId = '29N8_pSsWCE'; break;
-    }
     player = new YT.Player('yt', {
         videoId: videoId,
         playerVars: {
@@ -35,12 +38,12 @@ function onYouTubeIframeAPIReady() {
 
 function changeVideo(id) {
     let button = $('.controller>button');
-    let videoId;
+    let videoId = getV(id);
     switch (id) {
         case 0: videoId = 'oCrobJMZBTo'; break;
         case 1: videoId = 'YCg__giT4ko'; break;
-        case 2: videoId = 'RBIUyqNBnZs'; break;
-        case 3: videoId = '29N8_pSsWCE'; break;
+        case 2: videoId = '29N8_pSsWCE'; break;
+        case 3: videoId = 'RBIUyqNBnZs'; break;
     }
     button.removeClass("focus");
     button.eq(id).addClass("focus");
