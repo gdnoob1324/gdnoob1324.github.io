@@ -126,7 +126,7 @@ main>div {
     margin-top: -8px;
     width: calc(100% + 16px);
 }
-.idea .controller>button {
+.idea .controller>button, .idea .controller>button:not(:hover) {
     flex: 1 1 auto;
     background-color: #111;
     color: white;
@@ -138,9 +138,6 @@ main>div {
 .idea .controller>button:hover {
     background-color: #444;
 }
-.idea .controller>button:not(:hover) {
-    background-color: #111;
-}
 .idea .controller>button.focus {
     background-color: #202020;
 }
@@ -150,7 +147,6 @@ main>div {
         height: fit-content;
         grid-template-areas: "a" "b";
     }
-
     .pf {
         width: calc(100vw - 32px);
         height: calc(65vh - 32px);
@@ -158,7 +154,6 @@ main>div {
             margin-top: -16px;
         }
     }
-
     .idea {
         height: calc(35vh - 24px);
     }
@@ -175,11 +170,9 @@ main>div {
     body {
         font-size: small;
     }
-
     .pf>div {
         gap: 8px 0;
     }
-
     .pic img {
         width: 96px;
     }
