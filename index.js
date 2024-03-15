@@ -32,7 +32,7 @@ function onYouTubeIframeAPIReady() {
     });
     let button = $('.controller>button');
     button.removeClass("focus");
-    button.eq(id).addClass("focus");
+    button.eq(gid).addClass("focus");
 }
 
 function changeVideo(id) {
