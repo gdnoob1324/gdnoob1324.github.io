@@ -6,6 +6,7 @@
 
 a {
     color: white;
+    text-decoration: none;
 }
 
 body {
@@ -91,8 +92,8 @@ main>div {
 .pf p:first-child {
     margin-top: 0;
 }
-.pf p>a {
-    text-decoration: none;
+.pf p a {
+    margin: 0 1px;
 }
 .pf p a i {
     padding: 2px;
