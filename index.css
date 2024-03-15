@@ -17,10 +17,10 @@ body {
     min-height: 100vh;
 }
 
-.backblur {
+.b {
     background-color: rgba(0, 0, 0, .5);
-    -webkit-backdrop-filter: blur(2px);
-    backdrop-filter: blur(2px);
+    /* -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px); */
 }
 
 main {
@@ -181,11 +181,5 @@ main>div {
 
     .pfp img {
         width: 96px;
-    }
-}
-
-@keyframes rotate{
-    100% {
-        transform: rotate(360deg);
     }
 }
