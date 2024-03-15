@@ -3,7 +3,7 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var urlParams = (new URL(window.location)).searchParams;
+var gid = Number(((new URL(window.location)).searchParams).get('tab'));
 
 function getV(n) {
     switch (n) {
@@ -16,8 +16,7 @@ function getV(n) {
 
 var player;
 function onYouTubeIframeAPIReady() {
-    let id = Number(urlParams.get('tab'));
-    let videoId = getV(id);
+    let videoId = getV(gid);
     player = new YT.Player('yt', {
         videoId: videoId,
         playerVars: {
@@ -37,11 +36,12 @@ function onYouTubeIframeAPIReady() {
 }
 
 function changeVideo(id) {
+    if (id == gid) return;
     let button = $('.controller>button');
     let videoId = getV(id);
     button.removeClass("focus");
     button.eq(id).addClass("focus");
-    urlParams.set('tab', id);
+    gid = id;
     window.history.pushState({}, null, '?tab=' + id);
     player.loadVideoById(videoId);
 }
