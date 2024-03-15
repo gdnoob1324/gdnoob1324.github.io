@@ -81,10 +81,10 @@ main>div {
     margin: 0 auto;
     margin-top: 4px;
 }
-.pfp {
+.pic {
     height: fit-content;
 }
-.pfp >img {
+.pic >img {
     border: solid 2px #444;
     border-radius: 8px;
 }
@@ -179,7 +179,7 @@ main>div {
         gap: 8px 0;
     }
 
-    .pfp img {
+    .pic img {
         width: 96px;
     }
 }
