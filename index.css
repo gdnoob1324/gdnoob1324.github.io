@@ -10,6 +10,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    vertical-align: bottom;
+}
+
 * {
     letter-spacing: var(--l-spacing);
     word-spacing: var(--w-spacing);
@@ -75,6 +79,7 @@ main>div {
 }
 .pf h3 {
     margin: 0;
+    margin-top: 2px;
     line-height: 1;
 }
 .pic {
@@ -101,7 +106,6 @@ main>div {
 }
 .pf p:last-child {
     font-size: 14px;
-    margin-top: 6px;
 }
 .pf p a {
     margin: 0 1px;
