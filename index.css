@@ -150,6 +150,17 @@ main>div {
     background-color: #202020;
 }
 
+.pj {
+    width: calc(100vw - 32px);
+    min-height: calc(100vh - 32px);
+    margin: 0 8px 8px;
+    padding: 8px;
+    background-color: #202020;
+    border-radius: 12px;
+    display: flex;
+    gap: 8px;
+}
+
 @media screen and (orientation: portrait) {
     main {
         height: fit-content;
