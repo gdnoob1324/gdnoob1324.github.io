@@ -178,6 +178,11 @@ main>div {
     }
 }
 
+@media screen and (orientation: portrait) and (max-height: 900px) {
+    #yt {
+        width: min(100%, 500px);
+    }
+}
 
 @media screen and ((orientation: landscape) and ((max-height: 500px) or (max-width: 400px))) {
     .pf>div {
