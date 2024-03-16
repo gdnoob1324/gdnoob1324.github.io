@@ -16,12 +16,12 @@ function getV(n) {
 
 var player;
 function onYouTubeIframeAPIReady() {
-    let videoId = getV(gid);
     player = new YT.Player('yt', {
-        videoId: videoId,
+        videoId: getV(gid),
         playerVars: {
             'rel': 0,
-            'controls': 1,
+            'autoplay': 1,
+            'mute': 1,
             'loop': 1,
             'playsinline': 1,
         },
