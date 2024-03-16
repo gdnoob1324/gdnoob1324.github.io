@@ -21,7 +21,7 @@ function onYouTubeIframeAPIReady() {
         playerVars: {
             'rel': 0,
             'autoplay': 1,
-            'mute': 1,
+            'mute': 0,
             'loop': 1,
             'playsinline': 1,
         },
