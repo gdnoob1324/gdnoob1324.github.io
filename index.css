@@ -77,6 +77,13 @@ main>div {
     margin: 0;
     line-height: 1;
 }
+.pic {
+    height: fit-content;
+}
+.pic >img {
+    border: solid 2px #444;
+    border-radius: 8px;
+}
 .pf .desc {
     flex: 1 1 100%;
     width: min-content;
@@ -87,13 +94,7 @@ main>div {
     white-space: nowrap;
     margin: 0 auto;
     margin-top: 4px;
-}
-.pic {
-    height: fit-content;
-}
-.pic >img {
-    border: solid 2px #444;
-    border-radius: 8px;
+    line-height: 120%;
 }
 .pf p:first-child {
     margin-top: 0;
