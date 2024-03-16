@@ -99,6 +99,10 @@ main>div {
 .pf p:first-child {
     margin-top: 0;
 }
+.pf p:last-child {
+    font-size: 14px;
+    margin-top: 6px;
+}
 .pf p a {
     margin: 0 1px;
 }
@@ -204,5 +208,8 @@ main>div {
     }
     .pic img {
         width: 96px;
+    }
+    .pf p:last-child {
+        font-size: 12px;
     }
 }
