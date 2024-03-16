@@ -181,7 +181,7 @@ main>div {
 
 @media screen and (orientation: portrait) and (max-height: 1080px) {
     #yt {
-        width: min(100%, 500px);
+        width: min(100%, 400px);
     }
 }
 
