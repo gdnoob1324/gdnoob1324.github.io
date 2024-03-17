@@ -211,6 +211,10 @@ main>div {
     .pf>div {
         min-height: 90%;
     }
+
+    .pj img {
+        width: 128px;
+    }
 }
 
 @media screen and ((max-height: 500px) or (max-width: 400px)) {
