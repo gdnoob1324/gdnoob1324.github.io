@@ -211,10 +211,6 @@ main>div {
     .pf>div {
         min-height: 90%;
     }
-
-    .pj img {
-        width: 128px;
-    }
 }
 
 @media screen and ((max-height: 500px) or (max-width: 400px)) {
@@ -237,5 +233,9 @@ main>div {
 
     .pf p:last-child {
         font-size: 12px;
+    }
+
+    .pj img {
+        width: 128px;
     }
 }
