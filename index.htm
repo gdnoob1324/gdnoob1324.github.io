@@ -52,7 +52,7 @@
                 <button onclick="changeVideo(3);" style="border-radius: 0 12px 0 0;">Pop</button>
             </div>
             <div class="youtube">
-                <x id="yt"/>
+                <x id="yt" />
             </div>
         </div>
     </main>
@@ -64,8 +64,26 @@
                 align-content: center;
                 justify-content: center;
             }
+
+            .pj input {
+                border: solid 2px #444;
+                width: 50vw;
+                height: 32px;
+                padding-left: 12px;
+                border-radius: 10000px;
+                background-color: #111;
+                color: white;
+            }
+
+            input:focus {
+                outline: none;
+            }
         </style>
-        <div><img src="https://i.scdn.co/image/ab67616d00001e022fc8aa620527b53663388592" width="256px"></div>
+        <div>
+            <form action="https://www.google.com/search" method="GET">
+                <label class="search"><input type="text" name="q" placeholder="something" autocomplete="off"></label>
+            </form>
+        </div>
     </div>
 </body>
 
