@@ -109,10 +109,6 @@ main>div {
     font-size: 14px;
 }
 
-.pf p a {
-    margin: 0 1px;
-}
-
 .pf p a i {
     padding: 2px;
     border: dashed 1px transparent;
