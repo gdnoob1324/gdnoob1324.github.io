@@ -107,6 +107,7 @@ main>div {
 
 .pf p:last-child {
     font-size: 14px;
+    word-spacing: 0;
 }
 
 .pf p a i {
