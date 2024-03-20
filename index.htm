@@ -109,15 +109,12 @@
             input:focus {
                 outline: none;
             }
-
-            input::placeholder {
-                
-            }
         </style>
         <div>
             <h1>감성적인 검색창</h1>
-            <form action="https://www.google.com/search" method="GET">
-                <label class="search"><input type="text" name="q" placeholder="something..." autocomplete="off">
+            <!-- <form action="https://www.google.com/search" method="GET"> -->
+            <form action="https://m.search.naver.com/search.naver" method="GET">
+                <label class="search"><input type="text" name="query" placeholder="something..." autocomplete="off"> <!-- name="q" -->
                     <button><svg style="fill: currentColor; color: gray; width: 20px;" focusable="false"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
