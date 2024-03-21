@@ -24,8 +24,8 @@
 <body>
     <main>
         <div class="pf">
-            <span class="mini b" style="left: 8px; text-shadow: 0 0 2px white;">🎧</span>
-            <span class="mini b" style="right: 8px; text-shadow: 0 0 2px white;">❤️</span>
+            <span class="mini b" style="left: 8px;">🎧</span>
+            <span class="mini b" style="right: 8px;">❤️</span>
             <div>
                 <div class="pic b">
                     <img src="img/gn.png" width="160px">
@@ -64,10 +64,17 @@
                 justify-content: center;
             }
 
+            .pj .search {
+                padding: 16px;
+                border-radius: 38px;
+            }
+
             .pj h1 {
-                margin: 4px 0;
+                margin: 0 0 16px;
                 text-align: center;
-                color: #666;
+                color: gray;
+                line-height: 1;
+
             }
 
             .pj h1 span {
@@ -114,11 +121,11 @@
                 outline: none;
             }
         </style>
-        <div>
+        <div class="search b">
             <h1>감성적인 <span>검</span><span>색</span><span>창</span></h1>
             <!-- <form action="https://www.google.com/search" method="GET"> -->
             <form action="https://m.search.naver.com/search.naver" method="GET">
-                <label class="search"><input type="text" name="query" placeholder="검색어" autocomplete="off"> <!-- name="q" -->
+                <label><input type="text" name="query" placeholder="검색어" autocomplete="off"> <!-- name="q" -->
                     <button><svg style="fill: currentColor; color: gray; width: 20px;" focusable="false"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                             <path
