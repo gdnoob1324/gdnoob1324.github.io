@@ -44,3 +44,14 @@ function changeVideo(id) {
     window.history.pushState({}, null, '?tab=' + id);
     player.loadVideoById(videoId);
 }
+
+function switchQ() {
+    let form = document.getElementById('qform');
+    let input = document.getElementById('qinput');
+    let aN = 'https://m.search.naver.com/search.naver';
+    let aG = 'https://www.google.com/search';
+    form.action = form.action == aN ? aG : aN;
+    input.name = input.name == 'query' ? 'q' : 'query';
+    if ($('#qspan').hasClass('g')) $('#qspan').removeClass('g')
+    else $('#qspan').addClass('g');
+}
