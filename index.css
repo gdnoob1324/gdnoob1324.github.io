@@ -176,7 +176,67 @@ main>div {
     background-color: #202020;
     border-radius: 12px;
     display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     gap: 8px;
+}
+
+.pj .search {
+    padding: 16px;
+    border-radius: 38px;
+}
+
+.pj h1 {
+    margin: 0 0 16px;
+    text-align: center;
+    color: gray;
+    line-height: 1;
+
+}
+
+.pj h1 span {
+    color: #03c75a;
+}
+
+.pj label {
+    position: relative;
+    border: solid 2px #444;
+    width: min(60vw, 600px);
+    height: 40px;
+    padding-left: 12px;
+    border-radius: 10000px;
+    background-color: #111;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.pj input {
+    border: none;
+    width: 100%;
+    height: calc(100% - 2px);
+    background-color: #111;
+    color: white;
+    font-size: 16px;
+}
+
+.pj button {
+    position: absolute;
+    right: 0;
+    border: none;
+    background: transparent;
+    width: 32px;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+input:focus {
+    outline: none;
 }
 
 @media screen and (orientation: portrait) {
@@ -235,5 +295,9 @@ main>div {
 
     .pj img {
         width: 192px;
+    }
+
+    .pj h1 {
+        font-size: 20px;
     }
 }
