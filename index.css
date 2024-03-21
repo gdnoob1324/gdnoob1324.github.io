@@ -201,6 +201,7 @@ main>div {
 }
 
 .pj h1 span.g {
+    font-weight: 900;
     background: linear-gradient(90deg, rgba(66,133,244,1) 0%, rgba(66,133,244,1) 25%, rgba(219,68,55,1) 25%, rgba(219,68,55,1) 50%, rgba(244,180,0,1) 50%, rgba(244,180,0,1) 75%, rgba(15,157,88,1) 75%, rgba(15,157,88,1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
