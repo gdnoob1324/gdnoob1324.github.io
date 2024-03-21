@@ -168,7 +168,7 @@ main>div {
 }
 
 .pj {
-    width: calc(100vw - 32px);
+    width: calc(100% - 32px);
     min-height: calc(100vh - 32px);
     margin: 0 8px 8px;
     padding: 8px;
