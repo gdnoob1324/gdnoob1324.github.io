@@ -223,7 +223,7 @@ main>div {
 .pj button {
     border: none;
     background: transparent;
-    width: 40px;
+    flex: 0 40px;
     height: 100%;
     padding: 0;
     cursor: pointer;
@@ -232,7 +232,7 @@ main>div {
 }
 
 .pj button svg {
-    margin-left: 6px;
+    margin-left: 2px;
 }
 
 input:focus {

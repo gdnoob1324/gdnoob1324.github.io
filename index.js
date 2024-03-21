@@ -7,7 +7,7 @@ var gid = Number(((new URL(window.location)).searchParams).get('tab'));
 
 function getV(n) {
     switch (n) {
-        case 0: return 'kXF3VYYa5TI'; // oCrobJMZBTo
+        case 0: return 'oCrobJMZBTo';
         case 1: return '29N8_pSsWCE';
         case 2: return 'skDHFDdRH5s';
     }
