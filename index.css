@@ -183,6 +183,7 @@ main>div {
 }
 
 .pj .search {
+    margin-top: 32px;
     padding: 16px;
     border-radius: 38px;
 }
