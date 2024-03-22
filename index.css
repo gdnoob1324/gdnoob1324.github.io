@@ -245,7 +245,7 @@ main>div {
     margin-left: 2px;
 }
 
-input:focus {
+.pj input:focus {
     outline: none;
 }
 
