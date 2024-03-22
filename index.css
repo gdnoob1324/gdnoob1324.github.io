@@ -200,13 +200,16 @@ main>div {
     cursor: pointer;
 }
 
-.pj h1 span.g {
-    font-weight: 900;
-    background: linear-gradient(90deg, rgba(66,133,244,1) 0%, rgba(66,133,244,1) 25%, rgba(219,68,55,1) 25%, rgba(219,68,55,1) 50%, rgba(244,180,0,1) 50%, rgba(244,180,0,1) 75%, rgba(15,157,88,1) 75%, rgba(15,157,88,1) 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    -webkit-text-fill-color: transparent;
+.pj h1 span.g>span:nth-child(1) {
+    color: #4285f4;
+}
+
+.pj h1 span.g>span:nth-child(2) {
+    color: #db4437;
+}
+
+.pj h1 span.g>span:nth-child(3) {
+    color: #f4b400;
 }
 
 .pj label {
