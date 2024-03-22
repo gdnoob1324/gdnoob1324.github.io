@@ -19,7 +19,7 @@ function onYouTubeIframeAPIReady() {
         videoId: getV(gid),
         playerVars: {
             'rel': 0,
-            'autoplay': 1,
+            'autoplay': 0,
             'mute': 0,
             'loop': 1,
             'playsinline': 1,
