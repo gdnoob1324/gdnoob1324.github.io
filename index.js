@@ -3,7 +3,7 @@ tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-var gid = Number(((new URL(window.location)).searchParams).get('tab'));
+var gid = Number(((new URL(window.location)).searchParams).get('tab')) ?? 0;
 
 function getV(n) {
     switch (n) {
@@ -30,16 +30,16 @@ function onYouTubeIframeAPIReady() {
         }
     });
     let button = $('.controller>button');
-    button.removeClass("focus");
-    button.eq(gid).addClass("focus");
+    button.removeAttr('focus');
+    button.eq(gid).attr('focus','');
 }
 
 function changeVideo(id) {
     if (id == gid) return;
     let button = $('.controller>button');
     let videoId = getV(id);
-    button.removeClass("focus");
-    button.eq(id).addClass("focus");
+    button.removeAttr('focus');
+    button.eq(id).attr('focus', '');
     gid = id;
     window.history.pushState({}, null, '?tab=' + id);
     player.loadVideoById(videoId);

@@ -163,7 +163,7 @@ main>div {
     background-color: #303030;
 }
 
-.idea .controller>button.focus {
+.idea .controller>button[focus] {
     cursor: default;
     background-color: #202020;
 }
