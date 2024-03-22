@@ -212,6 +212,15 @@ main>div {
     color: #f4b400;
 }
 
+.pj h1 span span:nth-child(4) {
+    visibility: hidden;
+}
+
+.pj h1 span.g>span:nth-child(4) {
+    visibility: visible;
+    color: #0f9d58;
+}
+
 .pj label {
     border: solid 2px #444;
     width: min(60vw, 600px);
