@@ -66,13 +66,14 @@ main>div {
 
 .pf>div {
     width: min-content;
-    min-height: 50vh;
+    min-height: 45vh;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
     align-items: center;
+    gap: 8px;
 }
 
 .pf>div>div {
@@ -271,10 +272,6 @@ main>div {
     .pf {
         width: calc(100vw - 32px);
         height: calc(65vh - 32px);
-    }
-
-    .pf .desc {
-        margin-top: -16px;
     }
 
     .idea {
