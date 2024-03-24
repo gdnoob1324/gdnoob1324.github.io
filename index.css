@@ -112,12 +112,12 @@ main>div {
 }
 
 .pf p a i {
+    margin: 0 2px;
     padding: 2px;
-    border: dashed 1px transparent;
 }
 
 .pf p a i:hover {
-    border-color: white;
+    transform: scale(1.25);
 }
 
 .idea {
