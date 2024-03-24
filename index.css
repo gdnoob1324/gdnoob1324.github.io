@@ -184,7 +184,6 @@ main>div {
 }
 
 .pj .search {
-    margin-top: 32px;
     padding: 16px;
     border-radius: 38px;
 }
@@ -299,10 +298,6 @@ main>div {
 
     body {
         font-size: small;
-    }
-
-    .pf>div {
-        gap: 8px 0;
     }
 
     .pic img {
