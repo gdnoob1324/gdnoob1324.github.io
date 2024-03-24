@@ -32,7 +32,7 @@ function onYouTubeIframeAPIReady() {
     });
     let button = $('.controller>button');
     button.removeAttr('focus');
-    button.eq(gid).attr('focus','');
+    button.eq(gid).attr('focus', '');
 }
 
 function changeVideo(id) {
@@ -53,6 +53,14 @@ function switchQ() {
     let aG = 'https://www.google.com/search';
     form.action = form.action == aN ? aG : aN;
     input.name = input.name == 'query' ? 'q' : 'query';
-    if ($('#qspan').hasClass('g')) $('#qspan').removeClass('g')
-    else $('#qspan').addClass('g');
+    if ($('#qspan').hasClass('g')) {
+        $('#qspan').removeClass('g');
+        $('#qn').css('display', 'block');
+        $('#qg').css('display', 'none');
+    }
+    else {
+        $('#qspan').addClass('g');
+        $('#qn').css('display', 'none');
+        $('#qg').css('display', 'block');
+    }
 }

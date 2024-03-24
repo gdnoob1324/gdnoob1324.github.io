@@ -188,40 +188,6 @@ main>div {
     border-radius: 38px;
 }
 
-.pj h1 {
-    margin: 0 0 16px;
-    text-align: center;
-    color: dimgray;
-    line-height: 1;
-
-}
-
-.pj h1 span {
-    color: #03c75a;
-    cursor: pointer;
-}
-
-.pj h1 span.g>span:nth-child(1) {
-    color: #4285f4;
-}
-
-.pj h1 span.g>span:nth-child(2) {
-    color: #db4437;
-}
-
-.pj h1 span.g>span:nth-child(3) {
-    color: #f4b400;
-}
-
-.pj h1 span span:nth-child(4) {
-    visibility: hidden;
-}
-
-.pj h1 span.g>span:nth-child(4) {
-    visibility: visible;
-    color: #0f9d58;
-}
-
 .pj label {
     border: solid 2px #444;
     width: min(60vw, 600px);
@@ -241,6 +207,30 @@ main>div {
     background-color: #111;
     color: white;
     font-size: 16px;
+}
+
+.pj span {
+    border: none;
+    background: transparent;
+    flex: 0 32px;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pj span.g {
+    border: none;
+    background: transparent;
+    flex: 0 32px;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pj button {
