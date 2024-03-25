@@ -186,10 +186,6 @@ main>div {
     gap: 8px;
 }
 
-.pj .search {
-    border-radius: 38px;
-}
-
 .search label {
     border: solid 2px #444;
     width: min(70vw, 600px);
@@ -227,7 +223,6 @@ main>div {
 
 @media screen and (orientation: portrait) {
     main {
-        height: fit-content;
         grid-template-areas: "a" "b";
     }
 
@@ -238,12 +233,6 @@ main>div {
 
     .ytp {
         height: calc(40vh - 24px);
-    }
-}
-
-@media screen and (orientation: portrait) and (max-height: 1080px) {
-    #yt {
-        width: min(100%, 400px);
     }
 }
 
@@ -263,13 +252,5 @@ main>div {
 
     .pf p:last-child {
         font-size: 12px;
-    }
-
-    .pj img {
-        width: 192px;
-    }
-
-    .pj h1 {
-        font-size: 20px;
     }
 }
