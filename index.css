@@ -119,7 +119,7 @@ main>div {
     align-items: center;
     margin-top: 8px;
     width: 100%;
-    height: calc(100% - 26px);
+    height: calc(100% - 22px);
 }
 
 .ytp iframe {
