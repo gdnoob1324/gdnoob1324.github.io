@@ -89,8 +89,9 @@ main>div {
     line-height: 120%;
 }
 
-.pf p:first-child {
-    margin-top: 0;
+.pf p.st {
+    padding-top: 4px;
+    border-top: solid 2px gray;
 }
 
 .pf p:last-child {
