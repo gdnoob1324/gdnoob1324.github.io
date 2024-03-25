@@ -185,7 +185,7 @@ main>div {
 .search label {
     border: solid 2px #444;
     width: min(70vw, 600px);
-    height: 40px;
+    height: 48px;
     padding: 0 12px;
     border-radius: 10000px;
     background-color: #111;
