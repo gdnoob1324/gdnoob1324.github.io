@@ -211,7 +211,7 @@ main>div {
 .search span, .search button {
     border: none;
     background: transparent;
-    flex: 1 0 22px;
+    flex: 1 0 24px;
     height: 100%;
     padding: 0;
     cursor: pointer;
