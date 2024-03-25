@@ -198,7 +198,7 @@ main>div {
 }
 
 .search input {
-    padding: 1px 4px;
+    padding: 0 4px;
     border: none;
     width: 100%;
     height: calc(100% - 2px);
