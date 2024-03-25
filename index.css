@@ -239,7 +239,7 @@ main>div {
     }
 }
 
-@media screen and ((max-height: 500px) or (max-width: 350px)) {
+@media screen and ((max-height: 450px) or (max-width: 350px)) {
     :root {
         --l-spacing: -.7px;
         --w-spacing: 1px;
