@@ -189,6 +189,7 @@ main>div {
 }
 
 .pj input {
+    padding: 1px 4px;
     border: none;
     width: 100%;
     height: calc(100% - 2px);
@@ -244,12 +245,6 @@ main>div {
 @media screen and (orientation: portrait) and (max-height: 1080px) {
     #yt {
         width: min(100%, 400px);
-    }
-}
-
-@media screen and ((orientation: landscape) and ((max-height: 500px) or (max-width: 400px))) {
-    .pf>div {
-        min-height: 90%;
     }
 }
 
