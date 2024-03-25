@@ -91,7 +91,7 @@ main>div {
 
 .pf p.st {
     padding-top: 4px;
-    border-top: solid 2px gray;
+    border-top: solid 2px #444;
 }
 
 .pf p:last-child {
