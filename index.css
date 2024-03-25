@@ -185,7 +185,7 @@ main>div {
     border-radius: 38px;
 }
 
-.pj label {
+.search label {
     border: solid 2px #444;
     width: min(60vw, 600px);
     height: 40px;
@@ -197,7 +197,7 @@ main>div {
     align-items: center;
 }
 
-.pj input {
+.search input {
     padding: 1px 4px;
     border: none;
     width: 100%;
@@ -207,7 +207,7 @@ main>div {
     font-size: 16px;
 }
 
-.pj span {
+.search span, .search button {
     border: none;
     background: transparent;
     flex: 0 24px;
@@ -219,19 +219,7 @@ main>div {
     align-items: center;
 }
 
-.pj button {
-    border: none;
-    background: transparent;
-    flex: 0 24px;
-    height: 100%;
-    padding: 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.pj input:focus {
+.search input:focus {
     outline: none;
 }
 
