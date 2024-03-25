@@ -234,11 +234,11 @@ main>div {
 
     .pf {
         width: calc(100vw - 32px);
-        height: calc(65vh - 32px);
+        height: calc(60vh - 32px);
     }
 
     .idea {
-        height: calc(35vh - 24px);
+        height: calc(40vh - 24px);
     }
 }
 
