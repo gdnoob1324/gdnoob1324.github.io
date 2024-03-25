@@ -212,7 +212,7 @@ main>div {
 .pj span {
     border: none;
     background: transparent;
-    flex: 0 32px;
+    flex: 0 24px;
     height: 100%;
     padding: 0;
     cursor: pointer;
