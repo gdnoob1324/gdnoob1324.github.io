@@ -18,6 +18,12 @@ img {
     background-color: rgba(0, 0, 0, .5);
 }
 
+.fcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 * {
     letter-spacing: var(--l-spacing);
     word-spacing: var(--w-spacing);
@@ -50,8 +56,6 @@ main>div {
 
 .pf {
     grid-area: a;
-    display: flex;
-    align-items: center;
     position: relative;
 }
 
@@ -114,9 +118,6 @@ main>div {
 }
 
 .ytp .youtube {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 8px;
     width: 100%;
     height: calc(100% - 22px);
@@ -173,10 +174,7 @@ main>div {
     padding: 8px;
     background-color: #202020;
     border-radius: 12px;
-    display: flex;
     flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
     gap: 8px;
 }
 
@@ -214,9 +212,6 @@ main>div {
     height: 100%;
     padding: 0;
     cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .search input:focus {
