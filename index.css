@@ -24,6 +24,14 @@ img {
     align-items: center;
 }
 
+.dragban {
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
 * {
     letter-spacing: var(--l-spacing);
     word-spacing: var(--w-spacing);
