@@ -107,6 +107,11 @@ main>div {
     border-top: solid 2px #444;
 }
 
+p.st span {
+    display: inline-block;
+    line-height: .1;
+}
+
 .pf p:last-child {
     font-size: 14px;
     word-spacing: 0;
