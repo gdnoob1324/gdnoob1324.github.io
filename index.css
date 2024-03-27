@@ -186,6 +186,10 @@ main>div {
     gap: 8px;
 }
 
+.search {
+    height: 192px;
+}
+
 .search label {
     border: solid 2px #444;
     width: min(70vw, 600px);
