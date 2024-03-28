@@ -30,8 +30,8 @@ var gid = Number(((new URL(window.location)).searchParams).get('tab')) ?? 0;
 
 function getV(n) {
     switch (n) {
-        case 0: return 'ECgWPp8hvOs'; // oCrobJMZBTo
-        case 1: return 'NFfPxExTyYA' // ECgWPp8hvOs // NFfPxExTyYA
+        case 0: return 'ECgWPp8hvOs';
+        case 1: return 'oCrobJMZBTo'
         case 2: return 'X91djkoe0Ng';
         default: return 'jk-zZ82TShE';
     }
