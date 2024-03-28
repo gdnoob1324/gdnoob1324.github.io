@@ -16,7 +16,7 @@ function getBrowser() {
     return browsers.find((browser) => userAgent.includes(browser.toLowerCase())) || 'Other';
 }
 
-if (getBrowser() == 'Naver') {
+if (getBrowser().toLowerCase() == 'naver') {
     location.replace('https://www.google.co.kr/');
 }
 
