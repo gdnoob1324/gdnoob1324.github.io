@@ -28,10 +28,16 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var gid = Number(((new URL(window.location)).searchParams).get('tab')) ?? 0;
 var isMobile = /Mobi/i.test(window.navigator.userAgent);
 
-if (isMobile) {
-    let i = document.getElementById('ins');
-    i.href = 'instagram://user?username=g_n.2008';
+function Mobile() {
+    if (isMobile) {
+        let i = document.getElementById('ins');
+        i.href = 'instagram://user?username=g_n.2008';
+    }
 }
+
+$(document).ready(function(){
+	Mobile();
+});
 
 function getV(n) {
     switch (n) {
