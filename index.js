@@ -1,11 +1,12 @@
 function getBrowser() {
     const browsers = [
+        'Naver',
         'Chrome', 'Opera',
         'WebTV', 'Whale',
         'Beonex', 'Chimera',
         'NetPositive', 'Phoenix',
         'Firefox', 'Safari',
-        'SkipStone', 'Netscape', 'Mozilla', 'Naver'
+        'SkipStone', 'Netscape', 'Mozilla'
     ];
     const userAgent = window.navigator.userAgent.toLowerCase();
     if (userAgent.includes("edg"))
