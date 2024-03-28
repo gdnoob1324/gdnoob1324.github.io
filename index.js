@@ -50,7 +50,7 @@ $(document).ready(function () {
             console.log('current volume value is ' + volume);
         });
         widget.setVolume(30);
-        widget.load('https://soundcloud.com/rcciwlosof8h/');
+        // widget.load('https://soundcloud.com/rcciwlosof8h/');
     });
 });
 
