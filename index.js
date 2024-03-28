@@ -17,11 +17,11 @@ function getBrowser() {
 }
 
 if (getBrowser().toLowerCase() == 'naver') {
-    location.replace('https://www.google.co.kr/');
+    location.replace('https:www.google.co.kr/');
 }
 
 var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
+tag.src = "https:www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
@@ -71,8 +71,8 @@ function changeVideo(id) {
 function switchQ() {
     let form = document.getElementById('qform');
     let input = document.getElementById('qinput');
-    let aN = 'https://m.search.naver.com/search.naver';
-    let aG = 'https://www.google.com/search';
+    let aN = 'https:m.search.naver.com/search.naver';
+    let aG = 'https:www.google.com/search';
     form.action = form.action == aN ? aG : aN;
     input.name = input.name == 'query' ? 'q' : 'query';
     if ($('#qspan').hasClass('g')) {
