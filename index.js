@@ -26,6 +26,7 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var gid = Number(((new URL(window.location)).searchParams).get('tab')) ?? 0;
+var isMobile = /Mobi/i.test(window.navigator.userAgent);
 
 function getV(n) {
     switch (n) {
