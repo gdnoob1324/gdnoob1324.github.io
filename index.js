@@ -88,12 +88,10 @@ function switchQ() {
     input.name = input.name == 'query' ? 'q' : 'query';
     if ($('#qspan').hasClass('g')) {
         $('#qspan').removeClass('g');
-        $('#qn').css('display', 'block');
-        $('#qg').css('display', 'none');
+        $('#qimg').attr('src', 'img/n.svg');
     }
     else {
         $('#qspan').addClass('g');
-        $('#qn').css('display', 'none');
-        $('#qg').css('display', 'block');
+        $('#qimg').attr('src', 'img/g.svg');
     }
 }
