@@ -187,6 +187,7 @@ main>div {
 
 .search {
     height: 192px;
+    flex: 1 100%;
 }
 
 .search label {
