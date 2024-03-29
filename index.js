@@ -26,10 +26,9 @@ var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var gid = Number(((new URL(window.location)).searchParams).get('tab')) ?? 0;
-var isMobile = /Mobi/i.test(window.navigator.userAgent);
 
 function Mobile() {
-    if (isMobile) {
+    if (/Mobi/i.test(window.navigator.userAgent)) {
         let i = document.getElementById('ins');
         i.href = 'instagram://user?username=g_n.2008';
     }
@@ -41,7 +40,7 @@ $(document).ready(function () {
 
 function getV(n) {
     switch (n) {
-        case 0: return 'ECgWPp8hvOs';
+        case 0: return 'znvky0Uq8qc';
         case 1: return 'oCrobJMZBTo'
         case 2: return 'X91djkoe0Ng';
         default: return 'jk-zZ82TShE';
