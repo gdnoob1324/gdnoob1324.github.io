@@ -184,10 +184,11 @@ main>div {
     border-radius: 12px;
     flex-wrap: wrap;
     gap: 8px;
+    align-content: flex-end;
 }
 
 .search {
-    height: 192px;
+    height: 128px;
     flex: 1 100%;
 }
 
@@ -213,7 +214,8 @@ main>div {
     font-size: 16px;
 }
 
-.search span, .search button {
+.search span,
+.search button {
     border: none;
     background: transparent;
     flex: 1 0 24px;
