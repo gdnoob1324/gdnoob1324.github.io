@@ -184,7 +184,7 @@ main>div {
     border-radius: 12px;
     flex-wrap: wrap;
     gap: 8px;
-    align-content: flex-end;
+    /* align-content: flex-end; */
 }
 
 .search {
@@ -201,7 +201,7 @@ main>div {
     overflow: hidden;
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
+    /* margin-bottom: 16px; */
 }
 
 .search input {
