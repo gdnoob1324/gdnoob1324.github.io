@@ -38,14 +38,22 @@ $(document).ready(function () {
     Mobile();
 });
 
+var IDs = {};
+IDs['Young'] = 'X91djkoe0Ng';
+IDs['Hachiko'] = 'oCrobJMZBTo';
+IDs['Old Song'] = 'NFfPxExTyYA';
+IDs['Until I Found You'], IDs['Main'] = 'znvky0Uq8qc';
+
 function getV(n) {
-    switch (n) {
-        case 0: return 'znvky0Uq8qc';
-        case 1: return 'NFfPxExTyYA';
-        case 2: return 'oCrobJMZBTo'
-        case 3: return 'X91djkoe0Ng';
-        default: return 'NFfPxExTyYA';
-    }
+    let button = $('.controller>button');
+    return IDs[button.eq(n).text()];
+    // switch (n) {
+    //     case 0: return 'znvky0Uq8qc';
+    //     case 1: return 'NFfPxExTyYA';
+    //     case 2: return 'oCrobJMZBTo'
+    //     case 3: return 'X91djkoe0Ng';
+    //     default: return 'NFfPxExTyYA';
+    // }
 }
 
 var player;
