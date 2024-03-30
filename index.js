@@ -45,8 +45,7 @@ IDs['Old Song'] = 'NFfPxExTyYA';
 IDs['Until I Found You'], IDs['Main'] = 'znvky0Uq8qc';
 
 function getV(n) {
-    let button = $('.controller>button');
-    return IDs[button.eq(n).text()];
+    return IDs[$('.controller>button').eq(n).text()];
 }
 
 var player;
