@@ -188,7 +188,6 @@ main>div {
 }
 
 .search {
-    height: 128px;
     flex: 1 100%;
 }
 
@@ -202,6 +201,7 @@ main>div {
     overflow: hidden;
     display: flex;
     align-items: center;
+    margin-bottom: 16px;
 }
 
 .search input {
