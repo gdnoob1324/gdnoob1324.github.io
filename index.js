@@ -44,9 +44,7 @@ IDs['Hachiko'] = 'oCrobJMZBTo';
 IDs['Old Song'] = 'NFfPxExTyYA';
 IDs['Until I Found You'], IDs['Main'] = 'znvky0Uq8qc';
 
-function getV(n) {
-    return IDs[$('.controller>button').eq(n).text()];
-}
+var getV = (n) => IDs[$('.controller>button').eq(n).text()];
 
 var player;
 function onYouTubeIframeAPIReady() {
