@@ -32,16 +32,16 @@ function Mobile() {
     }
 }
 
-$(document).ready(function () {
-    Mobile();
-});
-
 var IDs = {};
 IDs['Young'] = 'X91djkoe0Ng';
 IDs['Hachiko'] = 'oCrobJMZBTo';
+IDs['Serenade'] = 'ECgWPp8hvOs';
 IDs['Old Song'] = 'NFfPxExTyYA';
 IDs['Until I Found You'], IDs['Main'] = 'znvky0Uq8qc';
 var getV = (n) => IDs[$('.controller>button').eq(n).text()];
+
+$(document).ready(function () {
+});
 
 var player;
 function onYouTubeIframeAPIReady() {
