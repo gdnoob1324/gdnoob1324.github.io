@@ -56,51 +56,52 @@
         </div>
     </main>
     <div class="pj fcenter">
-        <div>
-            <div class="search fcenter">
-                <form id="qform" action="https://m.search.naver.com/search.naver" method="GET">
-                    <label>
-                        <span class="fcenter" id="qspan" onclick="switchQ();">
-                            <img id="qimg" src="img/n.svg" class="dragban"></span>
-                        <input id="qinput" type="text" name="query" placeholder="검색어" autocomplete="off">
-                        <button class="fcenter"><img src="img/s.svg" class="dragban">
-                        </button></label>
-                </form>
+        <div class="search fcenter">
+            <form id="qform" action="https://m.search.naver.com/search.naver" method="GET">
+                <label>
+                    <span class="fcenter" id="qspan" onclick="switchQ();">
+                        <img id="qimg" src="img/n.svg" class="dragban"></span>
+                    <input id="qinput" type="text" name="query" placeholder="검색어" autocomplete="off">
+                    <button class="fcenter"><img src="img/s.svg" class="dragban">
+                    </button></label>
+            </form>
+        </div>
+
+        <style>
+            .btext {
+                color: #ddd;
+                margin: 0 32px;
+                width: fit-content;
+                display: inline-block;
+            }
+
+            .btext h1 {
+                margin: 0;
+                flex: 1 100%;
+                line-height: 0;
+                text-align: center;
+                color: gray;
+            }
+
+            .btext h1:first-child {
+                margin-bottom: 12px;
+            }
+
+            .btext h1:last-child {
+                margin-top: 12px;
+            }
+        </style>
+        <div class="btext fcenter">
+            <h1><i class="fa-solid fa-quote-left"></i></h1>
+            <div>
+                사랑은<br>
+                모든 것을 참으며<br>
+                모든 것을 믿으며<br>
+                모든 것을 바라며<br>
+                모든 것을 견디느니라<br><br>
+                - 고린도전서 13장
             </div>
-            
-            <style>
-                .btext {
-                    color: #ddd;
-                }
-
-                .btext h1 {
-                    margin: 0;
-                    flex: 1 100%;
-                    line-height: 0;
-                    text-align: center;
-                    color: gray;
-                }
-
-                .btext h1:first-child {
-                    margin-bottom: 12px;
-                }
-
-                .btext h1:last-child {
-                    margin-top: 12px;
-                }
-            </style>
-            <div class="btext fcenter">
-                <h1><i class="fa-solid fa-quote-left"></i></h1>
-                <div>
-                    사랑은<br>
-                    모든 것을 참으며<br>
-                    모든 것을 믿으며<br>
-                    모든 것을 바라며<br>
-                    모든 것을 견디느니라<br><br>
-                    - 고린도전서 13장
-                </div>
-                <h1><i class="fa-solid fa-quote-right"></i></h1>
-            </div>
+            <h1><i class="fa-solid fa-quote-right"></i></h1>
         </div>
     </div>
 </body>
