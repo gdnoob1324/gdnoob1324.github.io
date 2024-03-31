@@ -228,6 +228,29 @@ main>div {
     outline: none;
 }
 
+.btext {
+    color: #ddd;
+    margin: 0 32px;
+    width: fit-content;
+    display: inline-block;
+}
+
+.btext h1 {
+    margin: 0;
+    flex: 1 100%;
+    line-height: 0;
+    text-align: center;
+    color: gray;
+}
+
+.btext h1:first-child {
+    margin-bottom: 12px;
+}
+
+.btext h1:last-child {
+    margin-top: 12px;
+}
+
 @media screen and (orientation: portrait) {
     main {
         grid-template-areas: "a" "b";
