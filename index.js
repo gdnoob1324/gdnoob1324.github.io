@@ -29,8 +29,6 @@ var gid = Number(((new URL(window.location)).searchParams).get('tab')) ?? 0;
 
 function Mobile() {
     if (/Mobi/i.test(window.navigator.userAgent)) {
-        let i = document.getElementById('ins');
-        i.href = 'instagram://user?username=g_n.2008';
     }
 }
 
