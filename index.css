@@ -235,20 +235,21 @@ main>div {
     display: inline-block;
 }
 
-.btext h1 {
+.btext h2 {
     margin: 0;
     flex: 1 100%;
     line-height: 0;
     text-align: center;
     color: gray;
+    height: 20px;
 }
 
-.btext h1:first-child {
-    margin-bottom: 12px;
+.btext h2:first-child {
+    margin-bottom: 8px;
 }
 
-.btext h1:last-child {
-    margin-top: 12px;
+.btext h2:last-child {
+    margin-top: 8px;
 }
 
 @media screen and (orientation: portrait) {
