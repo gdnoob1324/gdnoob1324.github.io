@@ -248,7 +248,7 @@ main>div {
     padding: 8px;
     margin: 8px 0;
     border: solid 0 gray;
-    border-width: 2px 0;
+    border-width: 1px 0;
 }
 
 @media screen and (orientation: portrait) {
