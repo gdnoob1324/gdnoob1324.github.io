@@ -37,7 +37,9 @@ IDs['Young'] = 'X91djkoe0Ng';
 IDs['Hachiko'] = 'oCrobJMZBTo';
 IDs['Serenade'] = 'ECgWPp8hvOs';
 IDs['Old Song'] = 'NFfPxExTyYA';
-IDs['Until I Found You'], IDs['Main'] = 'znvky0Uq8qc';
+IDs['January Rock'] = 'HZZ2iZgKoLI';
+IDs['Until I Found You'] = 'znvky0Uq8qc';
+IDs['Main'] = IDs['January Rock'];
 var getV = (n) => IDs[$('.controller>button').eq(n).text()];
 
 $(document).ready(function () {
