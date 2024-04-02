@@ -230,6 +230,7 @@ main>div {
 
 .btext {
     color: #ddd;
+    margin: 0 0 16px;
     width: fit-content;
     display: inline-block;
 }
