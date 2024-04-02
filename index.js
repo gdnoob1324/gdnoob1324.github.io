@@ -41,6 +41,7 @@ IDs['January Rock'] = 'HZZ2iZgKoLI';
 IDs['Until I Found You'] = 'znvky0Uq8qc';
 IDs['Let’s Say Goodbye'] = '5BNXmOlRgzI';
 IDs['애상'] = 'hG7wdpAFz38';
+IDs['봄봄봄'] = '5RtR_h3f60';
 IDs['Main'] = IDs['January Rock'];
 var getV = (n) => IDs[$('.controller>button').eq(n).text()];
 
