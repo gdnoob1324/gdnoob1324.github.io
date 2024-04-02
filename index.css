@@ -188,7 +188,7 @@ main>div {
 
 .search {
     flex: 1 100%;
-    margin: 64px 0;
+    margin: 96px 0 32px;
 }
 
 .search label {
