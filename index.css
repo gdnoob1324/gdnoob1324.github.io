@@ -230,7 +230,7 @@ main>div {
 
 .btext {
     color: #ddd;
-    margin: 0 32px;
+    margin: 32px;
     width: fit-content;
     display: inline-block;
 }
@@ -244,12 +244,11 @@ main>div {
     height: 20px;
 }
 
-.btext h2:first-child {
-    margin-bottom: 8px;
-}
-
-.btext h2:last-child {
-    margin-top: 8px;
+.btext div {
+    padding: 6px 4px;
+    margin: 8px 0;
+    border: solid 0 gray;
+    border-width: 1px 0;
 }
 
 @media screen and (orientation: portrait) {
