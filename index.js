@@ -39,7 +39,7 @@ IDs['Serenade'] = 'ECgWPp8hvOs';
 IDs['Old Song'] = 'NFfPxExTyYA';
 IDs['January Rock'] = 'HZZ2iZgKoLI';
 IDs['Until I Found You'] = 'znvky0Uq8qc';
-
+IDs['Let’s Say Goodbye'] = '5BNXmOlRgzI';
 IDs['Main'] = IDs['January Rock'];
 var getV = (n) => IDs[$('.controller>button').eq(n).text()];
 
