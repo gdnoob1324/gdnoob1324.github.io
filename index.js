@@ -37,6 +37,7 @@ IDs['Young'] = 'X91djkoe0Ng';
 IDs['Hachiko'] = 'oCrobJMZBTo';
 IDs['Serenade'] = 'ECgWPp8hvOs';
 IDs['Old Song'] = 'NFfPxExTyYA';
+IDs['Frankenstein'] = 'NerMjkvcbSw';
 IDs['January Rock'] = 'HZZ2iZgKoLI';
 IDs['Until I Found You'] = 'znvky0Uq8qc';
 IDs['Let’s Say Goodbye'] = '5BNXmOlRgzI';
@@ -44,7 +45,7 @@ IDs['애상'] = 'hG7wdpAFz38';
 IDs['봄봄봄'] = '5RtR_h3f60';
 IDs['비행기'] = 'yCzg389Ut6w';
 IDs['봄이 좋냐??'] = 'ZDotTeH8qQI';
-IDs['Main'] = IDs['봄이 좋냐??'];
+IDs['Main'] = IDs['Frankenstein'];
 var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
 $(document).ready(function () {
