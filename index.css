@@ -6,7 +6,7 @@
 }
 
 a {
-    color: white;
+    color: #ddd;
     text-decoration: none;
 }
 
@@ -40,7 +40,7 @@ img {
 
 body {
     background-color: black;
-    color: white;
+    color: #ddd;
     padding: 0;
     margin: 0;
     font-family: "Noto Sans KR", sans-serif;
@@ -74,7 +74,7 @@ main>div {
     padding: 2px;
     border-radius: 4px;
     text-decoration: none;
-    text-shadow: 0 0 2px white;
+    text-shadow: 0 0 2px #ddd;
 }
 
 .pf>div {
@@ -153,7 +153,7 @@ main>div {
 .controller>button:not(:hover) {
     flex: 1 1 auto;
     background-color: #151515;
-    color: white;
+    color: #ddd;
     border: solid 0 #444;
     border-width: 0 0 0 1px;
     padding: 4px;
@@ -215,7 +215,7 @@ main>div {
     width: 100%;
     height: calc(100% - 2px);
     background-color: #111;
-    color: white;
+    color: #ddd;
     font-size: 16px;
 }
 
@@ -250,16 +250,19 @@ main>div {
 }
 
 .btext div {
-    padding: 8px 8px 0;
-    margin: 8px 0 0;
-    border: solid 0 gray;
-    border-width: 1px 0 0;
+    padding: 8px 8px;
+    margin: 8px 0;
+    border: 2px dashed #444;
+    background-color: #252525;
+    border-left: 5px solid #555;
 }
 
-.btext div:nth-last-of-type(1) {
-    padding: 8px;
+.btext div hr {
+    border: 0;
+    border-top: 1px solid #444;
+    box-sizing: content-box;
+    height: 0;
     margin: 8px 0;
-    border-width: 1px 0;
 }
 
 div[nosee] {
