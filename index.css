@@ -251,7 +251,7 @@ main>div {
 }
 
 .btext div {
-    padding: 8px 8px;
+    padding: 8px;
     margin: 8px 0;
     border: 2px dashed #444;
     background-color: #252525;
@@ -263,7 +263,7 @@ main>div {
     border-top: 2px solid #444;
     box-sizing: content-box;
     height: 0;
-    margin: 4px 0;
+    margin: 8px 0;
 }
 
 div[nosee] {
