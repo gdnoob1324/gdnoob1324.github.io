@@ -43,8 +43,8 @@ IDs['Let’s Say Goodbye'] = '5BNXmOlRgzI';
 IDs['애상'] = 'hG7wdpAFz38';
 IDs['봄봄봄'] = '5RtR_h3f60';
 IDs['비행기'] = 'yCzg389Ut6w';
-IDs['봄이 좋냐??'] = 'RD65RQZICv4iI';
-IDs['Main'] = IDs['봄이 좋냐??'];
+IDs['봄이 좋냐??'] = 'ZDotTeH8qQI';
+IDs['Main'] = 'ZDotTeH8qQI';
 var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
 $(document).ready(function () {
