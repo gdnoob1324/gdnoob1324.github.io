@@ -235,9 +235,9 @@ main>div {
 
 .btext {
     color: #ddd;
-    padding: 64px 0;
+    margin: 64px 0;
     width: fit-content;
-    display: inline-block;
+    word-break: keep-all;
 }
 
 .btext h2 {
