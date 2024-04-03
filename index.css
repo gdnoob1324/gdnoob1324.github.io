@@ -237,6 +237,7 @@ main>div {
     color: #ddd;
     margin: 64px 0;
     width: fit-content;
+    display: inline-block;
     word-break: keep-all;
 }
 
