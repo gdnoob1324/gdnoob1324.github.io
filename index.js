@@ -44,7 +44,7 @@ IDs['애상'] = 'hG7wdpAFz38';
 IDs['봄봄봄'] = '5RtR_h3f60';
 IDs['비행기'] = 'yCzg389Ut6w';
 IDs['Main'] = IDs['January Rock'];
-var getV = (n) => IDs[$('.controller>button').eq(n).text()];
+var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
 $(document).ready(function () {
 });
@@ -65,14 +65,14 @@ function onYouTubeIframeAPIReady() {
             'onStateChange': (e) => { }
         }
     });
-    let button = $('.controller>button');
+    let button = $('.ytp .controller>button');
     button.removeAttr('focus');
     button.eq(gid).attr('focus', '');
 }
 
 function changeVideo(id) {
     if (id == gid) return;
-    let button = $('.controller>button');
+    let button = $('.ytp .controller>button');
     let videoId = getV(id);
     button.removeAttr('focus');
     button.eq(id).attr('focus', '');

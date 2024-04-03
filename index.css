@@ -145,8 +145,12 @@ main>div {
     width: calc(100% + 16px);
 }
 
-.ytp .controller>button,
-.ytp .controller>button:not(:hover) {
+.controller {
+    display: flex;
+}
+
+.controller>button,
+.controller>button:not(:hover) {
     flex: 1 1 auto;
     background-color: #151515;
     color: white;
@@ -157,75 +161,39 @@ main>div {
     cursor: pointer;
 }
 
-.ytp .controller>button:first-child {
+.controller>button:first-child {
     border-top-left-radius: 12px;
     border-width: 0;
 }
 
-.ytp .controller>button:last-child {
+.controller>button:last-child {
     border-top-right-radius: 12px;
 }
 
-.ytp .controller>button:hover {
+.controller>button:hover {
     background-color: #303030;
 }
 
-.ytp .controller>button[focus] {
+.controller>button[focus] {
     cursor: default;
     background-color: #202020;
 }
 
 .pj {
     width: calc(100% - 16px);
-    min-height: calc(100vh - 32px);
+    min-height: calc(100vh - 16px);
     margin: 0 8px 8px;
     background-color: #202020;
     border-radius: 12px;
 }
 
-.pj .controller {
-    display: flex;
-}
-
-.pj .controller>button,
-.pj .controller>button:not(:hover) {
-    flex: 1 1 auto;
-    background-color: #151515;
-    color: white;
-    border: solid 0 #444;
-    border-width: 0 0 0 1px;
-    padding: 4px;
-    line-height: 100%;
-    cursor: pointer;
-}
-
-.pj .controller>button:first-child {
-    border-top-left-radius: 12px;
-    border-width: 0;
-}
-
-.pj .controller>button:last-child {
-    border-top-right-radius: 12px;
-}
-
-.pj .controller>button:hover {
-    background-color: #303030;
-}
-
-.pj .controller>button[focus] {
-    cursor: default;
-    background-color: #202020;
-}
-
 .pj>div:nth-child(2) {
     padding: 8px;
-    flex-wrap: wrap;
-    align-content: center;
+    height: calc(100vh - 52px);
 }
 
 .search {
     flex: 1 100%;
-    margin: 128px 0 64px;
 }
 
 .search label {
@@ -292,6 +260,13 @@ main>div {
     padding: 8px;
     margin: 8px 0;
     border-width: 1px 0;
+}
+
+div[nosee] {
+    margin: 0;
+    max-height: 0;
+    max-width: 0;
+    overflow: hidden;
 }
 
 @media screen and (orientation: portrait) {
