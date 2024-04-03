@@ -101,10 +101,17 @@ function switchQ() {
 
 function searchMode(id) {
     let button = $('.pj .controller>button');
+    if (button.eq(id).is('[focus]')) return;
     button.removeAttr('focus');
     button.eq(id).attr('focus', '');
     let search = $('.search');
     let btext = $('.btext');
-    button.removeAttr('focus');
-    button.eq(id).attr('focus', '');
+    if (id == 0) {
+        search.removeAttr('nosee');
+        btext.attr('nosee', '');
+    }
+    else if (id == 1) {
+        search.attr('nosee', '');
+        btext.removeAttr('nosee');
+    }
 }
