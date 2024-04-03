@@ -262,7 +262,7 @@ main>div {
     border-top: 1px solid #444;
     box-sizing: content-box;
     height: 0;
-    margin: 8px 0;
+    margin: 4px 0;
 }
 
 div[nosee] {
