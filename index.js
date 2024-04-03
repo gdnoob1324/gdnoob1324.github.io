@@ -43,7 +43,8 @@ IDs['Let’s Say Goodbye'] = '5BNXmOlRgzI';
 IDs['애상'] = 'hG7wdpAFz38';
 IDs['봄봄봄'] = '5RtR_h3f60';
 IDs['비행기'] = 'yCzg389Ut6w';
-IDs['Main'] = IDs['January Rock'];
+IDs['봄이 좋냐??'] = 'RD65RQZICv4iI';
+IDs['Main'] = IDs['봄이 좋냐??'];
 var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
 $(document).ready(function () {
@@ -96,4 +97,14 @@ function switchQ() {
         $('#qspan').addClass('g');
         $('#qimg').attr('src', 'img/g.svg');
     }
+}
+
+function searchMode(id) {
+    let button = $('.pj .controller>button');
+    button.removeAttr('focus');
+    button.eq(id).attr('focus', '');
+    let search = $('.search');
+    let btext = $('.btext');
+    button.removeAttr('focus');
+    button.eq(id).attr('focus', '');
 }
