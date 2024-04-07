@@ -241,7 +241,7 @@ main>div {
     word-break: keep-all;
 }
 
-.btext h2 {
+.btext h1 {
     margin: 0;
     flex: 1 100%;
     line-height: 0;
