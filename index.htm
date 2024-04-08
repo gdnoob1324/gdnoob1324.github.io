@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <main>
+    <main style="grid-template-columns: 1fr; gap: 0;">
         <div class="pf fcenter">
             <span class="mini b" style="left: 8px;">🎧</span>
             <span class="mini b" style="right: 8px;">😪</span>
@@ -38,7 +38,7 @@
                 </p>
             </div>
         </div>
-        <div class="ytp">
+        <div class="ytp" style="display: none;">
             <div class="controller">
                 <button onclick="changeVideo(0);" focus>Main</button>
                 <button onclick="changeVideo(1);">체념</button>
@@ -50,7 +50,7 @@
             </div>
         </div>
     </main>
-    <div class="pj">
+    <div class="pj" style="display: none;">
         <div class="controller">
             <button onclick="searchMode(0);" focus>검색</button>
             <button onclick="searchMode(1)">.</button>
