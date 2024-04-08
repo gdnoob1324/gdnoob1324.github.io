@@ -17,7 +17,7 @@ function getBrowser() {
 }
 
 if (getBrowser().toLowerCase() == 'naver') {
-    location.replace('https://www.google.co.kr/');
+    // location.replace('https://www.google.co.kr/');
 }
 
 var tag = document.createElement('script');
