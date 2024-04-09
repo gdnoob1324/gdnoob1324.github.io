@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <main style="grid-template-columns: 1fr; gap: 0;">
+    <main>
         <div class="pf fcenter" style="height: calc(100vh - 32px);">
             <span class="mini b" style="left: 8px;">🎧</span>
             <span class="mini b" style="right: 8px;">😪</span>
@@ -38,12 +38,9 @@
                 </p>
             </div>
         </div>
-        <div class="ytp" style="display: none;">
+        <div class="ytp">
             <div class="controller">
                 <button onclick="changeVideo(0);" focus>Main</button>
-                <button onclick="changeVideo(1);">체념</button>
-                <button onclick="changeVideo(2);">애상</button>
-                <button onclick="changeVideo(3);">Young</button>
             </div>
             <div class="youtube fcenter">
                 <x id="yt" />
