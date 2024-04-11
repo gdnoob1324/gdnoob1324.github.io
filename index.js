@@ -46,7 +46,7 @@ IDs['체념'] = '6SlBk5ziyOk';
 IDs['봄봄봄'] = '5RtR_h3f60';
 IDs['비행기'] = 'yCzg389Ut6w';
 IDs['봄이 좋냐??'] = 'ZDotTeH8qQI';
-IDs['Main'] = IDs['Its just a burning memory'];
+IDs['Main'] = IDs['Young'];
 var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
 $(document).ready(function () {
