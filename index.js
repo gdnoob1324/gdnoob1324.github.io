@@ -41,12 +41,13 @@ IDs['January Rock'] = 'HZZ2iZgKoLI';
 IDs['Until I Found You'] = 'znvky0Uq8qc';
 IDs['Let’s Say Goodbye'] = '5BNXmOlRgzI';
 IDs['Its just a burning memory'] = 'wPOF5FgG3DU';
+Ids['Photograph'] = 'SlbfAYvA_gI';
 IDs['애상'] = 'hG7wdpAFz38';
 IDs['체념'] = '6SlBk5ziyOk';
 IDs['봄봄봄'] = '5RtR_h3f60';
 IDs['비행기'] = 'yCzg389Ut6w';
 IDs['봄이 좋냐??'] = 'ZDotTeH8qQI';
-IDs['Main'] = IDs['Young'];
+IDs['Main'] = IDs['Photograph'];
 var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
 $(document).ready(function () {
