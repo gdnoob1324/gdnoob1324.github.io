@@ -266,11 +266,13 @@ main>div {
     margin: 8px 0;
 }
 
-div[nosee] {
+div[nosee], *[nosee] {
     margin: 0;
+    padding: 0;
     max-height: 0;
     max-width: 0;
     overflow: hidden;
+    display: none;
 }
 
 @media screen and (orientation: portrait) {
