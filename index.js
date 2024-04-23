@@ -34,19 +34,13 @@ function Mobile() {
 
 var IDs = {};
 IDs['Young'] = 'NZva0EyfVhw';
+IDs['샐러드와 커피'] = 'R6hHRjfCLI8';
 IDs['Hachiko'] = 'oCrobJMZBTo';
 IDs['Serenade'] = 'ECgWPp8hvOs';
 IDs['Old Song'] = 'NFfPxExTyYA';
-IDs['January Rock'] = 'HZZ2iZgKoLI';
 IDs['Until I Found You'] = 'znvky0Uq8qc';
-IDs['Let’s Say Goodbye'] = '5BNXmOlRgzI';
-IDs['Its just a burning memory'] = 'wPOF5FgG3DU';
 IDs['Photograph'] = 'SlbfAYvA_gI';
-IDs['애상'] = 'hG7wdpAFz38';
-IDs['체념'] = '6SlBk5ziyOk';
-IDs['봄봄봄'] = '5RtR_h3f60';
-IDs['비행기'] = 'yCzg389Ut6w';
-IDs['봄이 좋냐??'] = 'NZva0EyfVhw';
+IDs['4.2 (사이)'] = 'bNObjle08oc'; //'3ziryagRPyQ';
 IDs['Main'] = IDs['Young'];
 var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
