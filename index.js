@@ -34,6 +34,7 @@ function Mobile() {
 
 var IDs = {};
 IDs['Young'] = 'NZva0EyfVhw';
+IDs['But I Love You So'] = 'Y8n0yTAYUew';
 IDs['샐러드와 커피'] = 'R6hHRjfCLI8';
 IDs['Hachiko'] = 'oCrobJMZBTo';
 IDs['Serenade'] = 'ECgWPp8hvOs';
@@ -41,7 +42,7 @@ IDs['Old Song'] = 'NFfPxExTyYA';
 IDs['Until I Found You'] = 'znvky0Uq8qc';
 IDs['Photograph'] = 'SlbfAYvA_gI';
 IDs['4.2 (사이)'] = 'bNObjle08oc'; //'3ziryagRPyQ';
-IDs['Main'] = IDs['Young'];
+IDs['Main'] = IDs['But I Love You So'];
 var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
 $(document).ready(function () {
