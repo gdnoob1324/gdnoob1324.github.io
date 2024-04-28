@@ -42,6 +42,7 @@ IDs['Old Song'] = 'NFfPxExTyYA';
 IDs['Until I Found You'] = 'znvky0Uq8qc';
 IDs['Photograph'] = 'SlbfAYvA_gI';
 IDs['4.2 (사이)'] = 'bNObjle08oc'; //'3ziryagRPyQ';
+IDs['Hakujitsu'] = 'Tll_g1Gx7I8';
 IDs['Main'] = IDs['But I Love You So'];
 var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
