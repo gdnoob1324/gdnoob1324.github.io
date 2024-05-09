@@ -44,6 +44,7 @@ IDs['Photograph'] = 'SlbfAYvA_gI';
 IDs['4.2 (사이)'] = 'bNObjle08oc';
 IDs['Wi Ing Wi Ing'] = 'bVrW1eDMtL8';
 IDs['Tree'] = 'cHkDZ1ekB9U';
+IDs['TOMBOY'] = 'pC6tPEaAiYU';
 IDs['Main'] = IDs['Tree'];
 var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
