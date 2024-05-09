@@ -44,8 +44,8 @@ IDs['Photograph'] = 'SlbfAYvA_gI';
 IDs['4.2 (사이)'] = 'bNObjle08oc'; //'3ziryagRPyQ';
 IDs['Hakujitsu'] = 'Tll_g1Gx7I8';
 IDs['Wi Ing Wi Ing'] = 'bVrW1eDMtL8';
-IDs['These Tears'] = 'Mf-59f7DGS8';
-IDs['Main'] = IDs['These Tears'];
+IDs['Tree'] = 'cHkDZ1ekB9U';
+IDs['Main'] = IDs['Tree'];
 var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
 $(document).ready(function () {
