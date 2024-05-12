@@ -33,7 +33,7 @@ function Mobile() {
 }
 
 var IDs = {};
-IDs['Young'] = 'vgNvosh9oTc';
+IDs['Young'] = '2my28Tl_gvQ';
 IDs['But I Love You So'] = 'Y8n0yTAYUew';
 IDs['샐러드와 커피'] = 'R6hHRjfCLI8';
 IDs['Hachiko'] = 'oCrobJMZBTo';
@@ -45,7 +45,8 @@ IDs['4.2 (사이)'] = 'bNObjle08oc';
 IDs['Wi Ing Wi Ing'] = 'bVrW1eDMtL8';
 IDs['Tree'] = 'cHkDZ1ekB9U';
 IDs['TOMBOY'] = 'pC6tPEaAiYU';
-IDs['Main'] = IDs['Tree'];
+IDs['GNGD'] = 'g-rZeTNIw7E';
+IDs['Main'] = IDs['GNGD'];
 var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
 $(document).ready(function () {
