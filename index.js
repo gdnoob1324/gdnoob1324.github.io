@@ -34,7 +34,6 @@ function Mobile() {
 
 var IDs = {};
 IDs['Young'] = '2my28Tl_gvQ';
-IDs['But I Love You So'] = 'Y8n0yTAYUew';
 IDs['샐러드와 커피'] = 'R6hHRjfCLI8';
 IDs['Hachiko'] = 'oCrobJMZBTo';
 IDs['Serenade'] = 'ECgWPp8hvOs';
