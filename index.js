@@ -45,7 +45,7 @@ IDs['Wi Ing Wi Ing'] = 'bVrW1eDMtL8';
 IDs['Tree'] = 'cHkDZ1ekB9U';
 IDs['TOMBOY'] = 'pC6tPEaAiYU';
 IDs['GNGD'] = 'g-rZeTNIw7E';
-IDs['Main'] = IDs['GNGD'];
+IDs['Main'] = IDs['Young'];
 var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
 $(document).ready(function () {
