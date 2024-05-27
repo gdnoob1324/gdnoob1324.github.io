@@ -46,6 +46,7 @@ IDs['TOMBOY'] = 'pC6tPEaAiYU';
 IDs['GNGD'] = 'g-rZeTNIw7E';
 IDs['Hang Up'] = 'WpPpuqieuSg';
 IDs['Boat'] = 'OWL1RNX7p90';
+IDs['Sometimes'] = 'hoknJbAsOZY';
 IDs['Main'] = IDs['Boat'];
 var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
