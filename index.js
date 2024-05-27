@@ -42,10 +42,10 @@ IDs['Until I Found You'] = 'znvky0Uq8qc';
 IDs['Photograph'] = 'SlbfAYvA_gI';
 IDs['4.2 (사이)'] = 'bNObjle08oc';
 IDs['Wi Ing Wi Ing'] = 'bVrW1eDMtL8';
-IDs['Tree'] = 'cHkDZ1ekB9U';
 IDs['TOMBOY'] = 'pC6tPEaAiYU';
 IDs['GNGD'] = 'g-rZeTNIw7E';
-IDs['Main'] = IDs['Young'];
+IDs['Hang Up'] = 'WpPpuqieuSg';
+IDs['Main'] = IDs['Hang Up'];
 var getV = (n) => IDs[$('.ytp .controller>button').eq(n).text()];
 
 $(document).ready(function () {
