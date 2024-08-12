@@ -46,12 +46,16 @@ header a:hover, .dropdown:hover .dropbtn {
     display: block;
 }
 
+.dropbtn2 {
+    position: relative;
+}
+
 .dropdown2 {
     cursor: pointer;
     display: none;
     position: absolute;
-    top: 96px;
-    left: -128px;
+    top: 0;
+    left: calc(-100% - 2px);
     min-width: 128px;
     background-color: #202020;
     border: 1px solid #404040;
