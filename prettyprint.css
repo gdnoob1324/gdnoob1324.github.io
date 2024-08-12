@@ -1,14 +1,27 @@
-pre.prettyprint {
-    width: auto;
-    padding: 16px;
-    line-height: 1.45;
+.codeblock {
     border-radius: 4px;
     background-color: #101010;
     margin: 8px 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+pre.prettyprint {
+    width: auto;
+    line-height: 1.45;
+    margin: 0;
+    padding: 0;
     word-wrap: break-word;
+    background-color: #101010;
 
     overflow: scroll;
     text-overflow: clip;
+}
+
+pre xmp {
+    overflow: scroll;
+    padding: 16px;
 }
 
 pre .str, pre .atv {

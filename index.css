@@ -74,7 +74,7 @@ main {
     min-height: calc(100vh - 48px);
 }
 
-xmp {
+pre, xmp {
     margin: 0;
     font-size: large;
 }
