@@ -1,310 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
-
-:root {
-    --l-spacing: -1px;
-    --w-spacing: 2px;
-}
-
-a {
-    color: #ddd;
-    text-decoration: none;
-}
-
-img {
-    vertical-align: bottom;
-}
-
-.b {
-    background-color: rgba(0, 0, 0, .5);
-}
-
-.fcenter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.dragban {
-    -ms-user-select: none;
-    -moz-user-select: -moz-none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    user-select: none;
-}
-
 * {
-    letter-spacing: var(--l-spacing);
-    word-spacing: var(--w-spacing);
+    box-sizing: border-box;
 }
 
 body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
     background-color: black;
-    color: #ddd;
-    padding: 0;
-    margin: 0;
-    font-family: "Noto Sans KR", sans-serif;
-    min-height: 100vh;
-}
-
-main {
-    display: grid;
-    height: calc(100vh - 16px);
-    padding: 8px;
-    gap: 8px;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: "a b";
-}
-
-main>div {
-    background-color: #202020;
-    border-radius: 12px;
-    padding: 8px;
-    height: calc(100% - 16px);
-}
-
-.pf {
-    grid-area: a;
-    position: relative;
-}
-
-.pf .mini {
-    position: absolute;
-    top: 8px;
-    padding: 2px;
-    border-radius: 4px;
-    text-decoration: none;
-    text-shadow: 0 0 2px #ddd;
-}
-
-.pf>div {
-    width: min-content;
+    color: #eee;
+    width: 75%;
     margin: 0 auto;
-    text-align: center;
-    padding: 16px;
-    border-radius: 24px;
-}
-
-.pf h3 {
-    margin: 0;
-    margin-top: 2px;
-}
-
-.pf img {
-    border: solid 2px #444;
-    border-radius: 16px;
-}
-
-.pf p {
-    white-space: nowrap;
-    margin: 4px 0 0;
-    line-height: 120%;
-}
-
-.pf p.st {
-    margin-top: 6px;
-    padding-top: 6px;
-    border-top: solid 2px #444;
-}
-
-.pf p:last-child {
-    font-size: 14px;
-    word-spacing: 0;
-}
-
-.pf p a i {
-    margin: 0 2px;
-    padding: 2px;
-}
-
-.pf p a i:hover {
-    transform: scale(1.25);
-}
-
-.ytp {
-    grid-area: b;
-}
-
-.ytp .youtube {
-    margin-top: 8px;
-    width: 100%;
-    height: calc(100% - 22px);
-}
-
-.ytp iframe {
-    border: solid 1px #444;
-    border-radius: 8px;
-    width: min(100%, 800px);
-    height: min(100%, 600px);
-}
-
-.ytp .controller {
+    min-height: 100vh;
     display: flex;
-    margin-left: -8px;
-    margin-top: -8px;
-    width: calc(100% + 16px);
+    align-content: flex-start;
+    flex-wrap: wrap;
 }
 
-.controller {
-    display: flex;
-}
-
-.controller>button,
-.controller>button:not(:hover) {
-    flex: 1 1 auto;
-    background-color: #151515;
-    color: #ddd;
-    border: solid 0 #444;
-    border-width: 0 0 0 1px;
-    padding: 4px;
-    line-height: 100%;
-    cursor: pointer;
-}
-
-.controller>button:first-child {
-    border-top-left-radius: 12px;
-    border-width: 0;
-}
-
-.controller>button:last-child {
-    border-top-right-radius: 12px;
-}
-
-.controller>button:hover {
-    background-color: #303030;
-}
-
-.controller>button[focus] {
-    cursor: default;
-    background-color: #202020;
-}
-
-.pj {
-    width: calc(100% - 16px);
-    min-height: calc(100vh - 16px);
-    margin: 0 8px 8px;
-    background-color: #202020;
-    border-radius: 12px;
-}
-
-.pj>div:nth-child(2) {
-    padding: 8px;
-    min-height: calc(100vh - 52px);
-}
-
-.search {
-    flex: 1 100%;
-}
-
-.search label {
-    border: solid 2px #444;
-    width: min(70vw, 600px);
-    height: 44px;
-    padding: 0 12px;
-    border-radius: 10000px;
-    background-color: #111;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    /* margin-bottom: 32px; */
-}
-
-.search input {
-    padding: 0 4px;
-    border: none;
-    width: 100%;
-    height: calc(100% - 2px);
-    background-color: #111;
-    color: #ddd;
-    font-size: 16px;
-}
-
-.search span,
-.search button {
-    border: none;
-    background: transparent;
-    flex: 1 0 24px;
-    height: 100%;
-    padding: 0;
-    cursor: pointer;
-}
-
-.search input:focus {
-    outline: none;
-}
-
-.btext {
-    color: #ddd;
-    margin: 64px 0;
-    width: fit-content;
-    display: inline-block;
-    word-break: keep-all;
-}
-
-.btext h1 {
-    margin: 0;
-    flex: 1 100%;
-    line-height: 0;
-    text-align: center;
-    color: gray;
-    height: 20px;
-}
-
-.btext div {
-    padding: 8px;
-    margin: 24px 0;
-    border: 2px dashed #444;
-    background-color: #252525;
-    border-left: 5px solid #555;
-}
-
-.btext div hr {
-    border: 0;
-    border-top: 2px solid #444;
-    box-sizing: content-box;
-    height: 0;
+p {
     margin: 8px 0;
 }
 
-div[nosee], *[nosee] {
-    margin: 0;
-    padding: 0;
-    max-height: 0;
-    max-width: 0;
+.Header {
+    position: sticky;
+
+    top: 0;
+    height: max-content;
+}
+
+header {
     overflow: hidden;
-    display: none;
+    width: 75vw;
+    background-color: #101010;
+    border: 1px solid #606060;
+    border-width: 0 0 1px 0;
+    box-sizing: border-box;
+    height: 48px;
+
+    display: flex;
+    align-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header a {
+    float: left;
+    font-size: 16px;
+    color: #ddd;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+main {
+    width: 75vw;
+    background-color: #202020;
+    min-height: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+    min-height: calc(100vh - 48px);
+}
+
+xmp {
+    margin: 0;
+}
+
+#yt {
+    border: 1px solid #404040;
+    border-radius: 12px;
 }
 
 @media screen and (orientation: portrait) {
-    main {
-        grid-template-areas: "a" "b";
-    }
 
-    .pf {
-        width: calc(100vw - 32px);
-        height: calc(60vh - 32px);
-    }
-
-    .ytp {
-        height: calc(40vh - 24px);
-    }
 }
 
-@media screen and ((max-height: 500px) or (max-width: 350px)) {
-    :root {
-        --l-spacing: -.7px;
-        --w-spacing: 1px;
-    }
-
-    body {
+@media screen and ((max-height: 600px) or (max-width: 500px)) {
+    body, header, main {
         font-size: small;
-    }
-
-    .pf img {
-        width: 96px;
-    }
-
-    .pf p:last-child {
-        font-size: 12px;
+        width: 100vw;
     }
 }

@@ -1,83 +1,38 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
-    <title>gdnoob1324</title>
-    <meta name="robots" content="index,follow">
-    <meta name="description" content="지디늅 - github Page">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="지디늅 - github Page">
-    <meta property="og:description" content="description">
-    <meta property="og:image" content="http:gdnoob1324.github.io/img/gn.png">
-    <meta property="og:url" content="http:gdnoob1324.github.io">
-    <link rel="icon" href="img/gn.ico">
-
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="index.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.min.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
+    <link rel="stylesheet" href="prettyprint.css">
 </head>
 
 <body>
-    <main>
-        <div class="pf fcenter">
-            <span class="mini b" style="left: 8px;">🎧</span>
-            <span class="mini b" style="right: 8px;">💀</span>
-            <div class="b">
-                <img src="img/제목 없음.jpg" width="160px">
-                <!-- <h3>김종진</h3> -->
-                <p style="color: gray;">:/</p>
-                <p class="st">어려워 사는게</p>
-                <p>아무것도 내맘대로 안돼</p>
-                <p nosee>
-                    <a href="https://github.com/gdnoob1324"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/gdnoob1324/"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://g.dev/gdnoob1324"><i class="fa-brands fa-google"></i></a>
-                    <a href="https://open.kakao.com/me/gdnoob1324"><i class="fa-solid fa-comment"></i></a>
-                    <a href="mailto:gdnoob1324@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-                </p>
+    <div class="Header">
+        <header>
+            <div style="float: left;">
+                <a href="">gdnoob1324</a>
             </div>
-        </div>
-        <div class="ytp">
-            <div class="controller">
-                <button onclick="changeVideo(0);" focus>Main</button>
-                <button onclick="changeVideo(1);" focus>Sometimes</button>
+            <div  style="float: right;">
+                <div class="dropdown">
+                    <button class="dropbtn">≡ 사이트</button>
+                    <div class="dropdown-content">
+                        <a href="https://gdnoob1324.github.io/">Main site</a>
+                        <a href="#">도움!</a>
+                    </div>
+                </div>
             </div>
-            <div class="youtube fcenter">
-                <x id="yt" />
-            </div>
-        </div>
-    </main>
-    <div class="pj">
-        <!-- <div class="controller">
-            <button onclick="searchMode(0);" focus>검색</button>
-            <button onclick="searchMode(1)">.</button>
-        </div> -->
-        <style>
-            .pj div {
-                min-height: calc(100vh - 32px);
-            }
-        </style>
-        <div class="fcenter">
-            <div class="search fcenter">
-                <form id="qform" action="https://m.search.naver.com/search.naver" method="GET">
-                    <label><span class="fcenter" id="qspan" onclick="switchQ();">
-                            <img id="qimg" src="img/n.svg" class="dragban"></span>
-                        <input id="qinput" type="text" name="query" placeholder="검색어" autocomplete="off">
-                        <button class="fcenter"><img src="img/s.svg" class="dragban">
-                        </button></label>
-                </form>
-            </div>
-            <!-- <div class="btext fcenter" nosee>
-                <h1><i class="fa-solid fa-quote-left"></i></h1>
-                <div><br><hr></div>
-                <h1><i class="fa-solid fa-quote-right"></i></h1>
-            </div> -->
-        </div>
+        </header>
     </div>
+
+    <main>
+        <h2>Welcome!</h2>
+        <pre class="prettyprint lang-*"><xmp>print("This site is unfinished")</xmp></pre>
+    </main>
 </body>
 
 </html>

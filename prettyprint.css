@@ -1,0 +1,32 @@
+pre.prettyprint {
+    width: auto;
+    padding: 16px;
+    line-height: 1.45;
+    border-radius: 4px;
+    background-color: #101010;
+    margin: 8px 0;
+    word-wrap: break-word;
+
+    overflow: scroll;
+    text-overflow: clip;
+}
+
+pre .str, pre .atv {
+    color: #FE8D59;
+}
+
+pre .pln, pre .atn, pre .kwd {
+    color: #A8C7FA;
+}
+
+pre .typ {
+    color: #d2a8ff;
+}
+
+pre .tag {
+    color: #7CACF8;
+}
+
+pre .dec {
+    color: #8F8F8F;
+}
