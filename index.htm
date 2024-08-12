@@ -47,10 +47,18 @@
             <a href="javascript:alert('gdnoob1324');"><img height="18" src="https://cdn.simpleicons.org/kakaotalk"/></a>
         </p>
         <div class="codeblock">
-            <pre class="prettyprint lang-*"><xmp>print("This site is unfinished")</xmp></pre>
-            <button>Copy</button>
+            <pre class="prettyprint lang-*" id="1"><xmp>print("This site is unfinished")</xmp></pre>
+            <button onclick="myFunction()">Copy</button>
         </div>
     </main>
+    <script>
+        function myFunction() {
+          var copyText = document.getElementById("1");
+          copyText.select();
+          copyText.setSelectionRange(0, 99999);
+          navigator.clipboard.writeText(copyText.value);
+        }
+        </script>
 </body>
 
 </html>

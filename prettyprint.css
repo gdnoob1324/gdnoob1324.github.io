@@ -7,6 +7,15 @@
     justify-content: space-between;
 }
 
+.codeblock button {
+    background: #101010;
+    border: none;
+    border-left: 1px solid #505050;
+    color: #eee;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+}
+
 pre.prettyprint {
     width: auto;
     line-height: 1.45;
