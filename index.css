@@ -23,6 +23,11 @@ p {
     margin: 8px 0;
 }
 
+a {
+    color: #eee;
+    text-decoration: none;
+}
+
 .Header {
     position: sticky;
 
