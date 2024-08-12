@@ -90,7 +90,6 @@ pre, xmp {
 
 @media screen and ((max-height: 600px) or (max-width: 500px)) {
     body, header, main {
-        font-size: small;
         width: 100vw;
     }
 }
