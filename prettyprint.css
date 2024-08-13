@@ -16,6 +16,14 @@
     cursor: pointer;
 }
 
+.codeblock button:hover {
+    background: #303030;
+}
+
+.codeblock button:active {
+    background: gray;
+}
+
 pre.prettyprint {
     width: auto;
     line-height: 1.45;
@@ -23,7 +31,6 @@ pre.prettyprint {
     padding: 0;
     word-wrap: break-word;
     background-color: #101010;
-
     overflow: scroll;
     text-overflow: clip;
 }
