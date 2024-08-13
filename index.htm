@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="dropdown.css">
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js?skin=sunburst"></script>
     <link rel="stylesheet" href="prettyprint.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -48,9 +49,20 @@
         </p>
         <div class="codeblock">
             <pre class="prettyprint lang-*" id="code1"><xmp>print("This site is unfinished")</xmp></pre>
-            <button onclick="navigator.clipboard.writeText(document.getElementById('code1').innerText);">Copy</button>
+            <button onclick="copy(this)">Copy</button>
         </div>
     </main>
+    <script>
+        function copy(id) {
+            var e = $(".codeblock>button")
+            for (let i = 0; i < e.length; i++) {
+                if (e[i] == id){
+                    navigator.clipboard.writeText($(".codeblock>pre")[i].innerText);
+                    return
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>
