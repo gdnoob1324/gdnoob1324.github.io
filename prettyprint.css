@@ -1,7 +1,8 @@
 .codeblock {
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: #101010;
     margin: 8px 0;
+    overflow: hidden;
 
     display: flex;
     justify-content: space-between;
@@ -31,13 +32,17 @@ pre.prettyprint {
     padding: 0;
     word-wrap: break-word;
     background-color: #101010;
-    overflow: scroll;
     text-overflow: clip;
+    overflow: auto;
+    border-radius: 0;
 }
 
 pre xmp {
-    overflow: scroll;
     padding: 16px;
+    overflow: auto;
+    overflow: overlay;
+    scrollbar-color: #404040 #000;
+    scrollbar-width: 8px;
 }
 
 pre .str, pre .atv {
