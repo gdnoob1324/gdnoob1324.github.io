@@ -1,0 +1,40 @@
+#Sidebar {
+    height: 100%;
+    width: 192px;
+    background-color: #000000c0;
+    position: fixed;
+    z-index: 1;
+    overflow: auto
+}
+
+#Sidebar a {
+    height: 48px;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+#Sidebar a:hover {
+    background-color: #40404080;
+}
+
+#Sidebar a:not(:first-child) {
+    border-top: 1px solid #404040;
+}
+
+#Sidebar a:last-child {
+    border-bottom: 1px solid #404040;
+}
+
+#Sidebar .close {
+    background-color: #ff000080;
+    width: auto;
+    aspect-ratio: 1;
+    float: right;
+}
+
+#Sidebar .close:hover {
+    background-color: #ff0000c0;
+}
