@@ -92,7 +92,7 @@ pre, xmp {
 }
 
 @media screen and ((max-height: 600px) or (max-width: 500px)) {
-    body, header, main {
+    main {
         width: 100vw;
     }
 }
