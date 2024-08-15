@@ -95,7 +95,6 @@ pre, xmp {
     border: solid 2px #444;
     width: min(70vw, 600px);
     height: 44px;
-    padding: 0 12px;
     border-radius: 10000px;
     background-color: #111;
     overflow: hidden;
@@ -105,7 +104,7 @@ pre, xmp {
 }
 
 .search input {
-    padding: 0 4px;
+    padding: 0 8px;
     border: none;
     width: 100%;
     height: calc(100% - 2px);
@@ -128,6 +127,14 @@ pre, xmp {
     height: 100%;
     padding: 0;
     cursor: pointer;
+}
+
+.search span {
+    padding-left: 12px;
+}
+
+.search button {
+    padding-right: 12px;
 }
 
 .search input:focus {
