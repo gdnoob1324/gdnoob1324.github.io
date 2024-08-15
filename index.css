@@ -87,6 +87,53 @@ pre, xmp {
     border-radius: 12px;
 }
 
+.search {
+    margin: 16px 0;
+}
+
+.search label {
+    border: solid 2px #444;
+    width: min(70vw, 600px);
+    height: 44px;
+    padding: 0 12px;
+    border-radius: 10000px;
+    background-color: #111;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 32px; */
+}
+
+.search input {
+    padding: 0 4px;
+    border: none;
+    width: 100%;
+    height: calc(100% - 2px);
+    background-color: #111;
+    color: #ddd;
+    font-size: 16px;
+}
+
+.search span,
+.search button {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    border: none;
+    background: transparent;
+    flex: 1 0 24px;
+    height: 100%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.search input:focus {
+    outline: none;
+}
+
 @media screen and (orientation: portrait) {
 
 }
