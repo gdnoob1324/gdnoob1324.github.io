@@ -93,7 +93,7 @@ pre, xmp {
 
 .search label {
     border: solid 2px #404040;
-    width: min(70vw, 600px);
+    width: min(75vw, 512px);
     height: 44px;
     border-radius: 10000px;
     background-color: #101010;
