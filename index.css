@@ -92,15 +92,14 @@ pre, xmp {
 }
 
 .search label {
-    border: solid 2px #444;
+    border: solid 2px #404040;
     width: min(70vw, 600px);
     height: 44px;
     border-radius: 10000px;
-    background-color: #111;
+    background-color: #101010;
     overflow: hidden;
     display: flex;
     align-items: center;
-    /* margin-bottom: 32px; */
 }
 
 .search input {
@@ -108,8 +107,8 @@ pre, xmp {
     border: none;
     width: 100%;
     height: calc(100% - 2px);
-    background-color: #111;
-    color: #ddd;
+    background-color: #101010;
+    color: #eee;
     font-size: 16px;
 }
 
