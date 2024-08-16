@@ -5,6 +5,7 @@
     position: fixed;
     z-index: 1;
     overflow: auto;
+    backdrop-filter: blur(4px);
 }
 
 #Sidebar a {
