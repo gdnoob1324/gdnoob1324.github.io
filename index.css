@@ -31,11 +31,8 @@ a {
 
 .Header {
     position: sticky;
-
     top: 0;
     height: max-content;
-
-    backdrop-filter: blur(16px);
 }
 
 header {
