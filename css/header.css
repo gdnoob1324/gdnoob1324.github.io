@@ -1,0 +1,47 @@
+.header {
+    height: 96px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    align-items: center;
+    font-size: 24px;
+    background-color: #101010;
+    padding: 12px;
+}
+
+.header a.logo {
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.header a {
+    width: 96px;
+    text-align: center;
+    line-height: 48px;
+    position: relative;
+}
+
+.header a.logo::after {
+    content: "";
+    bottom: 0;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.header a:hover::after {
+    content: "";
+    bottom: 0;
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    z-index: 2;
+}
