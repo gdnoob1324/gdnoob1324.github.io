@@ -70,7 +70,7 @@
     height: 100%;
     background-color: #202020;
     border-radius: 12px;
-    flex: 0 0 min(380px, 80vw);
+    flex: 0 0 min(380px, 100%);
     text-align: center;
     overflow: hidden;
     display: flex;
