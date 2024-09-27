@@ -35,6 +35,4 @@ window.onload = function() {
     scrollable.addEventListener('mouseleave', () => {
         isDragging = false;
     });
-
-
 };
