@@ -1,7 +1,128 @@
 .main {
-    padding: 12px;
+    width: 100vw;
 }
 
-.main div h2 {
-    font-weight: 900;
+.main .title {
+    height: calc(100vh - var(--header-height));
+    width: 100%;
+    padding-left: 5vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+}
+
+.main .title .bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    border: none;
+    z-index: -1;
+    left: 0;
+    top: 0;
+
+    background-image: url(../img/bg.png);
+    filter: brightness(75%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main .title h1 {
+    font-size: 64px;
+    text-shadow: -3px -1px 1px #000;
+}
+
+.main .title p {
+    width: 40%;
+    line-height: 175%;
+}
+
+.main .desc {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+}
+
+.main .desc div.slides {
+    margin-top: 32px;
+    width: 90%;
+    height: 60%;
+    background-color: #404040;
+    border-radius: 12px;
+    overflow: scroll;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    overflow-x: hidden;
+    padding: 0 24px;
+    border: solid 16px #404040;
+}
+
+.main .desc a.slide {
+    height: 90%;
+    background-color: #202020;
+    border-radius: 12px;
+    flex: 0 0 min(380px, 80vw);
+    text-align: center;
+    overflow: hidden;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+a.slide::before {
+    box-sizing: border-box;
+    content: "이미지 없음";
+    color: #000;
+    padding-top: 16px;
+    font-size: 32px;
+    position: absolute;
+    height: 70%;
+    width: 100%;
+    left: 0;
+    background-image: url(../img/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(25%);
+    z-index: 0;
+}
+
+a.slide img {
+    height: 70%;
+    z-index: 1;
+}
+
+a.slide h3 {
+    margin: 0;
+    padding: 8px;
+    font-size: 24px;
+    width: 100%;
+}
+
+a.slide p {
+    margin: 0;
+    width: 80%;
+    word-break: keep-all;
+}
+
+@media screen and ((max-height: 500px) or (max-width: 650px)) {
+
+    .main .title h1 {
+        font-size: 40px;
+    }
+
+    .main .title p {
+        width: 80%;
+    }
 }

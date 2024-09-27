@@ -1,5 +1,5 @@
 .header {
-    height: 96px;
+    height: var(--header-height);
     width: 100%;
     display: flex;
     justify-content: center;
@@ -7,6 +7,7 @@
     align-items: center;
     font-size: 24px;
     background-color: #101010;
+    /* background-image: linear-gradient(270deg, #000080 0%, #ff0080 100%); */
     padding: 12px;
 }
 
@@ -44,4 +45,19 @@
     left: 0;
     background-color: #fff;
     z-index: 2;
+}
+
+@media screen and ((max-height: 500px) or (max-width: 700px)) {
+    :root {
+        --header-height: 64px;
+    }
+
+    .header {
+        gap: 16px;
+        font-size: 20px;
+    }
+    
+    .header a.logo {
+        font-size: 28px;
+    }
 }
