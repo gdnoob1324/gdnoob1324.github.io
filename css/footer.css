@@ -1,3 +1,14 @@
 .footer {
     padding: 8px;
+    text-align: center;
+}
+
+.footer br {
+    display: none;
+}
+
+@media only screen and (max-width: 860px) {
+    .footer br {
+        display: block;
+    }
 }
