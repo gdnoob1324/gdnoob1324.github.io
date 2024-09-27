@@ -61,9 +61,13 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    overflow-x: hidden;
+    overflow-x: scroll;
     padding: 0 8px;
     border: solid 16px #404040;
+}
+
+.main .desc div.slides::-webkit-scrollbar {
+    display: none;
 }
 
 .main .desc a.slide {
