@@ -49,20 +49,21 @@
     justify-content: center;
     position: relative;
     align-items: center;
+    background-image: linear-gradient(135deg, rgba(255,0,128,1) 0%, rgba(0,0,128,1) 100%);
 }
 
 .main .desc div.slides {
     margin-top: 32px;
     width: 90%;
     height: 60%;
-    background-color: #404040;
-    border-radius: 12px;
+    background-color: #ffffff80;
+    border-radius: 24px;
     overflow: scroll;
     display: flex;
     align-items: center;
     gap: 12px;
     overflow-x: scroll;
-    border: solid 16px #404040;
+    border: solid 12px transparent;
     position: relative;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth
@@ -74,7 +75,7 @@
 
 .main .desc a.slide {
     height: 100%;
-    background-color: #202020;
+    background-color: #000000c0;
     border-radius: 12px;
     flex: 0 0 min(380px, 100%);
     scroll-snap-align: start;
@@ -101,7 +102,7 @@ a.slide::before {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    filter: brightness(25%);
+    filter: brightness(50%);
     z-index: 0;
 }
 
@@ -111,6 +112,7 @@ a.slide img {
 }
 
 a.slide h3 {
+    border-top: solid 2px #ffffff80;
     margin: 0;
     padding: 8px;
     font-size: 24px;
