@@ -4,7 +4,6 @@ function setDivAHeight() {
 window.onload = setDivAHeight;
 window.addEventListener('resize', setDivAHeight);
 
-
 window.onload = function () {
     const scrollableElement = document.querySelector('.slides');
     scrollableElement.addEventListener('wheel', (event) => {
