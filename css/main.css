@@ -116,6 +116,8 @@ a.slide h3 {
     padding: 8px;
     font-size: 24px;
     width: 100%;
+    min-height: 53px;
+    line-height: 37px;
 }
 
 a.slide p {
