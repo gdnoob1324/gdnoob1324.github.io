@@ -63,6 +63,8 @@
     gap: 12px;
     overflow-x: scroll;
     border: solid 16px #404040;
+    position: relative;
+    scroll-snap-type: x mandatory;
 }
 
 .main .desc div.slides::-webkit-scrollbar {
@@ -74,6 +76,7 @@
     background-color: #202020;
     border-radius: 12px;
     flex: 0 0 min(380px, 100%);
+    scroll-snap-align: start;
     text-align: center;
     overflow: hidden;
     display: flex;

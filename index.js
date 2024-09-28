@@ -9,6 +9,7 @@ window.onload = function () {
     const scrollableElement = document.querySelector('.slides');
     scrollableElement.addEventListener('wheel', (event) => {
         event.preventDefault();
-        scrollableElement.scrollLeft += event.deltaY;
+        // scrollableElement.scrollLeft += event.deltaY;
+        scrollableElement.scrollBy(event.deltaY, 0)
     });
 };
