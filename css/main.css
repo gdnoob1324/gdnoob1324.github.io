@@ -65,6 +65,7 @@
     border: solid 16px #404040;
     position: relative;
     scroll-snap-type: x mandatory;
+    scroll-behavior: smooth
 }
 
 .main .desc div.slides::-webkit-scrollbar {
