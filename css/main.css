@@ -127,6 +127,26 @@ a.slide p {
     word-break: keep-all;
 }
 
+.main .desc .buttons {
+    background-color: #ffffff80;
+    border: solid 8px transparent;
+    border-width: 0 4px 8px 4px;
+    border-radius: 0 0 8px 8px;
+}
+
+.main .desc .buttons button {
+    border: none;
+    background-color: #ffffffc0;
+    margin: 0 2px;
+    border-radius: 100%;
+    aspect-ratio: 1;
+    cursor: pointer;
+}
+
+.main .desc .buttons button:last-child {
+    border-right: none;
+}
+
 @media screen and ((max-height: 500px) or (max-width: 650px)) {
 
     .main .title h1 {

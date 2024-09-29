@@ -9,6 +9,18 @@ window.onload = function () {
     scrollableElement.addEventListener('wheel', (event) => {
         event.preventDefault();
         // scrollableElement.scrollLeft += event.deltaY;
-        scrollableElement.scrollBy(event.deltaY, 0)
+        scrollableElement.scrollBy(event.deltaY*10, 0)
     });
+
+    const parentElement = document.querySelector('.slides');
+    const childElements = parentElement.children;
+
+    for (let i = 0; i < childElements.length; i++) {
+        const button = document.createElement('button');
+        button.innerText = (i + 1);
+        button.addEventListener('click', (event) => {
+            scrollableElement.scrollTo(i*361, 0)
+        });
+        document.querySelector('.buttons').appendChild(button);
+    }
 };
