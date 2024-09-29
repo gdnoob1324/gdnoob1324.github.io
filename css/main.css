@@ -37,7 +37,7 @@
 }
 
 .main .title p {
-    width: 40%;
+    width: min(40%, 512px);
     line-height: 175%;
 }
 
@@ -79,6 +79,7 @@
     border-radius: 12px;
     flex: 0 0 min(380px, 100%);
     scroll-snap-align: start;
+    scroll-snap-stop: always;
     text-align: center;
     overflow: hidden;
     display: flex;
