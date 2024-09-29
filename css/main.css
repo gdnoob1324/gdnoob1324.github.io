@@ -85,9 +85,6 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-}
-
-.main .desc a.slide:nth-of-type(4n + 1) {
     scroll-snap-stop: always;
     scroll-snap-align: start;
 }
