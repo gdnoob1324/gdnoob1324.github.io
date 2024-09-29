@@ -9,6 +9,6 @@ window.onload = function () {
     scrollableElement.addEventListener('wheel', (event) => {
         event.preventDefault();
         // scrollableElement.scrollLeft += event.deltaY;
-        scrollableElement.scrollBy(Math.sign(event.deltaY), 0)
+        scrollableElement.scrollBy(event.deltaY, 0)
     });
 };
