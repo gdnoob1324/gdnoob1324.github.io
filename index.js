@@ -6,14 +6,7 @@ window.addEventListener('resize', setDivAHeight);
 
 window.onload = function () {
     const scrollableElement = document.querySelector('.slides');
-    scrollableElement.addEventListener('wheel', (event) => {
-        event.preventDefault();
-        // scrollableElement.scrollLeft += event.deltaY;
-        scrollableElement.scrollBy(event.deltaY*10, 0)
-    });
-
-    const parentElement = document.querySelector('.slides');
-    const childElements = parentElement.children;
+    const childElements = scrollableElement.children;
 
     for (let i = 0; i < childElements.length; i++) {
         const button = document.createElement('button');
@@ -23,4 +16,19 @@ window.onload = function () {
         });
         document.querySelector('.buttons').appendChild(button);
     }
+
+    scrollableElement.addEventListener('wheel', (event) => {
+        event.preventDefault();
+        // scrollableElement.scrollLeft += event.deltaY;
+        scrollableElement.scrollBy(event.deltaY*10, 0)
+        const elements = document.querySelector('.buttons').children;
+        Array.prototype.forEach.call(elements, (e) => e.style.backgroundColor = '#00000040');
+
+        for (let i = 0; i <= childElements.length+1; i++) {
+            if (scrollableElement.scrollLeft > (childElements[0].clientWidth + 12) * i) i=i;
+            else {elements[i].style.backgroundColor = '#000000c0'; break}
+        }
+    });
+
+    scrollableElement.scroll(0, 0);
 };
