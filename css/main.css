@@ -78,8 +78,6 @@
     background-color: #000000c0;
     border-radius: 12px;
     flex: 0 0 min(380px, 100%);
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
     text-align: center;
     overflow: hidden;
     display: flex;
@@ -87,6 +85,11 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+}
+
+.main .desc a.slide:nth-of-type(4n + 1) {
+    scroll-snap-stop: always;
+    scroll-snap-align: start;
 }
 
 a.slide::before {
