@@ -21,6 +21,14 @@ window.onload = function () {
         event.preventDefault();
         // scrollableElement.scrollLeft += event.deltaY;
         scrollableElement.scrollBy(event.deltaY*10, 0)
+
+        for (let i = 0; i <= childElements.length+1; i++) {
+            if (scrollableElement.scrollLeft > (childElements[0].clientWidth + 12) * i) i=i;
+            else {elements[i].style.backgroundColor = '#000000c0'; break}
+        }
+    });
+
+    scrollableElement.addEventListener('scroll', (event) => {
         const elements = document.querySelector('.buttons').children;
         Array.prototype.forEach.call(elements, (e) => e.style.backgroundColor = '#00000040');
 
@@ -30,5 +38,5 @@ window.onload = function () {
         }
     });
 
-    scrollableElement.scroll(0, 0);
+    document.querySelector('.buttons').children[0].style.backgroundColor = '#000000c0';
 };
