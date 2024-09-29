@@ -136,7 +136,9 @@ a.slide p {
 
 .main .desc .buttons button {
     border: none;
-    background-color: #ffffffc0;
+    color: white;
+    font-weight: 700;
+    background-color: #00000020;
     margin: 0 2px;
     border-radius: 100%;
     aspect-ratio: 1;
