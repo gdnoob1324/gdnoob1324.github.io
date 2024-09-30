@@ -21,11 +21,6 @@ window.onload = function () {
         event.preventDefault();
         // scrollableElement.scrollLeft += event.deltaY;
         scrollableElement.scrollBy(event.deltaY*10, 0)
-
-        for (let i = 0; i <= childElements.length+1; i++) {
-            if (scrollableElement.scrollLeft > (childElements[0].clientWidth + 12) * i) i=i;
-            else {elements[i].style.backgroundColor = '#000000c0'; break}
-        }
     });
 
     scrollableElement.addEventListener('scroll', (event) => {
@@ -33,7 +28,7 @@ window.onload = function () {
         Array.prototype.forEach.call(elements, (e) => e.style.backgroundColor = '#00000040');
 
         for (let i = 0; i <= childElements.length+1; i++) {
-            if (scrollableElement.scrollLeft > (childElements[0].clientWidth + 12) * i) i=i;
+            if (scrollableElement.scrollLeft > (childElements[0].clientWidth + 12) * i + childElements[0].clientWidth/2) continue;
             else {elements[i].style.backgroundColor = '#000000c0'; break}
         }
     });
