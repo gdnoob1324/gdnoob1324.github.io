@@ -43,4 +43,4 @@ a {
 .scroll_on.type_bottom {transform: translate(0, 50px);}
 .scroll_on.type_left {transform: translate(-50px, 0);}
 .scroll_on.type_right {transform: translate(50px, 0);}
-.scroll_on.type_boom {transform:scale(2);}
+.scroll_on.type_boom {transform: scale(0.1);}
