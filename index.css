@@ -45,3 +45,4 @@ a {
 .scroll_on.type_right {transform: translate(50px, 0);}
 .scroll_on.type_boom {transform: scale(0.1);}
 .scroll_on.type_bow {transform: scale(2);}
+.scroll_on.type_1p {--exposure: 1;}

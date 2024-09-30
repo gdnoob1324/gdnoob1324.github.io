@@ -43,7 +43,7 @@ $(document).ready(function() {
     const counters = $(".scroll_on");
     
     // 노출 비율(%)과 애니메이션 반복 여부(true/false)를 설정합니다.
-    const exposurePercentage = 80; // ex) 스크롤 했을 때 $counters 컨텐츠가 화면에 100% 노출되면 숫자가 올라갑니다.
+    let exposurePercentage = 80; // ex) 스크롤 했을 때 $counters 컨텐츠가 화면에 100% 노출되면 숫자가 올라갑니다.
     const loop = false; // 애니메이션 반복 여부를 설정합니다. (true로 설정할 경우, 요소가 화면에서 사라질 때 다시 숨겨집니다.)
 
     // 윈도우의 스크롤 이벤트를 모니터링합니다.
@@ -59,6 +59,8 @@ $(document).ready(function() {
 
             const winHeight = window.innerHeight; // 현재 브라우저 창의 높이
             const contentHeight = rect.height / (scale > 1 ? scale : 1) // 요소의 높이
+            console.log(el[0].style.getPropertyValue('--exposure'));
+            exposurePercentage = getComputedStyle(el[0]).getPropertyValue('--exposure') || exposurePercentage;
             
             // 요소가 화면에 특정 비율만큼 노출될 때 처리합니다.
             if (rect.top <= winHeight - (contentHeight * exposurePercentage / 100) && rect.bottom >= (contentHeight * exposurePercentage / 100))
