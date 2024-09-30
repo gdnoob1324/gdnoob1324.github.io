@@ -58,7 +58,7 @@ $(document).ready(function() {
             const scale = rect.width / el[0].offsetWidth;
 
             const winHeight = window.innerHeight; // 현재 브라우저 창의 높이
-            const contentHeight = rect.height / scale; // 요소의 높이
+            const contentHeight = scale > 1 ? rect.height / scale : rect.height; // 요소의 높이
             
             // 요소가 화면에 특정 비율만큼 노출될 때 처리합니다.
             if (rect.top <= winHeight - (contentHeight * exposurePercentage / 100) && rect.bottom >= (contentHeight * exposurePercentage / 100))
