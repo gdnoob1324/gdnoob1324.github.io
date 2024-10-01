@@ -57,7 +57,7 @@ $(document).ready(function() {
             if (rect.top <= winHeight - (contentHeight * exposurePercentage / 100) && rect.bottom >= (contentHeight * exposurePercentage / 100))
                 el.addClass('active');
             if (loop && (rect.bottom <= 0 || rect.top >= window.innerHeight))
-                $el.removeClass('active');
+                el.removeClass('active');
         });
     }).scroll();
 });

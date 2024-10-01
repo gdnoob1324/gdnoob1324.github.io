@@ -39,10 +39,10 @@ a {
 .scroll_wrap {overflow: hidden;}
 .scroll_on {opacity: 0; transition: transform 1s ease-in-out;}
 .scroll_on.active {opacity: 1 !important; transform: translate(0, 0) scale(1) !important;}
-.scroll_on.type_top {transform: translate(0, -50px);}
-.scroll_on.type_bottom {transform: translate(0, 50px);}
-.scroll_on.type_left {transform: translate(-50px, 0);}
-.scroll_on.type_right {transform: translate(50px, 0);}
+.scroll_on.type_top {transform: translate(0, -100px);}
+.scroll_on.type_bottom {transform: translate(0, 100px);}
+.scroll_on.type_left {transform: translate(-100px, 0);}
+.scroll_on.type_right {transform: translate(100px, 0);}
 .scroll_on.type_boom {transform: scale(0.1);}
 .scroll_on.type_bow {transform: scale(2);}
 .scroll_on.type_1p {--exposure: 1;}
