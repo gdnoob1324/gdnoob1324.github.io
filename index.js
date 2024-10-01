@@ -42,7 +42,7 @@ $(document).ready(function() {
     const counters = $(".scroll_on");
 
     let exposurePercentage = 80;
-    const loop = false;
+    const loop = true;
 
     $(window).on('scroll', function() {
         counters.each(function() {
