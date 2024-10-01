@@ -1,10 +1,5 @@
-function setDivAHeight() {
-    document.documentElement.style.setProperty('--header-height', document.querySelector('.header').offsetHeight + 'px');
-}
-window.onload = setDivAHeight;
-window.addEventListener('resize', setDivAHeight);
-
 window.onload = function () {
+
     const scrollableElement = document.querySelector('.slides');
     const childElements = scrollableElement.children;
 
