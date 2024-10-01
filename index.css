@@ -37,7 +37,7 @@ a {
 }
 
 .scroll_wrap {overflow: hidden;}
-.scroll_on {opacity: 0; transition: transform 1s  ease-out;}
+.scroll_on {opacity: 0; transition: 1s  ease-out; transition-property: transform, opacity;}
 .scroll_on.active {opacity: 1 !important; transform: translate(0, 0) scale(1) !important;}
 .scroll_on.type_top {transform: translate(0, -50px);}
 .scroll_on.type_bottom {transform: translate(0, 50px);}
