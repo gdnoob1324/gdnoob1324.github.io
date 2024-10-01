@@ -11,7 +11,7 @@ window.onload = function () {
     // 버튼 추가
     for (let i = 0; i < childElements.length; i++) {
         const button = document.createElement('button');
-        button.innerText = (i + 1);
+        // button.innerText = (i + 1);
         button.addEventListener('click', (event) => {
             scrollableElement.scrollTo(i * 361, 0)
         });

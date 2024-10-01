@@ -20,9 +20,6 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-
-    background-image: linear-gradient(135deg, rgba(255,0,128,1) 0%, rgba(0,0,128,1) 100%);
-    background-attachment: fixed;
 }
 
 h1, h2, h3 {

@@ -45,6 +45,9 @@
     justify-content: center;
     position: relative;
     align-items: center;
+
+    background-image: linear-gradient(135deg, rgba(255,0,128,1) 0%, rgba(0,0,128,1) 100%);
+    background-attachment: fixed;
 }
 
 .main .desc div.slides {
@@ -125,7 +128,7 @@ a.slide p {
 .main .desc .buttons {
     background-color: #ffffff80;
     border: solid 8px transparent;
-    border-width: 0 4px 8px 4px;
+    border-width: 0 4px 4px 4px;
     border-radius: 0 0 8px 8px;
 }
 
@@ -138,6 +141,7 @@ a.slide p {
     border-radius: 100%;
     aspect-ratio: 1;
     cursor: pointer;
+    min-width: 14px;
 }
 
 .main .desc .buttons button:last-child {
