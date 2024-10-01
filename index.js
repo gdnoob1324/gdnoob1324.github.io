@@ -13,6 +13,11 @@ window.onload = function () {
         document.querySelector('.buttons').appendChild(button);
     }
 
+    for (let i = 0; i < childElements.length; i++) {
+        const href = getIdFromUri(childElements[i].href);
+        if(href != "") childElements[i].children[0].src = getThumbnailsFromId(href)[0];
+    }
+
     scrollableElement.addEventListener('wheel', (event) => {
         event.preventDefault();
         // scrollableElement.scrollLeft += event.deltaY;
@@ -56,3 +61,20 @@ $(document).ready(function() {
         });
     }).scroll();
 });
+
+const THUMBNAIL_SIZES = [
+    "maxresdefault",
+    "sddefault",
+    "hqdefault",
+    "mqdefault",
+    "default",
+];
+
+function getIdFromUri(uri) {
+    const match = uri.match(/youtu\.?be(\.com)?\/(shorts\/|watch\?v=|embed\/)?([^&?\s]+)/);
+    return match ? match[3] : "";
+}
+
+function getThumbnailsFromId(id) {
+    return THUMBNAIL_SIZES.map((x) => `https://i.ytimg.com/vi/${id}/${x}.jpg`);
+}

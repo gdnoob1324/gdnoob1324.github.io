@@ -125,8 +125,10 @@ a.slide h3 {
 
 a.slide p {
     margin: 0;
-    width: 80%;
+    width: 100%;
+    padding: 0 10%;
     word-break: keep-all;
+    height: 100%;
 }
 
 .main .desc .buttons {
