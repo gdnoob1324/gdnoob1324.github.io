@@ -137,7 +137,7 @@ a.slide p {
 .main .desc .buttons {
     background-color: #ffffff80;
     border: solid 8px transparent;
-    border-width: 0 4px 4px 4px;
+    border-width: 0 8px 8px;
     border-radius: 0 0 8px 8px;
 }
 

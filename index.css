@@ -41,7 +41,7 @@ img[src=""] {
 }
 
 .scroll_wrap {overflow: hidden;}
-.scroll_on {opacity: 0; transition: 1s  ease-out; transition-property: transform, opacity;}
+.scroll_on {opacity: 0; transition: 1s ease-out; transition-property: transform, opacity;}
 .scroll_on.active {opacity: 1 !important; transform: translate(0, 0) scale(1) !important;}
 .scroll_on.type_top {transform: translate(0, -50px);}
 .scroll_on.type_bottom {transform: translate(0, 50px);}
@@ -50,3 +50,4 @@ img[src=""] {
 .scroll_on.type_boom {transform: scale(0.1);}
 .scroll_on.type_bow {transform: scale(2);}
 .scroll_on.type_1p {--exposure: 1;}
+.scroll_on.loop {--loop: 1;}

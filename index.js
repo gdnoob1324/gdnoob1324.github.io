@@ -42,7 +42,7 @@ $(document).ready(function() {
     const counters = $(".scroll_on");
 
     let exposurePercentage = 80;
-    const loop = true;
+    const loop = false;
 
     $(window).on('scroll', function() {
         counters.each(function() {
@@ -51,12 +51,11 @@ $(document).ready(function() {
             const scale = rect.width / el[0].offsetWidth;
             const winHeight = window.innerHeight;
             const contentHeight = rect.height / (scale > 1 ? scale : 1)
-            console.log(el[0].style.getPropertyValue('--exposure'));
             exposurePercentage = getComputedStyle(el[0]).getPropertyValue('--exposure') || exposurePercentage;
 
             if (rect.top <= winHeight - (contentHeight * exposurePercentage / 100) && rect.bottom >= (contentHeight * exposurePercentage / 100))
                 el.addClass('active');
-            if (loop && (rect.bottom <= 0 || rect.top >= window.innerHeight))
+            if ((el.hasClass('loop') || loop) && (rect.bottom <= 0 || rect.top >= window.innerHeight))
                 el.removeClass('active');
         });
     }).scroll();
