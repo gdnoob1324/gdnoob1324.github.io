@@ -4,6 +4,10 @@
     user-select: none;
     background-color: rgba(0, 0, 0, .5);
     width: 100%;
+
+    position : fixed;
+    bottom : 0;
+    z-index: 100;
 }
 
 .footer br {
