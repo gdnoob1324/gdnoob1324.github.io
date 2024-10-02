@@ -36,6 +36,10 @@ a {
     text-decoration: none;
 }
 
+img[src=""] {
+    visibility: hidden;
+}
+
 .scroll_wrap {overflow: hidden;}
 .scroll_on {opacity: 0; transition: 1s  ease-out; transition-property: transform, opacity;}
 .scroll_on.active {opacity: 1 !important; transform: translate(0, 0) scale(1) !important;}

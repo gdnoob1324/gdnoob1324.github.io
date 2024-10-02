@@ -93,8 +93,9 @@ a.slide::before {
     padding-top: 32px;
     font-size: 32px;
     position: absolute;
-    height: 70%;
     width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
     top: 0;
     left: 0;
     background-image: url(../img/bg.png);
@@ -127,7 +128,6 @@ a.slide h3 {
 a.slide p {
     margin: 0;
     word-break: keep-all;
-    height: 100%;
     width: 100%;
     padding: 0 10%;
 }
