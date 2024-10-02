@@ -110,6 +110,8 @@ a.slide img {
     width: 100%;
     object-fit: cover;
     aspect-ratio: 1;
+
+    clip: rect(100%, 100%, 100%, 100%); /* 위, 오른쪽, 아래, 왼쪽 순으로 자르는 영역 지정 */
 }
 
 a.slide h3 {
