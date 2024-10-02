@@ -46,7 +46,7 @@
     position: relative;
     align-items: center;
 
-    background-image: linear-gradient(135deg, rgba(255,0,128,1) 0%, rgba(0,0,128,1) 100%);
+    background-image: linear-gradient(135deg, #ff0080 0%, #000080 100%);
 }
 
 .main .desc div.slides {
@@ -115,7 +115,6 @@ a.slide img {
 }
 
 a.slide h3 {
-    border-top: solid 2px #ffffff80;
     margin: 0;
     width: 100%;
     padding: 0 10%;
@@ -125,6 +124,16 @@ a.slide h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+
+a.slide h3::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 2px;
+    background-image: linear-gradient(90deg, #ff0080 0%, #000080 100%);
 }
 
 a.slide p {
