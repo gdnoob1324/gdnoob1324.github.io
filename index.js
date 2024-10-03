@@ -15,7 +15,7 @@ window.onload = function () {
 
     for (let i = 0; i < childElements.length; i++) {
         const href = getIdFromUri(childElements[i].href);
-        if(href != "") childElements[i].children[0].src = getThumbnailsFromId(href)[0];
+        if (href != "") childElements[i].children[0].src = getThumbnailsFromId(href)[0];
     }
 
     scrollableElement.addEventListener('wheel', (event) => {
