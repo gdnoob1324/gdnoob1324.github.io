@@ -1,5 +1,5 @@
 .main {
-    width: 100vw;
+    width: 100%;
 }
 
 .main .title {
@@ -30,6 +30,7 @@
 .main .title h1 {
     font-size: 64px;
     text-shadow: -3px -1px 1px #000;
+    width: fit-content;
 }
 
 .main .title p {
