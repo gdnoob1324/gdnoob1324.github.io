@@ -38,7 +38,44 @@
     line-height: 175%;
 }
 
-.main .desc {
+.main .info {
+    height: 100vh;
+    background-image: linear-gradient(45deg, #ff0080 0%, #000080 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.main .info h1 {
+    font-size: 48px;
+    margin: 48px 0;
+}
+
+.main .info div {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 60%;
+    justify-content: space-evenly;
+    border: solid 4px #ffffff80;
+    border-radius: 24px;
+    background-color: #00000040;
+}
+
+.main .info img {
+    width: 256px;
+    border-radius: 50%;
+    border: solid 4px #ffffff80;
+}
+
+.main .info p {
+    width: 256px;
+    font-size: larger;
+}
+
+.main .sites {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -50,7 +87,7 @@
     background-image: linear-gradient(135deg, #ff0080 0%, #000080 100%);
 }
 
-.main .desc div.slides {
+.main .sites div.slides {
     margin-top: 32px;
     width: 90%;
     height: 60%;
@@ -67,11 +104,11 @@
     scroll-behavior: smooth
 }
 
-.main .desc div.slides::-webkit-scrollbar {
+.main .sites div.slides::-webkit-scrollbar {
     display: none;
 }
 
-.main .desc a.slide {
+.main .sites a.slide {
     height: 100%;
     background-color: #000000c0;
     border-radius: 12px;
@@ -144,14 +181,14 @@ a.slide p {
     padding: 0 10%;
 }
 
-.main .desc .buttons {
+.main .sites .buttons {
     background-color: #ffffff80;
     border: solid 8px transparent;
     border-width: 0 8px 8px;
     border-radius: 0 0 16px 16px;
 }
 
-.main .desc .buttons button {
+.main .sites .buttons button {
     border: none;
     color: white;
     font-weight: 700;
@@ -163,7 +200,7 @@ a.slide p {
     min-width: 14px;
 }
 
-.main .desc .buttons button:last-child {
+.main .sites .buttons button:last-child {
     border-right: none;
 }
 
