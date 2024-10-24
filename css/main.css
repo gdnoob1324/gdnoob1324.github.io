@@ -53,7 +53,7 @@
     margin: 48px 0;
 }
 
-.main .info div {
+.main .info>div {
     display: flex;
     align-items: center;
     width: 80%;
@@ -64,16 +64,19 @@
     background-color: #00000040;
 }
 
-.main .info img {
+.main .info .d {
+    padding: 32px 0;
+}
+
+.main .info img.pp {
     border-radius: 50%;
     border: solid 4px #ffffff80;
 }
 
 .main .info p {
-    width: 50%;
+    width: 100%;
     font-size: larger;
     text-align: center;
-    padding: 32px 0;
     font-weight: 300;
 }
 
