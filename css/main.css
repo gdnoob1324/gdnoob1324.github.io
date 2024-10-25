@@ -225,13 +225,13 @@ a.slide p {
         flex-direction: column;
     }
 
-    .main .info img {
+    .main .info img.pp {
         width: min(50%, 256px);
     }
 }
 
 @media (orientation: landscape) {
-    .main .info img {
+    .main .info img.pp {
         height: min(50%, 256px);
     }
 }
