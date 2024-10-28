@@ -18,13 +18,16 @@ window.onload = function () {
         if (href != "") childElements[i].children[0].src = getThumbnailsFromId(href)[0];
     }
 
+    function posupdate() {
+        scrollableElement.querySelector('.ward').style.left = scrollableElement.scrollLeft + 12 + 'px';
+        scrollableElement.querySelector('.backward').style.right = -scrollableElement.scrollLeft + 12 + 'px';
+    }
+
     scrollableElement.addEventListener('wheel', (event) => {
         event.preventDefault();
         // scrollableElement.scrollLeft += event.deltaY;
         scrollableElement.scrollBy(event.deltaY * 10, 0)
-
-        scrollableElement.querySelector('.ward').style.left = scrollableElement.scrollLeft + 12 + 'px';
-        scrollableElement.querySelector('.backward').style.right = -scrollableElement.scrollLeft + 12 + 'px';
+        posupdate();
     });
 
     // 버튼 선택
@@ -41,11 +44,13 @@ window.onload = function () {
     document.querySelector('.buttons').children[0].style.backgroundColor = '#000000c0';
 
     document.querySelector('.ward').addEventListener('click', (event) => {
-        scrollableElement.scrollBy(-1, 0)
+        scrollableElement.scrollBy(-10, 0);
+        posupdate();
     });
 
     document.querySelector('.backward').addEventListener('click', (event) => {
-        scrollableElement.scrollBy(1, 0)
+        scrollableElement.scrollBy(10, 0);
+        posupdate();
     });
 };
 
