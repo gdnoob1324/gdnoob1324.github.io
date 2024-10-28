@@ -165,23 +165,23 @@ a.slide div {
     background-image: linear-gradient(180deg, transparent 0%, #000000c0 20px);
     width: 100%;
     padding: 16px 0 12px;
+    text-align: start;
+
+    transition: bottom .1s;
 }
 
 a.slide h3 {
     margin: 0;
     width: 100%;
-    padding: 8px 5%;
+    padding: 8px 16px;
     font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 a.slide p {
     margin: 0;
     word-break: keep-all;
     width: 100%;
-    padding: 0 10%;
+    padding: 0 16px;
 }
 
 .main .sites .buttons {

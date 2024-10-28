@@ -59,6 +59,16 @@ $(document).ready(function() {
                 el.removeClass('active');
         });
     }).scroll();
+
+    $('.slide').each(function (index, item) {
+        $(item).children('div').css('bottom', -$(item).children('div').children('p').outerHeight() -12);
+   });	
+
+    $('.slide').hover(function() {
+        $(this).children('div').css('bottom', 0);
+    }, function() {
+        $(this).children('div').css('bottom', -$(this).children('div').children('p').outerHeight() -12);
+    });
 });
 
 const THUMBNAIL_SIZES = [
