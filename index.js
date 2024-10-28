@@ -60,6 +60,12 @@ $(document).ready(function() {
         });
     }).scroll();
 
+    $(window).on('resize', function() {
+        $('.slide').each(function (index, item) {
+            $(item).children('div').css('bottom', -$(item).children('div').children('p').outerHeight() -12);
+       });	
+    });
+
     $('.slide').each(function (index, item) {
         $(item).children('div').css('bottom', -$(item).children('div').children('p').outerHeight() -12);
    });	

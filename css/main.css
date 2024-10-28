@@ -153,9 +153,14 @@ a.slide img {
     height: 100%;
     /* width: 100%; */
     object-fit: cover;
-    aspect-ratio: 1;
+    /* aspect-ratio: 1; */
+    transition: transform .1s;
 
-    clip: rect(100%, 100%, 100%, 100%); /* 위, 오른쪽, 아래, 왼쪽 순으로 자르는 영역 지정 */
+    clip: rect(100%, 100%, 100%, 100%);
+}
+
+a.slide:hover img {
+    transform: scale(1.1);
 }
 
 a.slide div {
