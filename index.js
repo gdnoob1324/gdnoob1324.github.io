@@ -44,12 +44,12 @@ window.onload = function () {
     document.querySelector('.buttons').children[0].style.backgroundColor = '#000000c0';
 
     document.querySelector('.ward').addEventListener('click', (event) => {
-        scrollableElement.scrollBy(-10, 0);
+        scrollableElement.scrollBy(-10000, 0);
         posupdate();
     });
 
     document.querySelector('.backward').addEventListener('click', (event) => {
-        scrollableElement.scrollBy(10, 0);
+        scrollableElement.scrollBy(10000, 0);
         posupdate();
     });
 };
