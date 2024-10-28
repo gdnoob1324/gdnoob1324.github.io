@@ -1,7 +1,7 @@
 window.onload = function () {
 
     const scrollableElement = document.querySelector('.slides');
-    const childElements = scrollableElement.children;
+    const childElements = scrollableElement.querySelectorAll('a');
 
     // 버튼 추가
     for (let i = 0; i < childElements.length; i++) {
@@ -22,6 +22,9 @@ window.onload = function () {
         event.preventDefault();
         // scrollableElement.scrollLeft += event.deltaY;
         scrollableElement.scrollBy(event.deltaY * 10, 0)
+
+        scrollableElement.querySelector('.ward').style.left = scrollableElement.scrollLeft + 12 + 'px';
+        scrollableElement.querySelector('.backward').style.right = -scrollableElement.scrollLeft + 12 + 'px';
     });
 
     // 버튼 선택
@@ -36,6 +39,14 @@ window.onload = function () {
     });
 
     document.querySelector('.buttons').children[0].style.backgroundColor = '#000000c0';
+
+    document.querySelector('.ward').addEventListener('click', (event) => {
+        scrollableElement.scrollBy(-1, 0)
+    });
+
+    document.querySelector('.backward').addEventListener('click', (event) => {
+        scrollableElement.scrollBy(1, 0)
+    });
 };
 
 $(document).ready(function() {

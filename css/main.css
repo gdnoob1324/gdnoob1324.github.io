@@ -212,6 +212,30 @@ a.slide p {
     border-right: none;
 }
 
+.slides>div {
+    width: 32px;
+    height: 32px;
+    background-color: #ffffffc0;
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform .1s;
+}
+
+.slides>div:hover {
+    transform: scale(1.25);
+}
+
+.slides>div.ward {
+left: 12px;
+}
+
+.slides>div.backward {
+right: 12px;
+}
+
 @media screen and ((max-height: 500px) or (max-width: 650px)) {
 
     .main .title h1 {
