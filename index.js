@@ -11,7 +11,7 @@ window.onload = function () {
     for (let i = 0; i < childElements.length; i++) {
         const button = document.createElement('button');
         // button.innerText = (i + 1);
-        button.addEventListener('click', (event) => {
+        button.addEventListener('click', (e) => {
             scrollableElement.scrollTo(i * 361, 0)
         });
         document.querySelector('.buttons').appendChild(button);
@@ -22,17 +22,25 @@ window.onload = function () {
         if (href != "") childElements[i].children[0].src = getThumbnailsFromId(href)[0];
     }
 
-    scrollableElement.addEventListener('wheel', (event) => {
-        event.preventDefault();
+    scrollableElement.addEventListener('wheel', (e) => {
+        e.preventDefault();
         // scrollableElement.scrollLeft += event.deltaY;
-        scrollableElement.scrollBy(event.deltaY * 10, 0)
+        scrollableElement.scrollBy(e.deltaY * 10, 0)
     });
 
-    if (isMobile() && childElements[0].clientWidth <= 380)
-        $(childElements[test]).addClass('act');
+    function slideUpdate() {
+        if (isMobile() && childElements[0].clientWidth <= 380) {
+            $(childElements).each((i, e) => {
+                $(e).removeClass('act');
+            });
+            $(childElements[test]).addClass('act');
+        }
+    }
+    slideUpdate();
+    window.addEventListener('resize', (e) => slideUpdate());
 
     // 버튼 선택
-    scrollableElement.addEventListener('scroll', (event) => {
+    scrollableElement.addEventListener('scroll', (e) => {
         const elements = document.querySelector('.buttons').children;
         Array.prototype.forEach.call(elements, (e) => e.style.backgroundColor = '#00000040');
 
@@ -41,26 +49,15 @@ window.onload = function () {
             else { test = i; elements[i].style.backgroundColor = '#000000c0'; break }
         }
 
-        if (isMobile() && childElements[0].clientWidth <= 380) {
-            $(childElements).each((index, item) => {
-                $(item).removeClass('act');
-            });
-            $(childElements[test]).addClass('act');
-        }
+        slideUpdate();
     });
-
     document.querySelector('.buttons').children[0].style.backgroundColor = '#000000c0';
 
-    document.querySelector('.ward').addEventListener('click', (event) => {
-        scrollableElement.scrollBy(-10000, 0);
-    });
+    document.querySelector('.ward').addEventListener('click', (e) => scrollableElement.scrollBy(-10000, 0));
+    document.querySelector('.backward').addEventListener('click', (e) => scrollableElement.scrollBy(10000, 0));
 
-    document.querySelector('.backward').addEventListener('click', (event) => {
-        scrollableElement.scrollBy(10000, 0);
-    });
-
-    document.querySelectorAll('.slide').forEach((element) => {
-        element.querySelector('div').style.setProperty('--element-height', -element.querySelector('p').clientHeight - 12 + 'px');
+    document.querySelectorAll('.slide').forEach((e) => {
+        e.querySelector('div').style.setProperty('--element-height', -e.querySelector('p').clientHeight - 12 + 'px');
     });
 };
 
@@ -85,24 +82,6 @@ $(document).ready(function() {
                 el.removeClass('active');
         });
     }).scroll();
-
-
-
-//     $(window).on('resize', function() {
-//         $('.slide').each(function (index, item) {
-//             $(item).children('div').css('bottom', -$(item).children('div').children('p').outerHeight() -12);
-//        });
-//     });
-
-//     $('.slide').each(function (index, item) {
-//         $(item).children('div').css('bottom', -$(item).children('div').children('p').outerHeight() -12);
-//    });
-
-//     $('.slide').hover(function() {
-//         $(this).children('div').css('bottom', 0);
-//     }, function() {
-//         $(this).children('div').css('bottom', -$(this).children('div').children('p').outerHeight() -12);
-//     });
 });
 
 const THUMBNAIL_SIZES = [
