@@ -17,7 +17,7 @@ window.onload = function () {
         const href = getIdFromUri(childElements[i].href);
         if (href != "") childElements[i].children[0].src = getThumbnailsFromId(href)[0];
     }
-    
+
     scrollableElement.addEventListener('wheel', (event) => {
         event.preventDefault();
         // scrollableElement.scrollLeft += event.deltaY;
@@ -44,6 +44,10 @@ window.onload = function () {
     document.querySelector('.backward').addEventListener('click', (event) => {
         scrollableElement.scrollBy(10000, 0);
     });
+
+    document.querySelectorAll('.slide').forEach((element) => {
+        element.querySelector('div').style.setProperty('--element-height', -element.querySelector('p').clientHeight - 12 + 'px');
+    });
 };
 
 $(document).ready(function() {
@@ -68,21 +72,23 @@ $(document).ready(function() {
         });
     }).scroll();
 
-    $(window).on('resize', function() {
-        $('.slide').each(function (index, item) {
-            $(item).children('div').css('bottom', -$(item).children('div').children('p').outerHeight() -12);
-       });	
-    });
 
-    $('.slide').each(function (index, item) {
-        $(item).children('div').css('bottom', -$(item).children('div').children('p').outerHeight() -12);
-   });	
 
-    $('.slide').hover(function() {
-        $(this).children('div').css('bottom', 0);
-    }, function() {
-        $(this).children('div').css('bottom', -$(this).children('div').children('p').outerHeight() -12);
-    });
+//     $(window).on('resize', function() {
+//         $('.slide').each(function (index, item) {
+//             $(item).children('div').css('bottom', -$(item).children('div').children('p').outerHeight() -12);
+//        });
+//     });
+
+//     $('.slide').each(function (index, item) {
+//         $(item).children('div').css('bottom', -$(item).children('div').children('p').outerHeight() -12);
+//    });
+
+//     $('.slide').hover(function() {
+//         $(this).children('div').css('bottom', 0);
+//     }, function() {
+//         $(this).children('div').css('bottom', -$(this).children('div').children('p').outerHeight() -12);
+//     });
 });
 
 const THUMBNAIL_SIZES = [

@@ -178,6 +178,11 @@ a.slide div {
     text-align: start;
 
     transition: bottom .1s;
+    bottom: var(--element-height);
+}
+
+a.slide:hover div {
+    bottom: 0;
 }
 
 a.slide h3 {
