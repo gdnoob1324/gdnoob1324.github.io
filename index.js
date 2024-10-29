@@ -29,15 +29,15 @@ window.onload = function () {
     });
 
     function slideUpdate() {
-        if (isMobile() && childElements[0].clientWidth <= 380) {
-            $(childElements).each((i, e) => {
-                $(e).removeClass('act');
-            });
+        console.log(scrollableElement.clientWidth);
+        if (scrollableElement.clientWidth <= 380) {
+            $(childElements).each((i, e) => $(e).removeClass('act'));
             $(childElements[test]).addClass('act');
         }
+        else $(childElements).each((i, e) => $(e).removeClass('act'));
     }
     slideUpdate();
-    window.addEventListener('resize', (e) => slideUpdate());
+    window.addEventListener("resize", (e)=> slideUpdate());
 
     // 버튼 선택
     scrollableElement.addEventListener('scroll', (e) => {
