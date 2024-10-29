@@ -51,13 +51,14 @@
 .main .info h1 {
     font-size: 48px;
     margin: 48px 0;
+    font-weight: 800;
 }
 
 .main .info>div {
     display: flex;
     align-items: center;
-    width: 80%;
-    height: 60%;
+    width: min(80%, 768px);
+    height: min(60%, 432px);
     justify-content: space-evenly;
     border: solid 4px #ffffff80;
     border-radius: 24px;
@@ -73,10 +74,14 @@
     border: solid 4px #ffffff80;
 }
 
+.main .info h2 {
+    margin: 0;
+}
+
 .main .info p {
+    margin: 0;
     width: 100%;
     font-size: larger;
-    text-align: center;
     font-weight: 300;
 }
 
@@ -230,12 +235,12 @@ a.slide p {
 }
 
 .slides>div.ward {
-    left: 12px;
+    left: 8px;
     margin-right: -44px;
 }
 
 .slides>div.backward {
-    right: 12px;
+    right: 8px;
     margin-left: -44px;
 }
 
