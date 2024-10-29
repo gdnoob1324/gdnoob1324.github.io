@@ -221,6 +221,8 @@ a.slide p {
     display: flex;
     border-radius: 50%;
     cursor: pointer;
+
+    transition: background-color .15s linear;
 }
 
 .slides>div:hover {
