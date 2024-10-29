@@ -164,7 +164,7 @@ a.slide img {
     clip: rect(100%, 100%, 100%, 100%);
 }
 
-a.slide:hover img {
+a.slide:hover img, a.slide.act img {
     transform: scale(1.1);
 }
 
@@ -181,7 +181,7 @@ a.slide div {
     bottom: var(--element-height);
 }
 
-a.slide:hover div {
+a.slide:hover div, a.slide.act div {
     bottom: 0;
 }
 

@@ -1,3 +1,7 @@
+var test = 0;
+
+function isMobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);}
+
 window.onload = function () {
 
     const scrollableElement = document.querySelector('.slides');
@@ -24,6 +28,9 @@ window.onload = function () {
         scrollableElement.scrollBy(event.deltaY * 10, 0)
     });
 
+    if (isMobile())
+        $(childElements[test]).addClass('act');
+
     // 버튼 선택
     scrollableElement.addEventListener('scroll', (event) => {
         const elements = document.querySelector('.buttons').children;
@@ -31,7 +38,14 @@ window.onload = function () {
 
         for (let i = 0; i <= childElements.length + 1; i++) {
             if (scrollableElement.scrollLeft > (childElements[0].clientWidth + 12) * i + childElements[0].clientWidth / 2) continue;
-            else { elements[i].style.backgroundColor = '#000000c0'; break }
+            else { test = i; elements[i].style.backgroundColor = '#000000c0'; break }
+        }
+
+        if (isMobile()) {
+            $(childElements).each((index, item) => {
+                $(item).removeClass('act');
+            });
+            $(childElements[test]).addClass('act');
         }
     });
 
