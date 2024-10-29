@@ -212,28 +212,31 @@ a.slide p {
     border-right: none;
 }
 
+.slides a:nth-last-of-type(1) {
+    margin-right: -44px;
+}
+
 .slides>div {
     width: 32px;
     height: 32px;
-    background-color: #ffffffc0;
-    position: absolute;
+    background-color: #ffffff60;
+    position: sticky;
     z-index: 2;
     display: flex;
     border-radius: 50%;
     cursor: pointer;
-    transition: transform .1s;
 }
 
 .slides>div:hover {
-    transform: scale(1.25);
+    background-color: #ffffffc0;
 }
 
 .slides>div.ward {
-left: 12px;
+    left: 12px;
 }
 
 .slides>div.backward {
-right: 12px;
+    right: 12px;
 }
 
 @media screen and ((max-height: 500px) or (max-width: 650px)) {

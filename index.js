@@ -17,17 +17,11 @@ window.onload = function () {
         const href = getIdFromUri(childElements[i].href);
         if (href != "") childElements[i].children[0].src = getThumbnailsFromId(href)[0];
     }
-
-    function posupdate() {
-        scrollableElement.querySelector('.ward').style.left = scrollableElement.scrollLeft + 12 + 'px';
-        scrollableElement.querySelector('.backward').style.right = -scrollableElement.scrollLeft + 12 + 'px';
-    }
-
+    
     scrollableElement.addEventListener('wheel', (event) => {
         event.preventDefault();
         // scrollableElement.scrollLeft += event.deltaY;
         scrollableElement.scrollBy(event.deltaY * 10, 0)
-        posupdate();
     });
 
     // 버튼 선택
@@ -45,12 +39,10 @@ window.onload = function () {
 
     document.querySelector('.ward').addEventListener('click', (event) => {
         scrollableElement.scrollBy(-10000, 0);
-        posupdate();
     });
 
     document.querySelector('.backward').addEventListener('click', (event) => {
         scrollableElement.scrollBy(10000, 0);
-        posupdate();
     });
 };
 
