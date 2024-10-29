@@ -28,7 +28,7 @@ window.onload = function () {
         scrollableElement.scrollBy(event.deltaY * 10, 0)
     });
 
-    if (isMobile())
+    if (isMobile() && childElements[0].clientWidth <= 380)
         $(childElements[test]).addClass('act');
 
     // 버튼 선택
@@ -41,7 +41,7 @@ window.onload = function () {
             else { test = i; elements[i].style.backgroundColor = '#000000c0'; break }
         }
 
-        if (isMobile()) {
+        if (isMobile() && childElements[0].clientWidth <= 380) {
             $(childElements).each((index, item) => {
                 $(item).removeClass('act');
             });
