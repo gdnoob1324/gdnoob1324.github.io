@@ -34,16 +34,21 @@
     z-index: 2;
 }
 
-.header a:hover::after {
+.header a::after {
     content: "";
     bottom: 0;
     display: block;
     position: absolute;
     height: 2px;
-    width: 100%;
+    width: 0%;
     left: 0;
     background-color: #fff;
     z-index: 2;
+    transition: width .15s;
+}
+
+.header a:hover::after {
+    width: 100%;
 }
 
 @media screen and ((max-height: 500px) or (max-width: 700px)) {
