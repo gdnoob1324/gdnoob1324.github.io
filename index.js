@@ -30,11 +30,8 @@ window.onload = function () {
 
     function slideUpdate() {
         console.log(scrollableElement.clientWidth);
-        if (scrollableElement.clientWidth <= 380) {
-            $(childElements).each((i, e) => $(e).removeClass('act'));
-            $(childElements[test]).addClass('act');
-        }
-        else $(childElements).each((i, e) => $(e).removeClass('act'));
+        $(childElements).each((i, e) => $(e).removeClass('act'));
+        if (scrollableElement.clientWidth <= 380) $(childElements[test]).addClass('act');
     }
     slideUpdate();
     window.addEventListener("resize", (e)=> slideUpdate());
