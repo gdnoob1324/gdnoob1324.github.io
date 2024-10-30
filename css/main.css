@@ -1,5 +1,8 @@
 .main {
     width: 100%;
+
+    background-image: linear-gradient(135deg, #ff0080 0%, #000080 100%);
+    background-attachment: fixed;
 }
 
 .main .title {
@@ -40,7 +43,7 @@
 
 .main .info {
     height: 100vh;
-    background-image: linear-gradient(135deg, #ff0080 0%, #000080 200%);
+    /* background-image: linear-gradient(135deg, #ff0080 0%, #000080 200%); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,8 +96,7 @@
     justify-content: center;
     position: relative;
     align-items: center;
-
-    background-image: linear-gradient(135deg, #ff0080 -100%, #000080 100%);
+    /* background-image: linear-gradient(135deg, #ff0080 -100%, #000080 100%); */
 }
 
 .main .sites div.slides {

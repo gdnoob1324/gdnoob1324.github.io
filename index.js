@@ -29,7 +29,6 @@ window.onload = function () {
     });
 
     function slideUpdate() {
-        console.log(slidesForm.clientWidth);
         $(slides).each((i, e) => $(e).removeClass('act'));
         if (slidesForm.clientWidth <= 380) $(slides[test]).addClass('act');
     }
@@ -56,11 +55,9 @@ window.onload = function () {
     document.querySelectorAll('.slide').forEach((e) => {
         e.querySelector('div').style.setProperty('--element-height', -e.querySelector('p').clientHeight - 12 + 'px');
     });
-};
 
-$(document).ready(function() {
+
     const counters = $(".scroll_on");
-
     let exposurePercentage = 80;
     const loop = false;
 
@@ -69,8 +66,7 @@ $(document).ready(function() {
             const el = $(this);
             const rect = el[0].getBoundingClientRect();
             const scale = rect.width / el[0].offsetWidth;
-            const winHeight = window.innerHeight;
-            const contentHeight = rect.height / (scale > 1 ? scale : 1)
+            const winHeight = window.innerHeight, contentHeight = rect.height / Math.max(scale, 1);
             exposurePercentage = getComputedStyle(el[0]).getPropertyValue('--exposure') || exposurePercentage;
 
             if (rect.top <= winHeight - (contentHeight * exposurePercentage / 100) && rect.bottom >= (contentHeight * exposurePercentage / 100))
@@ -79,7 +75,7 @@ $(document).ready(function() {
                 el.removeClass('active');
         });
     }).scroll();
-});
+};
 
 const THUMBNAIL_SIZES = [
     "maxresdefault",
