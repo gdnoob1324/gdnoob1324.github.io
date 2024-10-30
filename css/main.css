@@ -149,7 +149,7 @@ a.slide::before {
     object-fit: cover;
     top: 0;
     left: 0;
-    background-image: url(../img/bg.png);
+    background-image: url(../img/bg_min.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
