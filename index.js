@@ -4,45 +4,45 @@ function isMobile() {return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|
 
 window.onload = function () {
 
-    const scrollableElement = document.querySelector('.slides');
-    const childElements = scrollableElement.querySelectorAll('a');
+    const slidesForm = document.querySelector('.slides');
+    const slides = slidesForm.querySelectorAll('a');
 
     // 버튼 추가
-    for (let i = 0; i < childElements.length; i++) {
+    for (let i = 0; i < slides.length; i++) {
         const button = document.createElement('button');
         // button.innerText = (i + 1);
         button.addEventListener('click', (e) => {
-            scrollableElement.scrollTo(i * 361, 0)
+            slidesForm.scrollTo(i * 361, 0)
         });
         document.querySelector('.buttons').appendChild(button);
     }
 
-    for (let i = 0; i < childElements.length; i++) {
-        const href = getIdFromUri(childElements[i].href);
-        if (href != "") childElements[i].children[0].src = getThumbnailsFromId(href)[0];
+    for (let i = 0; i < slides.length; i++) {
+        const href = getIdFromUri(slides[i].href);
+        if (href != "") slides[i].children[0].src = getThumbnailsFromId(href)[0];
     }
 
-    scrollableElement.addEventListener('wheel', (e) => {
+    slidesForm.addEventListener('wheel', (e) => {
         e.preventDefault();
-        // scrollableElement.scrollLeft += event.deltaY;
-        scrollableElement.scrollBy(e.deltaY * 10, 0)
+        // slidesForm.scrollLeft += event.deltaY;
+        slidesForm.scrollBy(e.deltaY * 10, 0)
     });
 
     function slideUpdate() {
-        console.log(scrollableElement.clientWidth);
-        $(childElements).each((i, e) => $(e).removeClass('act'));
-        if (scrollableElement.clientWidth <= 380) $(childElements[test]).addClass('act');
+        console.log(slidesForm.clientWidth);
+        $(slides).each((i, e) => $(e).removeClass('act'));
+        if (slidesForm.clientWidth <= 380) $(slides[test]).addClass('act');
     }
     slideUpdate();
     window.addEventListener("resize", (e)=> slideUpdate());
 
     // 버튼 선택
-    scrollableElement.addEventListener('scroll', (e) => {
+    slidesForm.addEventListener('scroll', (e) => {
         const elements = document.querySelector('.buttons').children;
         Array.prototype.forEach.call(elements, (e) => e.style.backgroundColor = '#00000040');
 
-        for (let i = 0; i <= childElements.length + 1; i++) {
-            if (scrollableElement.scrollLeft > (childElements[0].clientWidth + 12) * i + childElements[0].clientWidth / 2) continue;
+        for (let i = 0; i <= slides.length + 1; i++) {
+            if (slidesForm.scrollLeft > (slides[0].clientWidth + 12) * i + slides[0].clientWidth / 2) continue;
             else { test = i; elements[i].style.backgroundColor = '#000000c0'; break }
         }
 
@@ -50,8 +50,8 @@ window.onload = function () {
     });
     document.querySelector('.buttons').children[0].style.backgroundColor = '#000000c0';
 
-    document.querySelector('.ward').addEventListener('click', (e) => scrollableElement.scrollBy(-10000, 0));
-    document.querySelector('.backward').addEventListener('click', (e) => scrollableElement.scrollBy(10000, 0));
+    document.querySelector('.ward').addEventListener('click', (e) => slidesForm.scrollBy(-10000, 0));
+    document.querySelector('.backward').addEventListener('click', (e) => slidesForm.scrollBy(10000, 0));
 
     document.querySelectorAll('.slide').forEach((e) => {
         e.querySelector('div').style.setProperty('--element-height', -e.querySelector('p').clientHeight - 12 + 'px');
