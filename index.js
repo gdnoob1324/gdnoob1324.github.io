@@ -33,7 +33,9 @@ window.onload = function () {
         if (slidesForm.clientWidth <= 380) $(slides[test]).addClass('active');
     }
     slideUpdate();
-    window.addEventListener("resize", (e)=> slideUpdate());
+    window.addEventListener("resize", (e)=> {
+        slideUpdate();
+    });
 
     // 버튼 선택
     slidesForm.addEventListener('scroll', (e) => {
