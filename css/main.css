@@ -9,7 +9,7 @@
     height: calc(100vh - var(--header-height));
     width: 100%;
     padding-left: 5vw;
-    background-image: url(../img/bg.png);
+    background-image: url(../img/bg_min.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,7 +166,7 @@ a.slide img {
     clip: rect(100%, 100%, 100%, 100%);
 }
 
-a.slide:hover img, a.slide.act img {
+a.slide:hover img, a.slide.active img {
     transform: scale(1.1);
 }
 
@@ -183,7 +183,7 @@ a.slide div {
     bottom: var(--element-height);
 }
 
-a.slide:hover div, a.slide.act div {
+a.slide:hover div, a.slide.active div {
     bottom: 0;
 }
 

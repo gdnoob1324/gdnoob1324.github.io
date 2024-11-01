@@ -29,8 +29,8 @@ window.onload = function () {
     });
 
     function slideUpdate() {
-        $(slides).each((i, e) => $(e).removeClass('act'));
-        if (slidesForm.clientWidth <= 380) $(slides[test]).addClass('act');
+        $(slides).each((i, e) => $(e).removeClass('active'));
+        if (slidesForm.clientWidth <= 380) $(slides[test]).addClass('active');
     }
     slideUpdate();
     window.addEventListener("resize", (e)=> slideUpdate());
