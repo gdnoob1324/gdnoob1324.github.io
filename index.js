@@ -17,11 +17,12 @@ window.onload = function () {
         document.querySelector('.buttons').appendChild(button);
     }
 
+    // 유튜브 이미지 로딩
     for (let i = 0; i < slides.length; i++) {
         const href = getIdFromUri(slides[i].href);
         if (href != "") slides[i].children[0].src = getThumbnailsFromId(href)[0];
     }
-
+    
     slidesForm.addEventListener('wheel', (e) => {
         e.preventDefault();
         // slidesForm.scrollLeft += event.deltaY;

@@ -79,6 +79,9 @@
 
 .main .info h2 {
     margin: 0;
+    font-weight: 800;
+    margin-bottom: 8px;
+    text-decoration: underline;
 }
 
 .main .info p {
