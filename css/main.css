@@ -173,7 +173,6 @@ a.slide:hover img, a.slide.active img {
     transform: scale(1.1);
 }
 
-
 a.slide div {
     position: absolute;
     bottom: 0;
